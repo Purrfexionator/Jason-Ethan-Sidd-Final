@@ -1,0 +1,1 @@
+nameRate = string_length(name) / 12
