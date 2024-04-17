@@ -12,9 +12,11 @@ caption = new display();
 speaker = new display();
 content = new display(480);
 
-function showMessage(text, speaker = "You") {
+currentSpeaker = "";
+
+function showMessage(text) {
 	caption.showText("dialogue box", 1);
-	self.speaker.showText(speaker + ":", 1);
+	self.speaker.showText(currentSpeaker + ":", 1);
 	
 	if active {
 		caption.reveal();
@@ -32,5 +34,3 @@ function hide() {
 		speaker.hideText(1, 1);
 		content.clear();
 }
-
-//showMessage("hey guys welcome back to my minecraft video i hope you have fun, remember to like an dsubscribe guys if i get to 500 likes i will build a bomb im my backyard guys im gonna do it guys get ready get hyped", "friendly guy");

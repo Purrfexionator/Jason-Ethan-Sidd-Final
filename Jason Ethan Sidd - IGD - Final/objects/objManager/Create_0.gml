@@ -1,6 +1,5 @@
 queuedRoom = -1;
 currentRoom = -1;
-dialogue = false;
 
 moving = false;
 freeMove = true;
@@ -8,6 +7,7 @@ moveDelay = 0;
 
 xTarget = x;
 yTarget = y;
+yOffset = 0;
 
 trueVariables = ds_list_create();
 variablesToAdd = ds_list_create();
@@ -68,18 +68,17 @@ function doNextThing() {
 			hide();
 		}
 		objChoiceSpawner.active = false;
-		dialogue = false;
+		yOffset = 0;
+		with objPortrait {
+			active = false;
+			selected = false;
+		}
 		
 		return;
 	}
 	
 	var line = currentLines.next();
 	
-	if variable_struct_exists(line, "set_true") {
-		if !isTrue(line.set_true) {
-			ds_list_add(variablesToAdd, line.set_true);	
-		}
-	}
 	if variable_struct_exists(line, "if_true") {
 		if !isTrue(line.if_true) {
 			doNextThing();
@@ -92,29 +91,75 @@ function doNextThing() {
 			return;
 		}
 	}
-	
-	var skipToNext = true;
+	if variable_struct_exists(line, "set_true") {
+		if !isTrue(line.set_true) {
+			ds_list_add(variablesToAdd, line.set_true);	
+		}
+	}
 	
 	if variable_struct_exists(line, "lines") {
 		addLines(line.lines);
 	}
-	if variable_struct_exists(line, "text") {
-		var text = line.text;
+	if variable_struct_exists(line, "speaker") {
+		objDialogue.currentSpeaker = line.speaker;	
+	}
 
-		var speaker = "You";
-		if variable_struct_exists(line, "speaker") {
-			speaker = line.speaker;	
+	if variable_struct_exists(line, "portraits") {
+		if line.portraits {
+			with objPortrait {
+				x = other.xTarget;
+				y = other.yTarget + 400;
+				active = true;
+			}
+			objLeftPortrait.x -= 400;
+			objRightPortrait.x += 400;
+		} else {
+			with objPortrait {
+				active = false;
+				selected = false;
+			}
 		}
-		
-		objDialogue.showMessage(text, speaker);
-		dialogue = true;
+	}
+	if variable_struct_exists(line, "portraitFocus") {
+		switch line.portraitFocus {
+			case "left":
+				objLeftPortrait.selected = true;
+				objRightPortrait.selected = false;
+				break;
+			case "right":
+				objLeftPortrait.selected = false;
+				objRightPortrait.selected = true;
+				break;
+			default:
+				objLeftPortrait.selected = false;
+				objRightPortrait.selected = false;
+				break;
+		}
+	}
+	if variable_struct_exists(line, "portraitL") {
+		objLeftPortrait.sprite_index = asset_get_index(line.portraitL);
+	}
+	if variable_struct_exists(line, "portraitLI") {
+		objLeftPortrait.image_index = line.portraitLI;
+	}
+	if variable_struct_exists(line, "portraitR") {
+		objRightPortrait.sprite_index = asset_get_index(line.portraitR);
+	}
+	if variable_struct_exists(line, "portraitRI") {
+		objRightPortrait.image_index = line.portraitRI;
+	}
+
+	var skipToNext = true;
+	
+	if variable_struct_exists(line, "text") {
+		objDialogue.showMessage(line.text);
+		yOffset = 100;
 		
 		skipToNext = false;
 	} else if variable_struct_exists(line, "choices") {
 		objDialogue.hide();
-		var choices = line.choices;
-		objChoiceSpawner.showChoices(choices);
-		dialogue = true;
+		objChoiceSpawner.showChoices(line.choices);
+		yOffset = 100;
 		
 		skipToNext = false;
 	}

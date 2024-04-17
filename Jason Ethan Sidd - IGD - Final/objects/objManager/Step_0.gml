@@ -41,10 +41,7 @@ if moving {
 	}
 } else if currentRoom != -1 {
 	xTarget = currentRoom.xMid;
-	yTarget = currentRoom.yMid;
-	if dialogue {
-		yTarget += 100;	
-	}
+	yTarget = currentRoom.yMid + yOffset;
 }
 
 x = lerp(x, xTarget, 0.1);

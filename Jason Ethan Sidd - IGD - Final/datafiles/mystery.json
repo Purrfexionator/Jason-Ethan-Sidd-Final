@@ -3,7 +3,11 @@
         "dev_notes": "Game starts in looking at a bed",
         "free_move": false,
         "lines": [
-            { "text": "mmmm.. huh?" },
+            { "speaker": "You"},
+            {
+                "speaker": "You",
+                "text": "mmmm.. huh?"
+            },
             { "text": "what time is it?" },
             { "text": "..." },
             { "text": "4pm." },
@@ -61,7 +65,7 @@
                     {
                         "text": "It's an apple. I'm not hungry now but I'll save it for later.",
                         "set_true": "has_apple",
-                        "dev_notes": "This should remove the apple from the room and reveal a key underneath.",
+                        "dev_notes": "This should remove the apple from the room and reveal a key underneath."
                     },
                     {
                         "text": "Ah, there's a key underneath"
@@ -89,13 +93,7 @@
                         "lines": [
                             {
                                 "speaker": "You",
-                                "portraits": false,
-                                "portraitFocus": "left",
-                                "portraitL": "sprPlayer",
-                                "portraitLI": 0,
-                                "portraitR": "sprNotPlayer",
-                                "portraitRI": 0
-        
+                                "portraits": false
                             },
                             { "text": "its my computer."},
                             { "text": "must have left it on overnight"},
@@ -109,39 +107,60 @@
                                 "speaker": "You",
                                 "portraits": true,
                                 "portraitFocus": "left",
-                                "portraitL": "sprPlayer",
+                                "portraitL": "sprPlayerPortrait",
                                 "portraitLI": 0,
-                                "portraitR": "sprNotPlayer",
+                                "portraitR": "sprPlayerPortrait",
                                 "portraitRI": 0
         
                             },
                             { "text": "hey whats up with my..."},
                             {
                                 "speaker": "RAAAAAAAAAAHHHHH",
+                                "portraitFocus": "right",
                                 "text": "Evil Computer"
                             },
-                            { "text": "OH MY GOD"},
+                            { 
+                                "speaker": "You",
+                                "portraitFocus": "left",
+                                "text": "OH MY GOD"
+                            },
                             {
                                 "speaker": "Evil Computer",
+                                "portraitFocus": "right",
                                 "text": "Hello welcome to My Trap. I have Trapped you here in My Trap that I had prepared to Trap You In"
                             },
-                            { "text": "okay??? why"},
+                            { 
+                                "speaker": "You",
+                                "portraitFocus": "left",
+                                "text": "okay??? why"
+                            },
                             {
                                 "speaker": "Evil Computer",
+                                "portraitFocus": "right",
                                 "text": "You are Trapped"
                             },
-                            { "text": "yes i can see that. why"},
+                            {
+                                "speaker": "You",
+                                "portraitFocus": "left",
+                                "text": "yes i can see that. why"
+                            },
                             {
                                 "speaker": "Evil Computer",
+                                "portraitFocus": "right",
                                 "text": "Fun"
                             },
                             {
                                 "speaker": "(Not) Evil Computer",
                                 "text": "That was a joke I am not actually Evil"
                             },
-                            { "text": "??????"},
+                            { 
+                                "speaker": "You",
+                                "portraitFocus": "left",
+                                "text": "??????"
+                            },
                             {
                                 "speaker": "Evil Computer",
+                                "portraitFocus": "right",
                                 "text": "or am i"
                             }
                         ]
