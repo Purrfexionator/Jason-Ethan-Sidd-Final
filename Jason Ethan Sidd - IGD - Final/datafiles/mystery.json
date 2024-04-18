@@ -4,10 +4,7 @@
         "free_move": false,
         "lines": [
             { "speaker": "You"},
-            {
-                "speaker": "You",
-                "text": "mmmm.. huh?"
-            },
+            { "text": "mmmm.. huh?"},
             { "text": "what time is it?" },
             { "text": "..." },
             { "text": "4pm." },
@@ -52,6 +49,7 @@
         "interactables": {
             "obj_car": {
                 "lines": [
+                    { "speaker": "You"},
                     { "text": "it's a car." },
                     { "text": "there's a hole in the wall from when it was driven in here." },
                     { "text": "..." },
@@ -91,10 +89,7 @@
                     {
                         "if_false": "tried_door",
                         "lines": [
-                            {
-                                "speaker": "You",
-                                "portraits": false
-                            },
+                            { "speaker": "You"},
                             { "text": "its my computer."},
                             { "text": "must have left it on overnight"},
                             { "text": "typical, i guess"}
@@ -104,16 +99,14 @@
                         "if_true": "tried_door",
                         "lines": [
                             {
-                                "speaker": "You",
                                 "portraits": true,
-                                "portraitFocus": "left",
                                 "portraitL": "sprPlayerPortrait",
-                                "portraitLI": 0,
-                                "portraitR": "sprPlayerPortrait",
-                                "portraitRI": 0
-        
+                                "portraitR": "sprPlayerPortrait"
                             },
-                            { "text": "hey whats up with my..."},
+                            {
+                                "speaker": "You",
+                                "portraitFocus": "left",
+                                "text": "hey whats up with my..."},
                             {
                                 "speaker": "RAAAAAAAAAAHHHHH",
                                 "portraitFocus": "right",

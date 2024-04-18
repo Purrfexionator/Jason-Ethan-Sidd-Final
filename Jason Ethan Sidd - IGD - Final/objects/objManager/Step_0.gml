@@ -47,3 +47,7 @@ if moving {
 x = lerp(x, xTarget, 0.1);
 y = lerp(y, yTarget, 0.1);
 camera_set_view_pos(view_camera[0], x - width / 2, y - height / 2);
+
+if keyboard_check_pressed(vk_f4) {
+ window_set_fullscreen(!window_get_fullscreen());	
+}
