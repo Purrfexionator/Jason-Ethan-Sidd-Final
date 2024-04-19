@@ -7,7 +7,7 @@ if drawScale > 0.01 {
 	draw_sprite_ext(sprite_index, image_index, x, ypos, drawScale, drawScale, angle, image_blend, image_alpha);
 
 	
-	nameDisplay.update();
+	//nameDisplay.update();
 	var textPos = ypos - 10 - (sprite_height * drawScale) / 2;
 	
 	draw_set_halign(fa_center);
