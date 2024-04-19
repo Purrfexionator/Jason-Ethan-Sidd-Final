@@ -160,6 +160,29 @@
                     }
                 ]
             },
+            "obj_minigame": {
+                "lines": [
+                    {
+                        "speaker": "Minigame",
+                        "text": "minigame"
+                    },
+                    {
+                        "speaker": "You",
+                        "text": "ok"
+                    },
+                    {
+                        "minigame": "mg_epic",
+                        "if_won": {
+                            "speaker": "Minigame",
+                            "text": "you won"
+                        },
+                        "if_lost": {
+                            "speaker": "Minigame",
+                            "text": "you lost"
+                        }
+                    }
+                ]
+            },
             "obj_door": {
                 "lines": [
                     {

@@ -1,0 +1,1 @@
+minigame = "mg_epic";
