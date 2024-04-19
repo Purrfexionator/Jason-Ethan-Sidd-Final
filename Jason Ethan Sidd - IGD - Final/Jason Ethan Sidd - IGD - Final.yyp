@@ -62,6 +62,7 @@
     {"id":{"name":"sprMinigameFrame","path":"sprites/sprMinigameFrame/sprMinigameFrame.yy",},},
     {"id":{"name":"objSingingFish","path":"objects/objSingingFish/objSingingFish.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
+    {"id":{"name":"sprPongBall","path":"sprites/sprPongBall/sprPongBall.yy",},},
     {"id":{"name":"objMinigameProp","path":"objects/objMinigameProp/objMinigameProp.yy",},},
     {"id":{"name":"objApple","path":"objects/objApple/objApple.yy",},},
     {"id":{"name":"Sprite13","path":"sprites/Sprite13/Sprite13.yy",},},
