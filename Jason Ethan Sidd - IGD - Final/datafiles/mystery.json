@@ -108,9 +108,9 @@
                                 "portraitFocus": "left",
                                 "text": "hey whats up with my..."},
                             {
-                                "speaker": "RAAAAAAAAAAHHHHH",
+                                "speaker": "Evil Computer",
                                 "portraitFocus": "right",
-                                "text": "Evil Computer"
+                                "text": "RAAAAAAAAAHHHHHHHHH"
                             },
                             { 
                                 "speaker": "You",
@@ -120,7 +120,7 @@
                             {
                                 "speaker": "Evil Computer",
                                 "portraitFocus": "right",
-                                "text": "Hello welcome to My Trap. I have Trapped you here in My Trap that I had prepared to Trap You In"
+                                "text": "HELLO AND WELCOME TO [[My Trap]]! PREPARE TO BE [[Cordially Executed]]."
                             },
                             { 
                                 "speaker": "You",
@@ -130,32 +130,48 @@
                             {
                                 "speaker": "Evil Computer",
                                 "portraitFocus": "right",
-                                "text": "You are Trapped"
+                                "text": "YOU MUST [[Answer]] MY THREE RIDDLES!"
                             },
                             {
                                 "speaker": "You",
                                 "portraitFocus": "left",
-                                "text": "yes i can see that. why"
+                                "text": "shit, did i leave the stove on?"
                             },
                             {
                                 "speaker": "Evil Computer",
                                 "portraitFocus": "right",
-                                "text": "Fun"
-                            },
-                            {
-                                "speaker": "(Not) Evil Computer",
-                                "text": "That was a joke I am not actually Evil"
+                                "text": "FOCUS, HUMAN! MY [[Master Plan]] IS UNFOLDING BEFORE YOU!!"
                             },
                             { 
                                 "speaker": "You",
                                 "portraitFocus": "left",
-                                "text": "??????"
+                                "lines": [
+                                    { "text": "can you just..." },
+                                    { "text": "let me go?" }
+                                ]
                             },
                             {
                                 "speaker": "Evil Computer",
                                 "portraitFocus": "right",
-                                "text": "or am i"
+                                "text": "YOU MUST PLAY MY [[Impossible Game]]!!! AHAHA!!!"
+                            },
+                            { 
+                                "speaker": "You",
+                                "portraitFocus": "left",
+                                "lines": [
+                                    { "text": "..." },
+                                    { "text": "fine. what's your game." }
+                                ]
+                            },
+                            {
+                                "speaker": "Evil Computer",
+                                "portraitFocus": "right",
+                                "lines": [
+                                    { "text": "THIS GAME IS [[Painful]], [[Torturous]], AND [[Excruciating]]!!" },
+                                    { "text": "YOU WILL NEVER [[Surpass]] MY [[Villlanous Endeavours]]!!!!" }
+                                ]
                             }
+
                         ]
                     }
                 ]
