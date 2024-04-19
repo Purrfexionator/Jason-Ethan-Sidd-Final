@@ -45,6 +45,7 @@
     {"id":{"name":"objInteractable","path":"objects/objInteractable/objInteractable.yy",},},
     {"id":{"name":"sprPongBackground","path":"sprites/sprPongBackground/sprPongBackground.yy",},},
     {"id":{"name":"objRoom","path":"objects/objRoom/objRoom.yy",},},
+    {"id":{"name":"sprPongBorder","path":"sprites/sprPongBorder/sprPongBorder.yy",},},
     {"id":{"name":"blapple2","path":"objects/blapple2/blapple2.yy",},},
     {"id":{"name":"objRmVoiceAngry","path":"objects/objRmVoiceAngry/objRmVoiceAngry.yy",},},
     {"id":{"name":"objWoodenFish","path":"objects/objWoodenFish/objWoodenFish.yy",},},

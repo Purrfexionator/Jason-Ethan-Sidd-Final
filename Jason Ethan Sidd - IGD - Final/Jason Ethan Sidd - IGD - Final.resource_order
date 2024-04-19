@@ -24,6 +24,7 @@
     {"name":"objKey","order":13,"path":"objects/objKey/objKey.yy",},
     {"name":"objInteractable","order":8,"path":"objects/objInteractable/objInteractable.yy",},
     {"name":"objRoom","order":4,"path":"objects/objRoom/objRoom.yy",},
+    {"name":"sprPongBorder","order":3,"path":"sprites/sprPongBorder/sprPongBorder.yy",},
     {"name":"blapple2","order":33,"path":"objects/blapple2/blapple2.yy",},
     {"name":"objRmVoiceAngry","order":22,"path":"objects/objRmVoiceAngry/objRmVoiceAngry.yy",},
     {"name":"objWoodenFish","order":15,"path":"objects/objWoodenFish/objWoodenFish.yy",},
