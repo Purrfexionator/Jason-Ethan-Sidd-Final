@@ -26,6 +26,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Evil Computer Minigame","folderPath":"folders/Sprites/Minigames/Evil Computer Minigame.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Minigames","folderPath":"folders/Sprites/Minigames.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"mystery.json","CopyToMask":-1,"filePath":"datafiles",},
@@ -39,6 +41,7 @@
     {"id":{"name":"sprDoor","path":"sprites/sprDoor/sprDoor.yy",},},
     {"id":{"name":"objKey","path":"objects/objKey/objKey.yy",},},
     {"id":{"name":"objInteractable","path":"objects/objInteractable/objInteractable.yy",},},
+    {"id":{"name":"sprPongBackground","path":"sprites/sprPongBackground/sprPongBackground.yy",},},
     {"id":{"name":"objRoom","path":"objects/objRoom/objRoom.yy",},},
     {"id":{"name":"blapple2","path":"objects/blapple2/blapple2.yy",},},
     {"id":{"name":"objRmVoiceAngry","path":"objects/objRmVoiceAngry/objRmVoiceAngry.yy",},},
