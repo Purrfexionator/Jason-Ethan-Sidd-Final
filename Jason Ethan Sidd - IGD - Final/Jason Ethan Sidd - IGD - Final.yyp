@@ -28,6 +28,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Evil Computer Minigame","folderPath":"folders/Sprites/Minigames/Evil Computer Minigame.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Minigames","folderPath":"folders/Sprites/Minigames.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Minigames","folderPath":"folders/Objects/Minigames.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Evil Computer Minigame","folderPath":"folders/Objects/Minigames/Evil Computer Minigame.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"mystery.json","CopyToMask":-1,"filePath":"datafiles",},
@@ -62,6 +64,7 @@
     {"id":{"name":"sprMinigameFrame","path":"sprites/sprMinigameFrame/sprMinigameFrame.yy",},},
     {"id":{"name":"objSingingFish","path":"objects/objSingingFish/objSingingFish.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
+    {"id":{"name":"objPongBackground","path":"objects/objPongBackground/objPongBackground.yy",},},
     {"id":{"name":"sprPongBall","path":"sprites/sprPongBall/sprPongBall.yy",},},
     {"id":{"name":"objMinigameProp","path":"objects/objMinigameProp/objMinigameProp.yy",},},
     {"id":{"name":"sprPongPaddle","path":"sprites/sprPongPaddle/sprPongPaddle.yy",},},

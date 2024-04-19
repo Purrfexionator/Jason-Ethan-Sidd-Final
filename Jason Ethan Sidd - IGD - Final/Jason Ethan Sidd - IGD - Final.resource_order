@@ -16,6 +16,8 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"Minigames","order":15,"path":"folders/Sprites/Minigames.yy",},
+    {"name":"Minigames","order":35,"path":"folders/Objects/Minigames.yy",},
+    {"name":"Evil Computer Minigame","order":1,"path":"folders/Objects/Minigames/Evil Computer Minigame.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sprDoor","order":8,"path":"sprites/sprDoor/sprDoor.yy",},
