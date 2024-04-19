@@ -41,6 +41,7 @@
     {"name":"objPlayer","order":5,"path":"objects/objPlayer/objPlayer.yy",},
     {"name":"sprPongBall","order":1,"path":"sprites/sprPongBall/sprPongBall.yy",},
     {"name":"objMinigameProp","order":30,"path":"objects/objMinigameProp/objMinigameProp.yy",},
+    {"name":"sprPongPaddle","order":2,"path":"sprites/sprPongPaddle/sprPongPaddle.yy",},
     {"name":"objApple","order":9,"path":"objects/objApple/objApple.yy",},
     {"name":"Sprite13","order":34,"path":"sprites/Sprite13/Sprite13.yy",},
     {"name":"objMinigames","order":27,"path":"objects/objMinigames/objMinigames.yy",},

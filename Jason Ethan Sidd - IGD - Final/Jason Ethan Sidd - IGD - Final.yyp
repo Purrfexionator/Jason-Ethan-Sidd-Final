@@ -64,6 +64,7 @@
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
     {"id":{"name":"sprPongBall","path":"sprites/sprPongBall/sprPongBall.yy",},},
     {"id":{"name":"objMinigameProp","path":"objects/objMinigameProp/objMinigameProp.yy",},},
+    {"id":{"name":"sprPongPaddle","path":"sprites/sprPongPaddle/sprPongPaddle.yy",},},
     {"id":{"name":"objApple","path":"objects/objApple/objApple.yy",},},
     {"id":{"name":"Sprite13","path":"sprites/Sprite13/Sprite13.yy",},},
     {"id":{"name":"objMinigames","path":"objects/objMinigames/objMinigames.yy",},},
