@@ -170,6 +170,17 @@
                                     { "text": "THIS GAME IS [[Painful]], [[Torturous]], AND [[Excruciating]]!!" },
                                     { "text": "YOU WILL NEVER [[Surpass]] MY [[Villlanous Endeavours]]!!!!" }
                                 ]
+                            },
+                            {
+                                "minigame": "mg_epic",
+                                "if_won": {
+                                    "speaker": "Minigame",
+                                    "text": "you won"
+                                },
+                                "if_lost": {
+                                    "speaker": "Minigame",
+                                    "text": "you lost"
+                                }
                             }
 
                         ]
