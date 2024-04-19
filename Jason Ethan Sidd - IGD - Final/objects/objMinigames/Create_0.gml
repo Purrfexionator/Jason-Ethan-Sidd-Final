@@ -29,8 +29,8 @@ function play(minigame) {
 		x = objManager.xTarget;
 		y = anchor.y;
 		
-		currentFrame.mouseXOffset = (x - currentFrame.x);
-		currentFrame.mouseYOffset = (y - currentFrame.y);
+		currentFrame.mouseXOffset = (currentFrame.x - x);
+		currentFrame.mouseYOffset = (currentFrame.y - y);
 		
 		boxWidth = currentFrame.sprite_width;
 		boxHeight = currentFrame.sprite_height;

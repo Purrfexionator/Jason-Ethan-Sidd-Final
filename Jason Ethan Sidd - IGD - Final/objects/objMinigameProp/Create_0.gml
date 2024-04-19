@@ -27,8 +27,8 @@ function mouseReleased(button) {
 	return mouseOver() && mouse_check_button_released(button);
 }
 
-draw = function() {
-	draw_self();
+draw = function(xpos, ypos) {
+	draw_sprite_ext(sprite_index, image_index, xpos, ypos, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 }
 
 onMinigameStart = function() {
