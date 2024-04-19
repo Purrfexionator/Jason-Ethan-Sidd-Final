@@ -3,9 +3,11 @@ boxHeight = 0;
 boxPercent = 0;
 
 active = false;
+delay = 0;
 
 caption = new display();
 currentFrame = noone;
+name = "";
 surface = noone;
 
 function play(minigame) {
@@ -22,9 +24,8 @@ function play(minigame) {
 	}
 	
 	if (currentFrame != noone && anchor != noone) {
-		active = true;
-		
-		caption.showText(minigame, 1);
+		delay = 20;
+		name = minigame;
 		
 		x = objManager.xTarget;
 		y = anchor.y;
@@ -35,7 +36,10 @@ function play(minigame) {
 		boxWidth = currentFrame.sprite_width;
 		boxHeight = currentFrame.sprite_height;
 		surface = surface_create(boxWidth, boxHeight);
+		
+		return true;
 	}
+	return false;
 }
 
 function hide() {

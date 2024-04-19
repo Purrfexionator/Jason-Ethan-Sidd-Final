@@ -163,11 +163,10 @@ function doNextThing() {
 		
 		skipToNext = false;
 	} else if variable_struct_exists(line, "minigame") {
-		objDialogue.hide();
-		objMinigames.play(line.minigame);
-		yOffset = objMinigames.y - y;
-		
-		skipToNext = false;
+		if objMinigames.play(line.minigame) {
+			objDialogue.hide();
+			skipToNext = false;
+		}
 	}
 	if variable_struct_exists(line, "goto") {
 		with objRoom {
