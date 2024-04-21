@@ -173,6 +173,7 @@
                             },
                             {
                                 "minigame": "mg_epic",
+                                "portraits": false,
                                 "if_won": {
                                     "speaker": "Minigame",
                                     "text": "you won"
