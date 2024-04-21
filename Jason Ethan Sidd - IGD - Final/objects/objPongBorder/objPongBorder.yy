@@ -1,19 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "pongBgReference",
+  "name": "objPongBorder",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Evil Computer Minigame",
+    "path": "folders/Objects/Minigames/Evil Computer Minigame.yy",
   },
   "parentObjectId": {
-    "name": "objMinigamePropReference",
-    "path": "objects/objMinigamePropReference/objMinigamePropReference.yy",
+    "name": "objMinigameProp",
+    "path": "objects/objMinigameProp/objMinigameProp.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprPongBackground",
-    "path": "sprites/sprPongBackground/sprPongBackground.yy",
+    "name": "sprPongBorder",
+    "path": "sprites/sprPongBorder/sprPongBorder.yy",
   },
   "spriteMaskId": null,
   "visible": true,

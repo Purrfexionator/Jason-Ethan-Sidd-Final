@@ -2,4 +2,3 @@
 event_inherited();
 
 minigame = "mg_epic";
-propDepth = 1;
