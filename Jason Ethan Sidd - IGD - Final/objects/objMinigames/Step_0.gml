@@ -6,6 +6,7 @@ if (delay > 0) {
 		} else {
 			objManager.yOffset = y - objManager.yTarget;
 			active = true;
+			currentFrame.startMinigame();
 			caption.showText(name, 1);
 		}
 	}

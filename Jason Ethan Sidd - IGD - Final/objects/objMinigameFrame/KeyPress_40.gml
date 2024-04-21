@@ -1,0 +1,1 @@
+show_debug_message(ds_list_size(propList))
