@@ -12,7 +12,7 @@ if drawScale > 0.01 {
 	
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
-	draw_text_ext(x, textPos, nameDisplay.currentText, 20, 50);
+	draw_text(x, textPos, nameDisplay.currentText);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
 }

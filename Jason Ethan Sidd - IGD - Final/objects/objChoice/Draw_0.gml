@@ -14,7 +14,7 @@ if boxPercent > 0.01 {
 	caption.update();
 	content.update();
 	
-	draw_text_ext(xpos - width / 2, ypos - height / 2 - 20, caption.currentText, 20, width);
+	draw_text(xpos - width / 2, ypos - height / 2 - 20, caption.currentText);
 	
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);

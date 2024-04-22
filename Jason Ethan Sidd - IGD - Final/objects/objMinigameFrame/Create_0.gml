@@ -35,7 +35,7 @@ function addProp(xpos, ypos, propDepth, prop) {
 			determined = true;	
 		} else {
 			var current = propList[|index];
-			if instance_exists(current) {
+			if (current != undefined && instance_exists(current)) {
 				if (current.propDepth < propDepth) {
 					determined = true;	
 				}
