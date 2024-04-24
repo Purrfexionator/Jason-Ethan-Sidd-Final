@@ -164,6 +164,8 @@ function doNextThing() {
 		skipToNext = false;
 	} else if variable_struct_exists(line, "minigame") {
 		if objMinigames.play(line.minigame) {
+			objMinigames.win = [line.if_won];
+			objMinigames.lose = [line.if_lost];
 			objDialogue.hide();
 			skipToNext = false;
 		}

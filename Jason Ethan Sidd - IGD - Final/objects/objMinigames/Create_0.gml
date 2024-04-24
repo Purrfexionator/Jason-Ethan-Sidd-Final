@@ -3,12 +3,16 @@ boxHeight = 0;
 boxPercent = 0;
 
 active = false;
+played = false;
 delay = 0;
 
 caption = new display();
 currentFrame = noone;
 name = "";
 surface = noone;
+
+win = [];
+lose = [];
 
 function play(minigame) {
 	with objMinigameFrame {
@@ -26,6 +30,7 @@ function play(minigame) {
 	if (currentFrame != noone && anchor != noone) {
 		delay = 20;
 		name = minigame;
+		played = false;
 		
 		x = objManager.xTarget;
 		y = anchor.y;
@@ -40,9 +45,4 @@ function play(minigame) {
 		return true;
 	}
 	return false;
-}
-
-function hide() {
-		active = false;
-		caption.hideText(1, 1);
 }

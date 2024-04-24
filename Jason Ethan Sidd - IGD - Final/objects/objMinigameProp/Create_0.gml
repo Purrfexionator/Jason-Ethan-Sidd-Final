@@ -28,6 +28,24 @@ function mouseReleased(button) {
 	return mouseOver() && mouse_check_button_released(button);
 }
 
+function spawnProp(xpos, ypos, prop, propDepth) {
+	with frame {
+		addProp(xpos, ypos, prop, propDepth);	
+	}
+}
+
+function endMinigame(victory) {
+	with objMinigames {
+		active = false;
+		delay = 25;
+		objManager.addLines(victory ? win : lose);
+	}
+}
+
 draw = function(xpos, ypos) {
 	draw_sprite_ext(sprite_index, image_index, xpos, ypos, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+}
+
+onMinigameStart = function() {
+	
 }

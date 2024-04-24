@@ -25,6 +25,9 @@ function startMinigame() {
 			newProp.image_angle = image_angle;
 		}
 	}
+	with objMinigameProp {
+		onMinigameStart();	
+	}
 }
 
 function addProp(xpos, ypos, propDepth, prop) {
