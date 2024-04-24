@@ -90,6 +90,7 @@
     {"id":{"name":"sprPlayerPortrait","path":"sprites/sprPlayerPortrait/sprPlayerPortrait.yy",},},
     {"id":{"name":"objRightPortrait","path":"objects/objRightPortrait/objRightPortrait.yy",},},
     {"id":{"name":"objPortrait","path":"objects/objPortrait/objPortrait.yy",},},
+    {"id":{"name":"objMinigameFade","path":"objects/objMinigameFade/objMinigameFade.yy",},},
     {"id":{"name":"objFridge","path":"objects/objFridge/objFridge.yy",},},
     {"id":{"name":"sprComputer","path":"sprites/sprComputer/sprComputer.yy",},},
     {"id":{"name":"objChoiceSpawner","path":"objects/objChoiceSpawner/objChoiceSpawner.yy",},},

@@ -1,0 +1,1 @@
+alpha = lerp(alpha, active, 0.2);

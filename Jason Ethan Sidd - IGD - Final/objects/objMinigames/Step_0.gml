@@ -4,10 +4,12 @@ if (delay > 0) {
 		if played {
 			instance_destroy(objMinigameProp);
 			objManager.doNextThing();
+			objMinigameFade.active = false;
 		} else {
-			objManager.yOffset = y - objManager.yTarget;
+			objManager.yOffset = (y - objManager.yTarget + objManager.yOffset);
 			active = true;
 			played = true;
+			objMinigameFade.active = true;
 			currentFrame.startMinigame();
 			caption.showText(name, 1);
 		}

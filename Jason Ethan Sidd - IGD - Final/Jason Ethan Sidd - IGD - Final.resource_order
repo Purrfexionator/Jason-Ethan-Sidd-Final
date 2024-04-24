@@ -65,6 +65,7 @@
     {"name":"sprPlayerPortrait","order":10,"path":"sprites/sprPlayerPortrait/sprPlayerPortrait.yy",},
     {"name":"objRightPortrait","order":25,"path":"objects/objRightPortrait/objRightPortrait.yy",},
     {"name":"objPortrait","order":23,"path":"objects/objPortrait/objPortrait.yy",},
+    {"name":"objMinigameFade","order":36,"path":"objects/objMinigameFade/objMinigameFade.yy",},
     {"name":"objFridge","order":20,"path":"objects/objFridge/objFridge.yy",},
     {"name":"sprComputer","order":9,"path":"sprites/sprComputer/sprComputer.yy",},
     {"name":"objChoiceSpawner","order":2,"path":"objects/objChoiceSpawner/objChoiceSpawner.yy",},

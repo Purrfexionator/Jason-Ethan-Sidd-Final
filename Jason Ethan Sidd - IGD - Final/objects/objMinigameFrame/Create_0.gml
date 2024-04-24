@@ -5,6 +5,9 @@ mouseYOffset = 0;
 propList = ds_list_create();
 
 function drawMinigame() {
+	draw_set_color(c_black);
+	draw_rectangle(0, 0, sprite_width, sprite_height, false);
+	draw_set_color(c_white);
 	for (var i = 0; i < ds_list_size(propList); i ++) {
 		var current = propList[|i]
 		if instance_exists(current) {
