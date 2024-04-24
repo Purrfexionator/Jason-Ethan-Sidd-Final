@@ -3,7 +3,11 @@
         "dev_notes": "Game starts in looking at a bed",
         "free_move": false,
         "lines": [
-            { "speaker": "You"},
+            {
+                "portraits": true,
+                "portraitL": "sprPlayerPortrait"
+            },
+            {"portraitFocus": "left"},
             { "text": "mmmm.. huh?"},
             { "text": "what time is it?" },
             { "text": "..." },
@@ -43,13 +47,22 @@
         "dev_notes": "Looking at a bedroom, containing all the interactables",
         "free_move": true,
         "lines": [
+            {
+                "portraits": true,
+                "portraitL": "sprPlayerPortrait"
+            },
+            {"portraitFocus": "left"},
             { "text": "hm." },
             { "text": "i should head downstairs and eat something" }
         ],
         "interactables": {
             "obj_car": {
                 "lines": [
-                    { "speaker": "You"},
+                    {
+                        "portraits": true,
+                        "portraitL": "sprPlayerPortrait"
+                    },
+                    {"portraitFocus": "left"},
                     { "text": "it's a car." },
                     { "text": "there's a hole in the wall from when it was driven in here." },
                     { "text": "..." },
@@ -89,7 +102,11 @@
                     {
                         "if_false": "tried_door",
                         "lines": [
-                            { "speaker": "You"},
+                            {
+                                "portraits": true,
+                                "portraitL": "sprPlayerPortrait"
+                            },
+                            {"portraitFocus": "left"},
                             { "text": "its my computer."},
                             { "text": "must have left it on overnight"},
                             { "text": "typical, i guess"}
@@ -101,7 +118,7 @@
                             {
                                 "portraits": true,
                                 "portraitL": "sprPlayerPortrait",
-                                "portraitR": "sprPlayerPortrait"
+                                "portraitR": "sprEvilComputerPortrait"
                             },
                             {
                                 "speaker": "You",
@@ -227,6 +244,11 @@
                         "if_false": "tried_door",
                         "set_true": "tried_door",
                         "lines": [
+                            {
+                                "portraits": true,
+                                "portraitL": "sprPlayerPortrait"
+                            },
+                            {"portraitFocus": "left"},
                             { "text": "its... locked?" },
                             { "text": "nono this door locks from the inside that doesnt..." },
                             { "text": ".....does it?" },
@@ -236,6 +258,11 @@
                     {
                         "if_true": "tried_door",
                         "lines": [
+                            {
+                                "portraits": true,
+                                "portraitL": "sprPlayerPortrait"
+                            },
+                            {"portraitFocus": "left"},
                             { "text": "its still locked." }
                         ]
                     }
@@ -244,157 +271,324 @@
         }
     },
     "rm_kitchen": {
+        "free_move": "true",
         "dev_notes": "Its a pretty normal kitchen, with a fridge in the center.",
-        "free_move": true,
-        "lines": [
-            { "text": "Interesting, I appear to be in a kitchen, but there still isn't a way out." }
-        ],
         "interactables": {
-            "obj_door": {
-                "lines": [
-                    {
-                        "if_true": "met_voice",
-                        "lines": [
-                            { "text": "There isn't any food back there" }
-                        ]
-                    },
-                    {
-                        "if_false": "met_voice",
-                        "text": "There's no need to go back there."
-                    }
-                ]
-            },
-            "obj_wooden_fish": {
-                "lines": [
-                    { "text": "Hmm... a wooden fish. I wonder who carved it?" }
-                ]
-            },
-            "obj_plastic_fish": {
-                "dev_notes": "This fish looks like a Swedish Fish",
-                "lines": [
-                    { "text": "This fish is plastic, or at least that's what it wants you to think" },
-                    {
-                        "if_true": "met_voice",
-                        "lines": [
-                            {
-                                "text": "Do you think the voice could tell its not edible?"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "obj_singing_fish": {
-                "lines": [
-                    {
-                        "speaker": "Singing Fish",
-                        "text": "I drove my truck, into the lake, and then I turned, into a fish."
-                    },
-                    {
-                        "text": "I can't tell if it's mechanical or magical, but either way its not edible."
-                    }
-                ]
-            },
-            "obj_fish": {
-                "lines": [
-                    { "text": "A fish, a fishy fish." },
-                    {
-                        "if_true": "met_voice",
-                        "lines": [
-                            {
-                                "text": "I will take this fish in case the voice in the fridge likes fish",
-                                "set_true": "has_fish"
-                            }
-                        ]
-                    }
-                ]
-            },
             "obj_fridge": {
                 "lines": [
                     {
-                        "if_false": "met_voice",
-                        "lines": [
-                            { "text": "A fridge? I wonder if it has any food in it" },
-                            { "text": "*Rumble*" },
-                            {
-                                "speaker": "Voice in Fridge",
-                                "text": "Who wants to enter my fridge?"
-                            },
-                            {
-                                "choices": [
-                                    { "text": "I am, I guess?" },
-                                    { "text": "Nobody" }
-                                ]
-                            },
-                            {
-                                "speaker": "Voice in Fridge",
-                                "text": "If you want to enter the fridge, you must give me food",
-                                "set_true": "met_voice"
-                            }
-                        ]
+                        "portraits": true,
+                        "portraitL": "sprPlayerPortrait"
                     },
+                    {"portraitFocus": "left"},
+                    {"text": "okay lets see what we have in here"},
+                    {"text": "..."},
+                    {"text": "i guess ill have some cereal"}
+
+                ]
+            },
+            "obj_tinfoil_gremlin": {
+                "lines": [
                     {
-                        "if_true": "met_voice",
-                        "lines": [
-                            {
-                                "speaker": "Voice in Fridge",
-                                "text": "Do you have any food for me?"
-                            },
-                            {
-                                "choices": [
-                                    {
-                                        "if_true": "has_fish",
-                                        "text": "I have a smelly fish.",
-                                        "lines": [
-                                            {
-                                                "speaker": "Voice in Fridge",
-                                                "text": "Ah, lovely. Please come in.",
-                                                "goto": "rm_voice_happy"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "if_true": "has_apple",
-                                        "text": "I have an apple.",
-                                        "lines": [
-                                            {
-                                                "speaker": "Voice in Fridge",
-                                                "text": "Absolutely freakish, I am most displeased",
-                                                "goto": "rm_voice_angry"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    }
+                        "portraits": true,
+                        "portraitL": "sprPlayerPortrait",
+                        "portraitR": "sprTinfoilGremlin"
+                    },
+                    {"portraitFocus": "right"},
+                    {"speaker": "Gremlin"},
+                    {"text": "mr president they're doing a little jig, get him"},
+                    {"portraitFocus": "left"},
+                    {"speaker": "You"},
+                    {"text": "what"},
+                    {"portraitFocus": "right"},
+                    {"speaker": "Gremlin"},
+                    {"text": "laser blast"}
+
+                ]
+            },
+            "obj_swedish_fish": {
+                "lines": [
+                    {
+                        "portraits": true,
+                        "portraitL": "sprPlayerPortrait",
+                        "portraitR": "sprSwedishFish"
+                    },
+                    {"portraitFocus": "left"},
+                    {"speaker": "You"},
+                    {"text": "this fish is plastic, or at least thats what it wants me to think"},
+                    {"portraitFocus": "right"},
+                    {"speaker": "Swedish Fish"},
+                    {"text": "(in a swedish voice) tear Off your Skin"},
+                    {"portraitFocus": "left"},
+                    {"speaker": "You"},
+                    {"text": "jesus christ"},
+                    {"portraitFocus": "right"},
+                    {"speaker": "Jesus Christ"},
+                    {"text": "what do you want"}
 
                 ]
             }
         }
-
     },
-    "rm_voice_happy": {
-        "dev_notes": "Fridge opens to show an idyllic peaceful landscape and the player escapes to freedom",
-        "free_move": false,
+    "rm_basement": {
+        "dev_notes": "The player enters the basement, where they find a lava-covered floor.",
+        "free_move": "true",
         "lines": [
-            { "text": "Finally, I can get out of here and follow my true passion: cryptocurrency" },
-            { "text": "Fin" }
-        ]
+            {
+                "portraits": true,
+                "portraitL": "sprPlayerPortrait",
+                "portraitR": "sprLavaPortrait"
+            },
+            {"portraitFocus": "left"},
+            { "speaker": "You" },
+            { "text": "oh. lava"},
+            {"portraitFocus": "right"},
+            { "speaker": "Lava" },
+            { "text": "im lava"},
+            {"portraitFocus": "left"},
+            { "speaker": "You" },
+            { "text": "thats probably not great"}
+        ],
+        "interactables": {
+            "obj_lava": {
+                "lines": [
+                    {
+                        "portraits": true,
+                        "portraitL": "sprPlayerPortrait",
+                        "portraitR": "sprWizardPortrait"
+                    },
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    { "text": "i didn't know lava had a reflection"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "Wizard" },
+                    { "text": "Hello young traveler my Name is Marlin and i am Your Reflection"},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    { "text": "you look nothing like me though"},
+                    {"portraitR": "sprPlayerPortrait"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "Wizard" },
+                    { "text": "Wrong"},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    { "text": "..."},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    { "text": "do you know where all this lava is coming from?"},
+                    {"portraitR": "sprWizardPortrait"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "Wizard" },
+                    { "text": "why of Course, it is coming From mister boiler Man"},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    { "text": "mister boiler man?"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "Wizard" },
+                    { "text": "it appears that He is particularly Sad today and that is why There is so much Lava"},
+                    {"text": "you Must approach him and make Him happy"},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    { "text": "..."},
+                    {"text": "ok"}
+                ]
+            },
+            "obj_metal_pipe": {
+                "lines": [
+                    {
+                        "portraits": true,
+                        "portraitL": "sprPlayerPortrait",
+                        "portraitR": "sprPipePortrait"
+                    },
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    { "text": "somehow this pipe hasn't melted"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "Pipe" },
+                    { "text": "*earth-shattering pipe noises*"},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    { "text": "ow"}
+                ]
+            },
+            "obj_mister_boiler": {
+                "lines": [
+                    {
+                        "portraits": true,
+                        "portraitL": "sprPlayerPortrait",
+                        "portraitR": "sprMrBoilerPortrait"
+                    },
+                        {"portraitFocus": "left"},
+                        { "speaker": "You" },
+                        { "text": "are you mister boiler man?"},
+                        {"portraitFocus": "right"},
+                        { "speaker": "Mr. Boiler" },
+                        { "text": "sohayo!! my name is boiler-san!! uWu "},
+                        {"portraitFocus": "left"},
+                        { "speaker": "You" },
+                        { "text": "..."},
+                        { "text": "okay, can you please stop getting your lava everywhere?"}
+                ]
+            },
+            "obj_racoon": {
+                "lines": [
+                    {
+                        "if_true": "lava_gone",
+                        "lines": [
+                            {
+                                "portraits": true,
+                                "portraitL": "sprPlayerPortrait",
+                                "portraitR": "sprRaccoonPortrait"
+                            },
+                            {"portraitFocus": "left"},
+                            { "speaker": "You" },
+                            {"text": "jeez i need to call an exterminator or something"},
+                            {"portraitFocus": "right"},
+                            { "speaker": "Raccoon" },
+                            {"text": "Have the individual of which I, another individual, am declaring to forbid someone or something, possibly themselves to seen an uncertain and indefinite article of which is a raccoon before?"},
+                            {"portraitFocus": "left"},
+                            { "speaker": "You" },
+                            {"text": "what"}
+                        ]
+                  }
+                ]
+            },
+            "obj_lawnmower": {
+                "lines": [
+                    {
+                        "if_true": "lava_gone",
+                        "lines": [
+                            {
+                                "portraits": true,
+                                "portraitL": "sprPlayerPortrait",
+                                "portraitR": "sprLawnmowerPortrait"
+                            },
+                            {"portraitFocus": "left"},
+                            { "speaker": "You" },
+                            {"text": "i cant remmeber the last time i mowed my lawn"},
+                            {"portraitFocus": "right"},
+                            { "speaker": "Lawn Mower" },
+                            {"text": "YEAH, YOU FAT &!@#?!!!!!!! YOU’RE A ?!#$?!%?ING !@?#?%!!!!!!!!!"},
+                            {"portraitFocus": "left"},
+                            { "speaker": "You" },
+                            {"text": "damn"}
+                        ]
+                  }
+                ]
+            }
+        }
     },
-    "rm_voice_angry": {
-        "dev_notes": "Fridge opens to show a large mouth that eats the player",
+    "rm_living_room": {
+        "free_move": "true",
+        "interactables": {
+            "obj_closet_goblin": {
+                "lines": [
+                    {
+                        "portraits": true,
+                        "portraitL": "sprPlayerPortrait",
+                        "portraitR": "sprClosetGoblinPortrait"
+                    },
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    {"text": "what did i put in here"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "Closet Goblin" },
+                    {"text": "Ehehehehe Hello There . I Am The Closet Goblin ."},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    {"text": "what"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "Closet Goblin" },
+                    {"text": "As The Master Of This House , You Are Legally Required To Satisfy My Wishes ."},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    {"text": "that makes no sense"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "Closet Goblin" },
+                    {"text": "Bring Me A Flower ."},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    {"text": "a flower?"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "You" },
+                    {"text": "Yes Ehehehehe . Flower Are Nice ."},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    {"text": "..."},
+                    {"text": "okay, i guess"},
+                    {"set_true": "met_goblin"}
+                ]
+            }
+        }
+    },
+    "rm_grass_room": {
+        "interactables": {
+            "obj_bunny_king": {
+                "lines": [
+                    {
+                        "if_true": "met_goblin",
+                        "lines": [
+                            {
+                                "portraits": true,
+                                "portraitL": "sprPlayerPortrait",
+                                "portraitR": "sprBunnyKingPortrait"
+                            },
+                            {"portraitfocus": "left"},
+                            {"speaker": "You"},
+                            {"text": "uhhh"},
+                            {"portraitfocus": "right"},
+                            {"speaker": "Bunny King"},
+                            {"text": "Our precious flower!! It's dead!!"},
+                            {"portraitfocus": "left"},
+                            {"speaker": "You"},
+                            {"text": "yikes"}       
+                        ]
+                  }
+                ]
+            }
+        }
+    },
+    "rm_end": {
+        "dev_notes": "Game starts in looking at a bed",
         "free_move": false,
         "lines": [
             {
-                "speaker": "Voice in/out of Fridge",
-                "text": "I am going to eat you now"
+                "portraits": true,
+                "portraitL": "sprPlayerPortrait"
             },
+            {"portraitFocus": "left"},
+            { "text": "mmmm.. huh?"},
+            { "text": "what time is it?" },
+            { "text": "..." },
+            { "text": "4pm." },
+            { "text": "im tired." },
             {
-                "text": "Aaaaaah, I am being eaten"
+                "choices": [
+                    {
+                        "text": "who am i",
+                        "lines": [
+                            { "text": "same person i was yesterday" },
+                            { "text": "...and the day before that" },
+                            { "text": "and the day before that" },
+                            { "text": "unfortunately." }
+                        ]
+                    },
+                    {
+                        "text": "where am i",
+                        "lines": [
+                            { "text": "bed."},
+                            { "text": "i spend a lot of time here"},
+                            { "text": "i guess you could call it my favorite place"},
+                            { "text": "i hate it though."}
+                        ]
+                    }
+                ]
             },
-            { "text": "Fin" }
+            { "text": "..." },
+            {
+                "text": "guess i should probably get up"
+            }
 
         ]
-
-    }
+    }   
 }
