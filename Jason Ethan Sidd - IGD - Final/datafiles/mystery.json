@@ -3,7 +3,11 @@
         "dev_notes": "Game starts in looking at a bed",
         "free_move": false,
         "lines": [
-            { "speaker": "You"},
+            {
+                "portraits": true,
+                "portraitL": "sprPlayerPortrait"
+            },
+            {"portraitFocus": "left"},
             { "text": "mmmm.. huh?"},
             { "text": "what time is it?" },
             { "text": "..." },
@@ -43,13 +47,22 @@
         "dev_notes": "Looking at a bedroom, containing all the interactables",
         "free_move": true,
         "lines": [
+            {
+                "portraits": true,
+                "portraitL": "sprPlayerPortrait"
+            },
+            {"portraitFocus": "left"},
             { "text": "hm." },
             { "text": "i should head downstairs and eat something" }
         ],
         "interactables": {
             "obj_car": {
                 "lines": [
-                    { "speaker": "You"},
+                    {
+                        "portraits": true,
+                        "portraitL": "sprPlayerPortrait"
+                    },
+                    {"portraitFocus": "left"},
                     { "text": "it's a car." },
                     { "text": "there's a hole in the wall from when it was driven in here." },
                     { "text": "..." },
@@ -89,7 +102,11 @@
                     {
                         "if_false": "tried_door",
                         "lines": [
-                            { "speaker": "You"},
+                            {
+                                "portraits": true,
+                                "portraitL": "sprPlayerPortrait"
+                            },
+                            {"portraitFocus": "left"},
                             { "text": "its my computer."},
                             { "text": "must have left it on overnight"},
                             { "text": "typical, i guess"}
@@ -227,6 +244,11 @@
                         "if_false": "tried_door",
                         "set_true": "tried_door",
                         "lines": [
+                            {
+                                "portraits": true,
+                                "portraitL": "sprPlayerPortrait"
+                            },
+                            {"portraitFocus": "left"},
                             { "text": "its... locked?" },
                             { "text": "nono this door locks from the inside that doesnt..." },
                             { "text": ".....does it?" },
@@ -236,6 +258,11 @@
                     {
                         "if_true": "tried_door",
                         "lines": [
+                            {
+                                "portraits": true,
+                                "portraitL": "sprPlayerPortrait"
+                            },
+                            {"portraitFocus": "left"},
                             { "text": "its still locked." }
                         ]
                     }

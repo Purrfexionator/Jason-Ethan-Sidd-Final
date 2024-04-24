@@ -12,7 +12,11 @@ if boxPercent > 0.01 {
 	
 	draw_text_ext(x - width / 2, y - height / 2 - 20, caption.currentText, 20, width);
 	draw_text_ext(x - width / 2 + 10, y - height / 2 + 10, speaker.currentText, 20, width - 20);
-	draw_text_ext(x - width / 2 + 10, y - height / 2 + 50, content.currentText, 20, width - 20);
+	if currentSpeaker == "" {
+		draw_text_ext(x - width / 2 + 10, y - height / 2 + 10, content.currentText, 20, width - 20);
+	} else {
+		draw_text_ext(x - width / 2 + 10, y - height / 2 + 50, content.currentText, 20, width - 20);
+	}
 	
 	if (active && content.complete) {
 		var xdraw = x - 30 + width / 2;
