@@ -416,7 +416,6 @@
                         "portraitL": "sprPlayerPortrait",
                         "portraitR": "sprMrBoilerPortrait"
                     },
-                    {
                         {"portraitFocus": "left"},
                         { "speaker": "You" },
                         { "text": "are you mister boiler man?"},
@@ -427,9 +426,97 @@
                         { "speaker": "You" },
                         { "text": "..."},
                         { "text": "okay, can you please stop getting your lava everywhere?"}
-                    }  
+                ]
+            },
+            "obj_racoon": {
+                "lines": [
+                    {
+                        "if_true": "lava_gone",
+                        "lines": [
+                            {
+                                "portraits": true,
+                                "portraitL": "sprPlayerPortrait",
+                                "portraitR": "sprRaccoonPortrait"
+                            },
+                            {"portraitFocus": "left"},
+                            { "speaker": "You" },
+                            {"text": "jeez i need to call an exterminator or something"},
+                            {"portraitFocus": "right"},
+                            { "speaker": "Raccoon" },
+                            {"text": "Have the individual of which I, another individual, am declaring to forbid someone or something, possibly themselves to seen an uncertain and indefinite article of which is a raccoon before?"},
+                            {"portraitFocus": "left"},
+                            { "speaker": "You" },
+                            {"text": "what"}
+                        ]
+                  }
+                ]
+            },
+            "obj_lawnmower": {
+                "lines": [
+                    {
+                        "if_true": "lava_gone",
+                        "lines": [
+                            {
+                                "portraits": true,
+                                "portraitL": "sprPlayerPortrait",
+                                "portraitR": "sprLawnmowerPortrait"
+                            },
+                            {"portraitFocus": "left"},
+                            { "speaker": "You" },
+                            {"text": "i cant remmeber the last time i mowed my lawn"},
+                            {"portraitFocus": "right"},
+                            { "speaker": "Lawn Mower" },
+                            {"text": "YEAH, YOU FAT &!@#?!!!!!!! YOU’RE A ?!#$?!%?ING !@?#?%!!!!!!!!!"},
+                            {"portraitFocus": "left"},
+                            { "speaker": "You" },
+                            {"text": "damn"}
+                        ]
+                  }
                 ]
             }
         }
-    }
+    },
+    "rm_end": {
+        "dev_notes": "Game starts in looking at a bed",
+        "free_move": false,
+        "lines": [
+            {
+                "portraits": true,
+                "portraitL": "sprPlayerPortrait"
+            },
+            {"portraitFocus": "left"},
+            { "text": "mmmm.. huh?"},
+            { "text": "what time is it?" },
+            { "text": "..." },
+            { "text": "4pm." },
+            { "text": "im tired." },
+            {
+                "choices": [
+                    {
+                        "text": "who am i",
+                        "lines": [
+                            { "text": "same person i was yesterday" },
+                            { "text": "...and the day before that" },
+                            { "text": "and the day before that" },
+                            { "text": "unfortunately." }
+                        ]
+                    },
+                    {
+                        "text": "where am i",
+                        "lines": [
+                            { "text": "bed."},
+                            { "text": "i spend a lot of time here"},
+                            { "text": "i guess you could call it my favorite place"},
+                            { "text": "i hate it though."}
+                        ]
+                    }
+                ]
+            },
+            { "text": "..." },
+            {
+                "text": "guess i should probably get up"
+            }
+
+        ]
+    }   
 }
