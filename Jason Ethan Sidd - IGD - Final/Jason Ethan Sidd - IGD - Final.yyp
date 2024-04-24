@@ -30,6 +30,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Evil Computer Minigame","folderPath":"folders/Sprites/Minigames/Evil Computer Minigame.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Portraits","folderPath":"folders/Sprites/Portraits.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"mystery.json","CopyToMask":-1,"filePath":"datafiles",},
@@ -92,6 +93,7 @@
     {"id":{"name":"objPortrait","path":"objects/objPortrait/objPortrait.yy",},},
     {"id":{"name":"objMinigameFade","path":"objects/objMinigameFade/objMinigameFade.yy",},},
     {"id":{"name":"objFridge","path":"objects/objFridge/objFridge.yy",},},
+    {"id":{"name":"sprEvilComputerPortrait","path":"sprites/sprEvilComputerPortrait/sprEvilComputerPortrait.yy",},},
     {"id":{"name":"sprComputer","path":"sprites/sprComputer/sprComputer.yy",},},
     {"id":{"name":"objChoiceSpawner","path":"objects/objChoiceSpawner/objChoiceSpawner.yy",},},
     {"id":{"name":"sprApple","path":"sprites/sprApple/sprApple.yy",},},
