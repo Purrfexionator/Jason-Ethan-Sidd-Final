@@ -476,6 +476,48 @@
             }
         }
     },
+    "rm_living_room": {
+        "interactables": {
+            "obj_closet_goblin": {
+                "lines": [
+                    {
+                        "portraits": true,
+                        "portraitL": "sprPlayerPortrait",
+                        "portraitR": "sprClosetGoblinPortrait"
+                    },
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    {"text": "what did i put in here"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "Closet Goblin" },
+                    {"text": "Ehehehehe Hello There . I Am The Closet Goblin ."},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    {"text": "what"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "Closet Goblin" },
+                    {"text": "As The Master Of This House , You Are Legally Required To Satisfy My Wishes ."},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    {"text": "that makes no sense"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "Closet Goblin" },
+                    {"text": "Bring Me A Flower ."},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    {"text": "a flower?"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "You" },
+                    {"text": "Yes Ehehehehe . Flower Are Nice ."},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    {"text": "..."},
+                    {"text": "okay, i guess"},
+                    {"set_true": "met_goblin"}
+                ]
+            }
+        }
+    },
     "rm_end": {
         "dev_notes": "Game starts in looking at a bed",
         "free_move": false,
