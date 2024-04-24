@@ -1,2 +1,0 @@
-x = relativeMouseX();
-y = relativeMouseY();

@@ -8,7 +8,7 @@ function drawMinigame() {
 	for (var i = 0; i < ds_list_size(propList); i ++) {
 		var current = propList[|i]
 		if instance_exists(current) {
-			current.draw(current.x - bbox_left, current.y - bbox_top);	
+			current.draw();	
 		} else {
 			ds_list_delete(propList, i);
 			i --;

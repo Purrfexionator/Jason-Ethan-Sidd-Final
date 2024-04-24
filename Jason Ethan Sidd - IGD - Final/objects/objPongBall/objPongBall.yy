@@ -1,16 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "blapple2",
+  "name": "objPongBall",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Evil Computer Minigame",
+    "path": "folders/Objects/Minigames/Evil Computer Minigame.yy",
   },
   "parentObjectId": {
     "name": "objMinigameProp",
@@ -32,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprMinigameAnchor",
-    "path": "sprites/sprMinigameAnchor/sprMinigameAnchor.yy",
+    "name": "sprPongBall",
+    "path": "sprites/sprPongBall/sprPongBall.yy",
   },
   "spriteMaskId": null,
   "visible": true,

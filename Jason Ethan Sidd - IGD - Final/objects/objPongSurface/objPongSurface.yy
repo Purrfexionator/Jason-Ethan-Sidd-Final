@@ -1,16 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "blapple",
+  "name": "objPongSurface",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Evil Computer Minigame",
+    "path": "folders/Objects/Minigames/Evil Computer Minigame.yy",
   },
   "parentObjectId": {
     "name": "objMinigameProp",
@@ -31,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sprApple",
-    "path": "sprites/sprApple/sprApple.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

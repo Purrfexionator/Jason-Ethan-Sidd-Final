@@ -2,6 +2,14 @@ minigame = "mg_test";
 frame = noone;
 propDepth = 0;
 
+function relativeX() {
+	return x - frame.bbox_left;
+}
+
+function relativeY() {
+	return y - frame.bbox_top;	
+}
+
 function relativeMouseX() {
 	return mouse_x + frame.mouseXOffset;
 }
@@ -42,10 +50,8 @@ function endMinigame(victory) {
 	}
 }
 
-draw = function(xpos, ypos) {
-	draw_sprite_ext(sprite_index, image_index, xpos, ypos, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+draw = function() {
+	draw_sprite_ext(sprite_index, image_index, relativeX(), relativeY(), image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 }
 
-onMinigameStart = function() {
-	
-}
+onMinigameStart = function() {}
