@@ -118,7 +118,7 @@
                             {
                                 "portraits": true,
                                 "portraitL": "sprPlayerPortrait",
-                                "portraitR": "sprPlayerPortrait"
+                                "portraitR": "sprEvilComputerPortrait"
                             },
                             {
                                 "speaker": "You",
@@ -271,6 +271,7 @@
         }
     },
     "rm_kitchen": {
+        "free_move": "true",
         "dev_notes": "Its a pretty normal kitchen, with a fridge in the center.",
         "interactables": {
             "obj_fridge": {
@@ -294,7 +295,7 @@
                         "portraitR": "sprTinfoilGremlin"
                     },
                     {"portraitFocus": "right"},
-                    {"speaker": "Gremlin"}
+                    {"speaker": "Gremlin"},
                     {"text": "mr president they're doing a little jig, get him"},
                     {"portraitFocus": "left"},
                     {"speaker": "You"},
@@ -313,7 +314,7 @@
                         "portraitR": "sprSwedishFish"
                     },
                     {"portraitFocus": "left"},
-                    {"speaker": "You"}
+                    {"speaker": "You"},
                     {"text": "this fish is plastic, or at least thats what it wants me to think"},
                     {"portraitFocus": "right"},
                     {"speaker": "Swedish Fish"},
@@ -331,6 +332,7 @@
     },
     "rm_basement": {
         "dev_notes": "The player enters the basement, where they find a lava-covered floor.",
+        "free_move": "true",
         "lines": [
             {
                 "portraits": true,
@@ -477,6 +479,7 @@
         }
     },
     "rm_living_room": {
+        "free_move": "true",
         "interactables": {
             "obj_closet_goblin": {
                 "lines": [
@@ -514,6 +517,33 @@
                     {"text": "..."},
                     {"text": "okay, i guess"},
                     {"set_true": "met_goblin"}
+                ]
+            }
+        }
+    },
+    "rm_grass_room": {
+        "interactables": {
+            "obj_bunny_king": {
+                "lines": [
+                    {
+                        "if_true": "met_goblin",
+                        "lines": [
+                            {
+                                "portraits": true,
+                                "portraitL": "sprPlayerPortrait",
+                                "portraitR": "sprBunnyKingPortrait"
+                            },
+                            {"portraitfocus": "left"},
+                            {"speaker": "You"},
+                            {"text": "uhhh"},
+                            {"portraitfocus": "right"},
+                            {"speaker": "Bunny King"},
+                            {"text": "Our precious flower!! It's dead!!"},
+                            {"portraitfocus": "left"},
+                            {"speaker": "You"},
+                            {"text": "yikes"}       
+                        ]
+                  }
                 ]
             }
         }
