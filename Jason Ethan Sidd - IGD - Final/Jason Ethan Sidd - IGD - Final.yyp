@@ -49,6 +49,7 @@
     {"id":{"name":"objRoom","path":"objects/objRoom/objRoom.yy",},},
     {"id":{"name":"sprPongBorder","path":"sprites/sprPongBorder/sprPongBorder.yy",},},
     {"id":{"name":"objRmVoiceAngry","path":"objects/objRmVoiceAngry/objRmVoiceAngry.yy",},},
+    {"id":{"name":"sprPongPaddleEvil","path":"sprites/sprPongPaddleEvil/sprPongPaddleEvil.yy",},},
     {"id":{"name":"objWoodenFish","path":"objects/objWoodenFish/objWoodenFish.yy",},},
     {"id":{"name":"objManager","path":"objects/objManager/objManager.yy",},},
     {"id":{"name":"sprRmBedroom","path":"sprites/sprRmBedroom/sprRmBedroom.yy",},},
