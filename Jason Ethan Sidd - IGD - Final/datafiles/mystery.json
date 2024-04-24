@@ -328,5 +328,108 @@
                 ]
             }
         }
+    },
+    "rm_basement": {
+        "dev_notes": "The player enters the basement, where they find a lava-covered floor.",
+        "lines": [
+            {
+                "portraits": true,
+                "portraitL": "sprPlayerPortrait",
+                "portraitR": "sprLavaPortrait"
+            },
+            {"portraitFocus": "left"},
+            { "speaker": "You" },
+            { "text": "oh. lava"},
+            {"portraitFocus": "right"},
+            { "speaker": "Lava" },
+            { "text": "im lava"},
+            {"portraitFocus": "left"},
+            { "speaker": "You" },
+            { "text": "thats probably not great"}
+        ],
+        "interactables": {
+            "obj_lava": {
+                "lines": [
+                    {
+                        "portraits": true,
+                        "portraitL": "sprPlayerPortrait",
+                        "portraitR": "sprWizardPortrait"
+                    },
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    { "text": "i didn't know lava had a reflection"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "Wizard" },
+                    { "text": "Hello young traveler my Name is Marlin and i am Your Reflection"},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    { "text": "you look nothing like me though"},
+                    {"portraitR": "sprPlayerPortrait"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "Wizard" },
+                    { "text": "Wrong"},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    { "text": "..."},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    { "text": "do you know where all this lava is coming from?"},
+                    {"portraitR": "sprWizardPortrait"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "Wizard" },
+                    { "text": "why of Course, it is coming From mister boiler Man"},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    { "text": "mister boiler man?"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "Wizard" },
+                    { "text": "it appears that He is particularly Sad today and that is why There is so much Lava"},
+                    {"text": "you Must approach him and make Him happy"},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    { "text": "..."},
+                    {"text": "ok"}
+                ]
+            },
+            "obj_metal_pipe": {
+                "lines": [
+                    {
+                        "portraits": true,
+                        "portraitL": "sprPlayerPortrait",
+                        "portraitR": "sprPipePortrait"
+                    },
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    { "text": "somehow this pipe hasn't melted"},
+                    {"portraitFocus": "right"},
+                    { "speaker": "Pipe" },
+                    { "text": "*earth-shattering pipe noises*"},
+                    {"portraitFocus": "left"},
+                    { "speaker": "You" },
+                    { "text": "ow"}
+                ]
+            },
+            "obj_mister_boiler": {
+                "lines": [
+                    {
+                        "portraits": true,
+                        "portraitL": "sprPlayerPortrait",
+                        "portraitR": "sprMrBoilerPortrait"
+                    },
+                    {
+                        {"portraitFocus": "left"},
+                        { "speaker": "You" },
+                        { "text": "are you mister boiler man?"},
+                        {"portraitFocus": "right"},
+                        { "speaker": "Mr. Boiler" },
+                        { "text": "sohayo!! my name is boiler-san!! uWu "},
+                        {"portraitFocus": "left"},
+                        { "speaker": "You" },
+                        { "text": "..."},
+                        { "text": "okay, can you please stop getting your lava everywhere?"}
+                    }  
+                ]
+            }
+        }
     }
 }
