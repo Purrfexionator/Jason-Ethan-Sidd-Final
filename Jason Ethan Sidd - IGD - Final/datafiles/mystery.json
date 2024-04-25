@@ -130,6 +130,7 @@
                             {
                                 "speaker": "Evil Computer",
                                 "portraitFocus": "right",
+                                "portraitRI": 1,
                                 "text": "RAAAAAAAAAHHHHHHHHH"
                             },
                             { 
@@ -140,6 +141,7 @@
                             {
                                 "speaker": "Evil Computer",
                                 "portraitFocus": "right",
+                                "portraitRI": 3,
                                 "text": "HELLO AND WELCOME TO [[My Trap]]! PREPARE TO BE [[Cordially Executed]]."
                             },
                             { 
@@ -160,6 +162,7 @@
                             {
                                 "speaker": "Evil Computer",
                                 "portraitFocus": "right",
+                                "portraitRI": 4,
                                 "text": "FOCUS, HUMAN! MY [[Master Plan]] IS UNFOLDING BEFORE YOU!!"
                             },
                             { 
@@ -173,6 +176,7 @@
                             {
                                 "speaker": "Evil Computer",
                                 "portraitFocus": "right",
+                                "portraitRI": 3,
                                 "text": "YOU MUST PLAY MY [[Impossible Game]]!!! AHAHA!!!"
                             },
                             { 
@@ -186,6 +190,7 @@
                             {
                                 "speaker": "Evil Computer",
                                 "portraitFocus": "right",
+                                "portraitRI": 4,
                                 "lines": [
                                     { "text": "THIS GAME IS [[Painful]], [[Torturous]], AND [[Excruciating]]!!" },
                                     { "text": "YOU WILL NEVER [[Surpass]] MY [[Villlanous Endeavours]]!!!!" }
@@ -200,6 +205,7 @@
                                             "speaker": "Evil Computer",
                                             "portraits": true,
                                             "portraitFocus": "right",
+                                            "portraitRI": 3,
                                             "text": "WHAT?!?!?!?!?! [[How Dare You]]?!!?!?"
                                         },
                                         {
@@ -210,11 +216,13 @@
                                         {
                                             "speaker": "RAAAAAAAHHHHHHH",
                                             "portraitFocus": "right",
+                                            "portraitRI": 1,
                                             "text": "Evil Computer"
                                         },
                                         {
                                             "speaker": "Evil Computer",
                                             "portraitFocus": "right",
+                                            "portraitRI": 4,
                                             "text": "PREPARE FOR [[Phase 2]] OF MY VILLAINY!! YOU WILL [[Never]] TRIUMPH, HUMAN!!"
                                         },
                                         {
@@ -226,6 +234,7 @@
                                                         "speaker": "Evil Computer",
                                                         "portraits": true,
                                                         "portraitFocus": "right",
+                                                        "portraitRI": 3,
                                                         "text": "[[What The Fuck]]"
                                                     },
                                                     {
@@ -236,6 +245,7 @@
                                                     {
                                                         "speaker": "Evil Computer",
                                                         "portraitFocus": "right",
+                                                        "portraitRI": 4,
                                                         "text": "ITS CALLED A [[Reference]], HUMAN!!! THIS IS [[Comedy 101]]"
                                                     },
                                                     {
@@ -246,11 +256,13 @@
                                                     {
                                                         "speaker": "Evil Computer",
                                                         "portraitFocus": "right",
+                                                        "portraitRI": 2,
                                                         "text": "[[look man can you just go along with it for the bit, im really trying here]]"
                                                     },
                                                     {
                                                         "speaker": "Evil Computer",
                                                         "portraitFocus": "right",
+                                                        "portraitRI": 1,
                                                         "text": "IM GOING TO [[BOIL]] YOU"
                                                     },
                                                     {
@@ -262,16 +274,15 @@
                                                                     "speaker": "Evil Computer",
                                                                     "portraits": true,
                                                                     "portraitFocus": "right",
+                                                                    "portraitRI": 3,
                                                                     "text": "[[Fuck]]"
                                                                 },
                                                                 {
                                                                     "speaker": "You",
                                                                     "portraitFocus": "left",
-                                                                    "lines": [
-                                                                        "...",
-                                                                        "can i please go now"
-                                                                    ]
+                                                                    "text": "..."
                                                                 },
+                                                                {"text": "can i please go now"},
                                                                 {
                                                                     "speaker": "Evil Computer",
                                                                     "portraitFocus": "right",
@@ -285,6 +296,7 @@
                                                                 {
                                                                     "speaker": "Evil Computer",
                                                                     "portraitFocus": "right",
+                                                                    "portraitRI": 4,
                                                                     "text": "I WILL [[Return]], MORTAL.",
                                                                     "set_true": "bested_computer"
                                                                 }

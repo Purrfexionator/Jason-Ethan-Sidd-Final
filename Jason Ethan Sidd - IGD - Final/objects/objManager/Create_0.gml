@@ -108,7 +108,7 @@ function doNextThing() {
 		if line.portraits {
 			with objPortrait {
 				x = other.xTarget;
-				y = other.yTarget + 400;
+				y = other.currentRoom.yMid + 400;
 				active = true;
 			}
 			objLeftPortrait.x -= 400;
