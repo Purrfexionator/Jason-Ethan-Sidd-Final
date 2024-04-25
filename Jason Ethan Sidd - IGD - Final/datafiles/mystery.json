@@ -197,8 +197,25 @@
                                 "if_won": {
                                     "lines": [
                                         {
-                                            "speaker": "Minigame",
-                                            "text": "you won 1"
+                                            "speaker": "Evil Computer",
+                                            "portraits": true,
+                                            "portraitFocus": "right",
+                                            "text": "WHAT?!?!?!?!?! [[How Dare You]]?!!?!?"
+                                        },
+                                        {
+                                            "speaker": "You",
+                                            "portraitFocus": "left",
+                                            "text": "you kinda suck at this"
+                                        },
+                                        {
+                                            "speaker": "RAAAAAAAHHHHHHH",
+                                            "portraitFocus": "right",
+                                            "text": "Evil Computer"
+                                        },
+                                        {
+                                            "speaker": "Evil Computer",
+                                            "portraitFocus": "right",
+                                            "text": "PREPARE FOR [[Phase 2]] OF MY VILLAINY!! YOU WILL [[Never]] TRIUMPH, HUMAN!!"
                                         },
                                         {
                                             "minigame": "mg_epic",
@@ -206,15 +223,72 @@
                                             "if_won": {
                                                 "lines": [
                                                     {
-                                                        "speaker": "Minigame",
-                                                        "text": "you won 2"
+                                                        "speaker": "Evil Computer",
+                                                        "portraits": true,
+                                                        "portraitFocus": "right",
+                                                        "text": "[[What The Fuck]]"
+                                                    },
+                                                    {
+                                                        "speaker": "You",
+                                                        "portraitFocus": "left",
+                                                        "text": "hey you kinda remind me of that guy? that one guy? from that game? uhhh that one? yeah him"
+                                                    },
+                                                    {
+                                                        "speaker": "Evil Computer",
+                                                        "portraitFocus": "right",
+                                                        "text": "ITS CALLED A [[Reference]], HUMAN!!! THIS IS [[Comedy 101]]"
+                                                    },
+                                                    {
+                                                        "speaker": "You",
+                                                        "portraitFocus": "left",
+                                                        "text": "idk that seems a little on the nose"
+                                                    },
+                                                    {
+                                                        "speaker": "Evil Computer",
+                                                        "portraitFocus": "right",
+                                                        "text": "[[look man can you just go along with it for the bit, im really trying here]]"
+                                                    },
+                                                    {
+                                                        "speaker": "Evil Computer",
+                                                        "portraitFocus": "right",
+                                                        "text": "IM GOING TO [[BOIL]] YOU"
                                                     },
                                                     {
                                                         "minigame": "mg_epic",
                                                         "portraits": false,
                                                         "if_won": {
-                                                            "speaker": "Minigame",
-                                                            "text": "you won 3"
+                                                            "lines": [
+                                                                {
+                                                                    "speaker": "Evil Computer",
+                                                                    "portraits": true,
+                                                                    "portraitFocus": "right",
+                                                                    "text": "[[Fuck]]"
+                                                                },
+                                                                {
+                                                                    "speaker": "You",
+                                                                    "portraitFocus": "left",
+                                                                    "lines": [
+                                                                        "...",
+                                                                        "can i please go now"
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "speaker": "Evil Computer",
+                                                                    "portraitFocus": "right",
+                                                                    "text": "...FINE."
+                                                                },
+                                                                {
+                                                                    "speaker": "You",
+                                                                    "portraitFocus": "left",
+                                                                    "text": "okay"
+                                                                },
+                                                                {
+                                                                    "speaker": "Evil Computer",
+                                                                    "portraitFocus": "right",
+                                                                    "text": "I WILL [[Return]], MORTAL.",
+                                                                    "set_true": "bested_computer"
+                                                                }
+                                                            ]
                                                         },
                                                         "if_lost": {
                                                             "speaker": "Minigame",
