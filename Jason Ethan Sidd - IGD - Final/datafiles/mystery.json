@@ -14,10 +14,12 @@
             { "text": "4pm." },
             { "text": "im tired." },
             {
+                "portraitFocus": "none",
                 "choices": [
                     {
                         "text": "who am i",
                         "lines": [
+                            {"portraitFocus": "left"},
                             { "text": "same person i was yesterday" },
                             { "text": "...and the day before that" },
                             { "text": "and the day before that" },
@@ -27,6 +29,7 @@
                     {
                         "text": "where am i",
                         "lines": [
+                            {"portraitFocus": "left"},
                             { "text": "bed."},
                             { "text": "i spend a lot of time here"},
                             { "text": "i guess you could call it my favorite place"},
@@ -192,8 +195,40 @@
                                 "minigame": "mg_epic",
                                 "portraits": false,
                                 "if_won": {
-                                    "speaker": "Minigame",
-                                    "text": "you won"
+                                    "lines": [
+                                        {
+                                            "speaker": "Minigame",
+                                            "text": "you won 1"
+                                        },
+                                        {
+                                            "minigame": "mg_epic",
+                                            "portraits": false,
+                                            "if_won": {
+                                                "lines": [
+                                                    {
+                                                        "speaker": "Minigame",
+                                                        "text": "you won 2"
+                                                    },
+                                                    {
+                                                        "minigame": "mg_epic",
+                                                        "portraits": false,
+                                                        "if_won": {
+                                                            "speaker": "Minigame",
+                                                            "text": "you won 3"
+                                                        },
+                                                        "if_lost": {
+                                                            "speaker": "Minigame",
+                                                            "text": "you lost"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "if_lost": {
+                                                "speaker": "Minigame",
+                                                "text": "you lost"
+                                            }
+                                        }
+                                    ]
                                 },
                                 "if_lost": {
                                     "speaker": "Minigame",
