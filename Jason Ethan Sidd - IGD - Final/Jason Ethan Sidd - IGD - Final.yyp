@@ -65,6 +65,7 @@
     {"id":{"name":"sprArrow","path":"sprites/sprArrow/sprArrow.yy",},},
     {"id":{"name":"objDoor","path":"objects/objDoor/objDoor.yy",},},
     {"id":{"name":"objRmBedroom","path":"objects/objRmBedroom/objRmBedroom.yy",},},
+    {"id":{"name":"sprWizardPortrait","path":"sprites/sprWizardPortrait/sprWizardPortrait.yy",},},
     {"id":{"name":"sprMinigameFrame","path":"sprites/sprMinigameFrame/sprMinigameFrame.yy",},},
     {"id":{"name":"objSingingFish","path":"objects/objSingingFish/objSingingFish.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},

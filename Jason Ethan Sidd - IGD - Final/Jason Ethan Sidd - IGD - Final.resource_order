@@ -42,6 +42,7 @@
     {"name":"objCar","order":11,"path":"objects/objCar/objCar.yy",},
     {"name":"objDoor","order":12,"path":"objects/objDoor/objDoor.yy",},
     {"name":"objRmBedroom","order":7,"path":"objects/objRmBedroom/objRmBedroom.yy",},
+    {"name":"sprWizardPortrait","order":1,"path":"sprites/sprWizardPortrait/sprWizardPortrait.yy",},
     {"name":"sprMinigameFrame","order":11,"path":"sprites/sprMinigameFrame/sprMinigameFrame.yy",},
     {"name":"objSingingFish","order":17,"path":"objects/objSingingFish/objSingingFish.yy",},
     {"name":"objPlayer","order":5,"path":"objects/objPlayer/objPlayer.yy",},
