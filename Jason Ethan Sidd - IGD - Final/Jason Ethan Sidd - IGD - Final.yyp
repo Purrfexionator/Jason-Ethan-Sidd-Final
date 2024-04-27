@@ -31,6 +31,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Portraits","folderPath":"folders/Sprites/Portraits.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Cereal","folderPath":"folders/Sprites/Minigames/Cereal.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"mystery.json","CopyToMask":-1,"filePath":"datafiles",},
@@ -48,6 +49,7 @@
     {"id":{"name":"objInteractable","path":"objects/objInteractable/objInteractable.yy",},},
     {"id":{"name":"sprPongBackground","path":"sprites/sprPongBackground/sprPongBackground.yy",},},
     {"id":{"name":"objRoom","path":"objects/objRoom/objRoom.yy",},},
+    {"id":{"name":"sprCerealMomCook","path":"sprites/sprCerealMomCook/sprCerealMomCook.yy",},},
     {"id":{"name":"sprPongBorder","path":"sprites/sprPongBorder/sprPongBorder.yy",},},
     {"id":{"name":"objRmVoiceAngry","path":"objects/objRmVoiceAngry/objRmVoiceAngry.yy",},},
     {"id":{"name":"sprPongPaddleEvil","path":"sprites/sprPongPaddleEvil/sprPongPaddleEvil.yy",},},

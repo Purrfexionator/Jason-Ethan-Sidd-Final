@@ -19,6 +19,7 @@
     {"name":"Portraits","order":16,"path":"folders/Sprites/Portraits.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Cereal","order":1,"path":"folders/Sprites/Minigames/Cereal.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"objPongPlayerPaddle","order":2,"path":"objects/objPongPlayerPaddle/objPongPlayerPaddle.yy",},
