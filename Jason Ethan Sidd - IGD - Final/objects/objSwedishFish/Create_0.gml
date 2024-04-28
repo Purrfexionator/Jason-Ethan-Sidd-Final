@@ -1,4 +1,4 @@
 // Inherit the parent event
 event_inherited();
 
-name = "obj_singing_fish";
+name = "obj_swedish_fish";

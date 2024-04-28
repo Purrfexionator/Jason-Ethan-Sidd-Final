@@ -352,10 +352,12 @@
             "obj_door": {
                 "lines": [
                     {
-                        "if_true": "has_key",
+                        "if_true": "bested_computer",
                         "lines": [
                             {
-                                "text": "Let me open this door",
+								"portraits": false,
+								"speaker": "",
+                                "text": "let me get out of here",
                                 "goto": "rm_kitchen"
                             }
                         ]
@@ -396,17 +398,39 @@
         "dev_notes": "Its a pretty normal kitchen, with a fridge in the center.",
         "interactables": {
             "obj_fridge": {
-                "lines": [
-                    {
-                        "portraits": true,
-                        "portraitL": "sprPlayerPortrait"
-                    },
-                    {"portraitFocus": "left"},
-                    {"text": "okay lets see what we have in here"},
-                    {"text": "..."},
-                    {"text": "i guess ill have some cereal"}
-
-                ]
+				"lines": [
+					{
+						"if_false": "made_cereal",
+						"set_true": "made_cereal",
+						"lines": [
+							{
+								"portraits": true,
+								"portraitL": "sprPlayerPortrait",
+								"portraitR": ""
+							},
+							{"portraitFocus": "left"},
+							{"text": "okay lets see what we have in here"},
+							{"text": "..."},
+							{"text": "i guess ill have some cereal"}
+						]
+					},
+					{
+						"if_true": "made_cereal",
+						"lines": [
+							{
+								"portraits": true,
+								"portraitL": "sprPlayerPortrait",
+								"portraitR": ""
+							},
+							{"portraitFocus": "left"},
+							{"text": "*eating noises*"},
+							{"text": "yeah thats food alright"},
+							{"text": "..."},
+							{"text": "it's getting kinda hot. i should go to the basement to fix the heater."},
+							{"goto": "rm_basement"}
+						]
+					}
+				]
             },
             "obj_tinfoil_gremlin": {
                 "lines": [

@@ -17,7 +17,9 @@ currentSpeaker = "";
 function showMessage(text) {
 	caption.showText("dialogue box", 1);
 	if currentSpeaker != "" {
-	self.speaker.showText(currentSpeaker + ":", 1);
+		if currentSpeaker != "empty" {
+			self.speaker.showText(currentSpeaker + ":", 1);
+		}
 	}
 	
 	if active {
