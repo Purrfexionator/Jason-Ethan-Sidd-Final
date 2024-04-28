@@ -497,45 +497,60 @@
         "interactables": {
             "obj_lava": {
                 "lines": [
-                    {
-                        "portraits": true,
-                        "portraitL": "sprPlayerPortrait",
-                        "portraitR": "sprWizardPortrait"
-                    },
-                    {"portraitFocus": "left"},
-                    { "speaker": "You" },
-                    { "text": "i didn't know lava had a reflection"},
-                    {"portraitFocus": "right"},
-                    { "speaker": "Wizard" },
-                    { "text": "Hello young traveler my Name is Marlin and i am Your Reflection"},
-                    {"portraitFocus": "left"},
-                    { "speaker": "You" },
-                    { "text": "you look nothing like me though"},
-                    {"portraitR": "sprPlayerPortrait"},
-                    {"portraitFocus": "right"},
-                    { "speaker": "Wizard" },
-                    { "text": "Wrong"},
-                    {"portraitFocus": "left"},
-                    { "speaker": "You" },
-                    { "text": "..."},
-                    {"portraitFocus": "left"},
-                    { "speaker": "You" },
-                    { "text": "do you know where all this lava is coming from?"},
-                    {"portraitR": "sprWizardPortrait"},
-                    {"portraitFocus": "right"},
-                    { "speaker": "Wizard" },
-                    { "text": "why of Course, it is coming From mister boiler Man"},
-                    {"portraitFocus": "left"},
-                    { "speaker": "You" },
-                    { "text": "mister boiler man?"},
-                    {"portraitFocus": "right"},
-                    { "speaker": "Wizard" },
-                    { "text": "it appears that He is particularly Sad today and that is why There is so much Lava"},
-                    {"text": "you Must approach him and make Him happy"},
-                    {"portraitFocus": "left"},
-                    { "speaker": "You" },
-                    { "text": "..."},
-                    {"text": "ok"}
+					{
+						"if_false": "met_wizard",
+						"lines": [
+							{
+								"portraits": true,
+								"portraitL": "sprPlayerPortrait",
+								"portraitR": "sprWizardPortrait"
+							},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{ "text": "i didn't know lava had a reflection"},
+							{"portraitFocus": "right"},
+							{ "speaker": "Wizard" },
+							{ "text": "Hello young traveler my Name is Marlin and i am Your Reflection"},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{ "text": "you look nothing like me though"},
+							{"portraitR": "sprPlayerPortrait"},
+							{"portraitFocus": "right"},
+							{ "speaker": "Wizard" },
+							{ "text": "Wrong"},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{ "text": "..."},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{ "text": "do you know where all this lava is coming from?"},
+							{"portraitR": "sprWizardPortrait"},
+							{"portraitFocus": "right"},
+							{ "speaker": "Wizard" },
+							{ "text": "why of Course, it is coming From mister boiler Man"},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{ "text": "mister boiler man?"},
+							{"portraitFocus": "right"},
+							{ "speaker": "Wizard" },
+							{ "text": "it appears that He is particularly Sad today and that is why There is so much Lava"},
+							{"text": "you Must approach him and make Him happy"},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{ "text": "..."},
+							{"text": "ok"},
+							{"set_true": "met_wizard"}
+						]
+					},
+					{
+						"if_true": "met_wizard",
+						"lines": [
+							{"portraitFocus": "right"},
+							{ "speaker": "Wizard" },
+							{ "text": "it appears that Mister Boiler is particularly Sad today and that is why There is so much Lava"},
+							{"text": "you Must approach him and make Him happy"}
+						]
+					}
                 ]
             },
             "obj_metal_pipe": {
@@ -557,25 +572,30 @@
                 ]
             },
             "obj_mister_boiler": {
-                "lines": [
-                    {
-                        "portraits": true,
-                        "portraitL": "sprPlayerPortrait",
-                        "portraitR": "sprMrBoilerPortrait"
-                    },
-                        {"portraitFocus": "left"},
-                        { "speaker": "You" },
-                        { "text": "are you mister boiler man?"},
-                        {"portraitFocus": "right"},
-                        { "speaker": "Mr. Boiler" },
-                        { "text": "sohayo!! my name is boiler-san!! uWu "},
-                        {"portraitFocus": "left"},
-                        { "speaker": "You" },
-                        { "text": "..."},
-                        { "text": "okay, can you please stop getting your lava everywhere?"}
-                ]
+				"lines": [
+					{
+						"if_true": "met_wizard",
+						"lines": [
+							{
+								"portraits": true,
+								"portraitL": "sprPlayerPortrait",
+								"portraitR": "sprMrBoilerPortrait"
+							},
+								{"portraitFocus": "left"},
+								{ "speaker": "You" },
+								{ "text": "are you mister boiler man?"},
+								{"portraitFocus": "right"},
+								{ "speaker": "Mr. Boiler" },
+								{ "text": "ohayo!! my name is boiler-san!! uWu "},
+								{"portraitFocus": "left"},
+								{ "speaker": "You" },
+								{ "text": "..."},
+								{ "text": "okay, can you please stop getting your lava everywhere?"}
+						]
+					}
+				]
             },
-            "obj_racoon": {
+            "obj_raccoon": {
                 "lines": [
                     {
                         "if_true": "lava_gone",
