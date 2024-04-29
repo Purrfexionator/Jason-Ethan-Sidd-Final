@@ -52,6 +52,7 @@
     {"name":"objMinigameProp","order":29,"path":"objects/objMinigameProp/objMinigameProp.yy",},
     {"name":"objRmLivingRoom","order":38,"path":"objects/objRmLivingRoom/objRmLivingRoom.yy",},
     {"name":"sprPongPaddle","order":2,"path":"sprites/sprPongPaddle/sprPongPaddle.yy",},
+    {"name":"objDoor3","order":44,"path":"objects/objDoor3/objDoor3.yy",},
     {"name":"objLawnmower","order":43,"path":"objects/objLawnmower/objLawnmower.yy",},
     {"name":"objApple","order":9,"path":"objects/objApple/objApple.yy",},
     {"name":"objMinigames","order":26,"path":"objects/objMinigames/objMinigames.yy",},

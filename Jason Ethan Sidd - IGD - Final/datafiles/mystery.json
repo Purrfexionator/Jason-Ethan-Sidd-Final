@@ -479,20 +479,48 @@
         "dev_notes": "The player enters the basement, where they find a lava-covered floor.",
         "free_move": "true",
         "lines": [
-            {
-                "portraits": true,
-                "portraitL": "sprPlayerPortrait",
-                "portraitR": "sprLavaPortrait"
-            },
-            {"portraitFocus": "left"},
-            { "speaker": "You" },
-            { "text": "oh. lava"},
-            {"portraitFocus": "right"},
-            { "speaker": "Lava" },
-            { "text": "im lava"},
-            {"portraitFocus": "left"},
-            { "speaker": "You" },
-            { "text": "thats probably not great"}
+			{
+				"if_false": "lava_gone",
+				"lines": [
+					{
+						"portraits": true,
+						"portraitL": "sprPlayerPortrait",
+						"portraitR": "sprLavaPortrait"
+					},
+					{"portraitFocus": "left"},
+					{ "speaker": "You" },
+					{ "text": "oh. lava"},
+					{"portraitFocus": "right"},
+					{ "speaker": "Lava" },
+					{ "text": "im lava"},
+					{"portraitFocus": "left"},
+					{ "speaker": "You" },
+					{ "text": "thats probably not great"}
+				]
+			},
+			{
+				"if_true": "lava_gone",
+				"lines": [
+					{
+						"portraits": true,
+						"portraitL": "sprPlayerPortrait",
+						"portraitR": "sprWizardPortrait"
+					},
+					{"portraitFocus": "right"},
+					{ "speaker": "Wizard"},
+					{ "text": "congratulations Young traveller you saved The basement"},
+					{"portraitFocus": "left"},
+					{ "speaker": "You"},
+					{ "text": "what happens to you now?"},
+					{"portraitFocus": "right"},
+					{ "speaker": "Wizard"},
+					{ "text": "my Time has come but my legacy Will always be carried on"},
+					{"text": "tell my tale To your children and do Not forget me"},
+					{"portraitFocus": "left"},
+					{ "speaker": "You"},
+					{ "text": "ok"}
+				]
+			}
         ],
         "interactables": {
             "obj_lava": {
@@ -640,7 +668,23 @@
                         ]
                   }
                 ]
-            }
+            },
+			"obj_door": {
+				"lines": [
+					{
+						"if_true": "lava_gone",
+						"lines": [
+							{"goto": "rm_living_room"}
+						]
+					},
+					{
+						"if_false": "lava_gone",
+						"lines": [
+							{"text": "the door is locked"}
+						]
+					}
+				]
+			}
         }
     },
     "rm_living_room": {
