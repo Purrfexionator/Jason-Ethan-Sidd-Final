@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objRmVoiceAngry",
+  "name": "objRmEnd",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprRoom",
-    "path": "sprites/sprRoom/sprRoom.yy",
+    "name": "sprRmInBed",
+    "path": "sprites/sprRmInBed/sprRmInBed.yy",
   },
   "spriteMaskId": null,
   "visible": true,

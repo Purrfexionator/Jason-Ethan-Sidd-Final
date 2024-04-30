@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objRmVoiceHappy",
+  "name": "objDoor6",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -12,8 +12,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "objRoom",
-    "path": "objects/objRoom/objRoom.yy",
+    "name": "objInteractable",
+    "path": "objects/objInteractable/objInteractable.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprRoom",
-    "path": "sprites/sprRoom/sprRoom.yy",
+    "name": "sprDoor",
+    "path": "sprites/sprDoor/sprDoor.yy",
   },
   "spriteMaskId": null,
   "visible": true,
