@@ -32,10 +32,7 @@ switch state {
 				x -= 20;
 				with objPongBall {
 					x -= 20;
-					var dir = 180 + random_range(35, 55);
-					xspd = lengthdir_x(4, dir);
-					yspd = lengthdir_y(4, dir) * choose(-1, 1);
-					moving = true;
+					launch(other.ballSpeed, -1, choose(1, -1));
 				}
 				switchState(pongEnemyStates.wait);
 			}

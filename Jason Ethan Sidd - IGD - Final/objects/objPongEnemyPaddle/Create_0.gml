@@ -9,7 +9,9 @@ drawAngle = 0;
 yTarget = y;
 ySpeed = 6;
 
+ballSpeed = 4;
 numCatches = 3;
+
 catchesLeft = 0;
 
 draw = function() {
@@ -31,4 +33,21 @@ function switchState(newState) {
 	state = newState;
 	stateInit = false;
 	counter = 0;
+}
+
+onMinigameStart = function() {
+	switch getGameData("round") {
+		case 1:
+			numCatches = 1;
+			ballSpeed = 4;
+			break;
+		case 2:
+			numCatches = 2;
+			ballSpeed = 5;
+			break;
+		case 3:
+			numCatches = 4;
+			ballSpeed = 6;
+			break;
+	}
 }

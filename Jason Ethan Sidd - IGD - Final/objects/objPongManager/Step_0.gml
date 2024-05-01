@@ -43,6 +43,17 @@ switch state {
 			switchState(pongStates.enemyGrab);
 		}
 		break;
+	case pongStates.playerGrab:
+		if !stateInit {
+			objPongIndicator.show(sprPongTutorial1, getGameData("round") == 1);
+			stateInit = true;
+		}
+		with objPongPlayerPaddle {
+			if grabbed {
+				other.switchState(pongStates.enemyGrab);	
+			}
+		}
+		break;
 	case pongStates.enemyGrab:
 		if !stateInit {
 			objPongIndicator.hide();

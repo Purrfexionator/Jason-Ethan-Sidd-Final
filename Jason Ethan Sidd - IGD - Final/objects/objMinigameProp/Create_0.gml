@@ -50,6 +50,14 @@ function endMinigame(victory) {
 	}
 }
 
+function setGameData(name, value) {
+	frame.setData(name, value);	
+}
+
+function getGameData(name) {
+	return frame.getData(name);	
+}
+
 draw = function() {
 	draw_sprite_ext(sprite_index, image_index, relativeX(), relativeY(), image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 }

@@ -199,7 +199,8 @@
                             {
                                 "minigame": "mg_epic",
                                 "minigameData": [
-                                    {"name": "round", "value": 1}
+                                    {"name": "round", "value": 1},
+                                    {"name": "lives", "value": 3}
                                 ],
                                 "portraits": false,
                                 "if_won": {

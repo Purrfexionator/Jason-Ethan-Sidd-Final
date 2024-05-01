@@ -7,14 +7,14 @@ if moving {
 		if abs(objPongPlayerPaddle.bbox_right - 5 < bbox_left) {
 			objPongPlayerPaddle.drawScale = 1.2;
 			objPongEnemyPaddle.switchState(pongEnemyStates.catchBall);
-			xspd *= -1;
+			launch(objPongEnemyPaddle.ballSpeed, 1, sign(yspd));
 			drawScale = 1.1;
 		}
 	}
 	if (place_meeting(x + xspd, y, objPongEnemyPaddle) && sign(xspd) = 1) {
 		if (objPongEnemyPaddle.bbox_left + 5 > bbox_right) {
 			objPongEnemyPaddle.drawScale = 1.2;
-			xspd *= -1;
+			launch(objPongEnemyPaddle.ballSpeed, -1, sign(yspd));
 			drawScale = 1.1;
 		}
 	}

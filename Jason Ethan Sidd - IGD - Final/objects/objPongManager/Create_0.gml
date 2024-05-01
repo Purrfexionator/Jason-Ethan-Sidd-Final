@@ -25,4 +25,7 @@ function switchState(newState) {
 	counter = 0;
 }
 
-switchState(pongStates.intro);
+onMinigameStart = function() {
+	var initialState = (getGameData("round") == 1 ? pongStates.intro : pongStates.playerGrab);
+	switchState(initialState);
+}

@@ -166,9 +166,9 @@ function doNextThing() {
 		if objMinigames.play(line.minigame) {
 			if variable_struct_exists(line, "minigameData") {
 				var dataList = line.minigameData;
-				for (var i = 0; i < array_length(data); i ++) {
+				for (var i = 0; i < array_length(dataList); i ++) {
 					var data = dataList[i];
-					objMinigames.currentFrame.addData(data.name, data,value);
+					objMinigames.currentFrame.setData(data.name, data.value);
 				}
 			}
 			
