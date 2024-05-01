@@ -9,6 +9,9 @@ drawAngle = 0;
 yTarget = y;
 ySpeed = 6;
 
+numCatches = 3;
+catchesLeft = 0;
+
 draw = function() {
 	draw_sprite_ext(sprite_index, image_index, relativeX(), relativeY(), drawScale, drawScale, drawAngle, image_blend, image_alpha);	
 }

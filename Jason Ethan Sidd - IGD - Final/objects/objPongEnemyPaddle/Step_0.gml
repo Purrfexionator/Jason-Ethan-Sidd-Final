@@ -22,7 +22,8 @@ switch state {
 		break;
 	case pongEnemyStates.serve:
 		if !stateInit {
-			yTarget = irandom_range(frame.bbox_top + 104, frame.bbox_bottom - 164);	
+			catchesLeft = numCatches;
+			yTarget = irandom_range(frame.bbox_top + 104, frame.bbox_bottom - 164);
 			stateInit = true;
 		}
 		if (y == yTarget) {
@@ -41,27 +42,32 @@ switch state {
 		}
 		break;
 	case pongEnemyStates.catchBall:
-		counter ++;
-		if (counter == 30) {
-			with objPongBall {
-				var testX = bbox_right;
-				var testY = y;
-				var testYspd = yspd;
-				while (testX < other.bbox_left + 5) {
-					testX += xspd;
-					if place_meeting(x, testY, [objPongBorder, objPongTaskbar]) {
-							testYspd *= -1;
+		if (x - objPongBall.x < 200) {
+			if (catchesLeft > 0) {
+				with objPongBall {
+					var testX = bbox_right;
+					var testY = y;
+					var testYspd = yspd;
+					while (testX < other.bbox_left + 5) {
+						testX += xspd;
+						if place_meeting(x, testY, [objPongBorder, objPongTaskbar]) {
+								testYspd *= -1;
+						}
+						testY += testYspd;
 					}
-					testY += testYspd;
+					other.yTarget = clamp(testY, frame.bbox_top + 104, frame.bbox_bottom - 164)
 				}
-				other.yTarget = clamp(testY, frame.bbox_top + 104, frame.bbox_bottom - 164)
+				catchesLeft --;
+				show_debug_message(catchesLeft);
+			} else {
+				yTarget = irandom_range(frame.bbox_top + 104, frame.bbox_bottom - 164);
 			}
 			switchState(pongEnemyStates.wait);
 		}
 		break;
 }
 
-x = lerp(x, xstart, 0.05);
+x = lerp(x, xstart, 0.15);
 if (state == pongEnemyStates.serve || state == pongEnemyStates.wait) {
 	objPongEnemyHand.x = x + 16;
 }
