@@ -9,7 +9,7 @@ if grabbed {
 		drawScale = 1.05;
 	}
 } else {
-	if mouseOver() {
+	if (mouseOver() && canGrab) {
 		drawScale = lerp(drawScale, 1.1, 0.1);	
 		if mouse_check_button_pressed(mb_left) {
 			grabbed = true;

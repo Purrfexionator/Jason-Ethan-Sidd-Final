@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objPongEnemyHand",
+  "name": "objPongIndicator",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprPongEnemyHand",
-    "path": "sprites/sprPongEnemyHand/sprPongEnemyHand.yy",
+    "name": "sprPongTutorial1",
+    "path": "sprites/sprPongTutorial1/sprPongTutorial1.yy",
   },
   "spriteMaskId": null,
   "visible": true,

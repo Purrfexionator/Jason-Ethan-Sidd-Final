@@ -5,7 +5,14 @@ minigame = "mg_epic";
 propDepth = 1;
 
 surf = -1;
-props = [objPongPlayerPaddle, objPongEnemyPaddle, objPongBall];
+props = [
+	objPongPlayerPaddle,
+	objPongEnemyPaddle,
+	objPongBall,
+	objPongWindow,
+	objPongIndicator,
+	objPongEnemyHand
+];
 
 draw = function() {
 	if !surface_exists(surf) {

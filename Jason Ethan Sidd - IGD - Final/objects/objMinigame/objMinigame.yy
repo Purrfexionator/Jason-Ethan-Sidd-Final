@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Minigames",
+    "path": "folders/Objects/Minigames.yy",
   },
   "parentObjectId": {
     "name": "objInteractable",

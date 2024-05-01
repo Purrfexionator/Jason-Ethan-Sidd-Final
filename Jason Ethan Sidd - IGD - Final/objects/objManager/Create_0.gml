@@ -192,3 +192,5 @@ while (!file_text_eof(file)) {
 	fileStr += file_text_readln(file);
 }
 data = json_parse(fileStr);
+
+randomize();

@@ -2,3 +2,15 @@
 event_inherited();
 
 minigame = "mg_epic";
+
+drawScale = 0;
+drawAngle = 0;
+show_debug_message("IM HERE");
+
+moving = false;
+xspd = 0;
+yspd = 0;
+
+draw = function() {
+	draw_sprite_ext(sprite_index, image_index, relativeX(), relativeY(), drawScale, drawScale, drawAngle, image_blend, image_alpha);
+}
