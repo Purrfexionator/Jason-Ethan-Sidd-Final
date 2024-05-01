@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Cereal",
-    "path": "folders/Sprites/Minigames/Cereal.yy",
+    "name": "Intro",
+    "path": "folders/Sprites/Minigames/Cereal/Intro.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
