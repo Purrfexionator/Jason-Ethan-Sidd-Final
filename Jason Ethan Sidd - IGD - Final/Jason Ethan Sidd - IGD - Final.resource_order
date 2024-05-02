@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
+    {"name":"sprSwedishFishPortrait","order":1,"path":"sprites/sprSwedishFishPortrait/sprSwedishFishPortrait.yy",},
     {"name":"sprPongHeart","order":1,"path":"sprites/sprPongHeart/sprPongHeart.yy",},
   ],
 }

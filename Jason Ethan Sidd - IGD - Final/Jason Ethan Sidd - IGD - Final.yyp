@@ -52,6 +52,7 @@
     {"id":{"name":"objInteractable","path":"objects/objInteractable/objInteractable.yy",},},
     {"id":{"name":"objRmEnd","path":"objects/objRmEnd/objRmEnd.yy",},},
     {"id":{"name":"sprPongBackground","path":"sprites/sprPongBackground/sprPongBackground.yy",},},
+    {"id":{"name":"sprSwedishFishPortrait","path":"sprites/sprSwedishFishPortrait/sprSwedishFishPortrait.yy",},},
     {"id":{"name":"sprCerealBox","path":"sprites/sprCerealBox/sprCerealBox.yy",},},
     {"id":{"name":"objMisterBoiler","path":"objects/objMisterBoiler/objMisterBoiler.yy",},},
     {"id":{"name":"sprPongHeart","path":"sprites/sprPongHeart/sprPongHeart.yy",},},
