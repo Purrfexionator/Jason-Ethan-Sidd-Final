@@ -104,6 +104,7 @@
     {"id":{"name":"objDialogue","path":"objects/objDialogue/objDialogue.yy",},},
     {"id":{"name":"sprCerealIntroCookButton","path":"sprites/sprCerealIntroCookButton/sprCerealIntroCookButton.yy",},},
     {"id":{"name":"objMinigameAnchor","path":"objects/objMinigameAnchor/objMinigameAnchor.yy",},},
+    {"id":{"name":"sprMetalPipePortrait","path":"sprites/sprMetalPipePortrait/sprMetalPipePortrait.yy",},},
     {"id":{"name":"sprPongBorderMask","path":"sprites/sprPongBorderMask/sprPongBorderMask.yy",},},
     {"id":{"name":"sprPongTutorial1","path":"sprites/sprPongTutorial1/sprPongTutorial1.yy",},},
     {"id":{"name":"sprPongTaskbar","path":"sprites/sprPongTaskbar/sprPongTaskbar.yy",},},
