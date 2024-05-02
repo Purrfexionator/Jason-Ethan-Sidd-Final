@@ -58,6 +58,10 @@ function getGameData(name) {
 	return frame.getData(name);	
 }
 
+function screenShake(magnitude) {
+	objMinigames.boxShake = magnitude;
+}
+
 draw = function() {
 	draw_sprite_ext(sprite_index, image_index, relativeX(), relativeY(), image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 }

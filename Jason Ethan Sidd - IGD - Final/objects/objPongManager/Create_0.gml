@@ -13,7 +13,9 @@ enum pongStates {
 	tutorial3,
 	playerGrab,
 	enemyGrab,
-	serve
+	serve,
+	playerScore,
+	enemyScore
 }
 state = 0;
 stateInit = false;

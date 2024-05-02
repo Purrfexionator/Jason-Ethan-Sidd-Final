@@ -3,6 +3,7 @@ event_inherited();
 
 minigame = "mg_epic";
 
+active = true;
 drawScale = 0;
 drawAngle = 0;
 show_debug_message("IM HERE");

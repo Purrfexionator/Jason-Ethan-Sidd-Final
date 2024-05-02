@@ -10,7 +10,7 @@ switch state {
 		}
 		counter ++;
 		if (counter == 60) {
-			switchState(tutorial ? pongStates.tutorial1: pongStates.playerGrab)
+			switchState(getGameData("tutorial") ? pongStates.tutorial1: pongStates.playerGrab)
 		}
 		break;
 	case pongStates.tutorial1:
@@ -18,6 +18,7 @@ switch state {
 			objPongPlayerPaddle.canGrab = true;
 			objPongWindow.hide();
 			objPongIndicator.show(sprPongTutorial1, true);
+			setGameData("tutorial", false);
 			stateInit = true;
 		}
 		with objPongPlayerPaddle {
@@ -45,7 +46,7 @@ switch state {
 		break;
 	case pongStates.playerGrab:
 		if !stateInit {
-			objPongIndicator.show(sprPongTutorial1, getGameData("round") == 1);
+			objPongIndicator.show(sprPongGrabIndicator, getGameData("round") == 1);
 			stateInit = true;
 		}
 		with objPongPlayerPaddle {
@@ -59,6 +60,19 @@ switch state {
 			objPongIndicator.hide();
 			objPongEnemyPaddle.switchState(pongEnemyStates.grab);
 			stateInit = true;
+		}
+		break;
+	case pongStates.playerScore:
+		if !stateInit {
+			screenShake(15);
+			stateInit = true;
+		}
+		counter ++;
+		if (counter == 30) {
+			objPongWindow.show(sprPongPlayerScore);
+		}
+		if (counter == 100) {
+			endMinigame(true);
 		}
 		break;
 }
