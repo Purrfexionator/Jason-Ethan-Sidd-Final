@@ -54,6 +54,7 @@
     {"id":{"name":"sprPongBackground","path":"sprites/sprPongBackground/sprPongBackground.yy",},},
     {"id":{"name":"sprCerealBox","path":"sprites/sprCerealBox/sprCerealBox.yy",},},
     {"id":{"name":"objMisterBoiler","path":"objects/objMisterBoiler/objMisterBoiler.yy",},},
+    {"id":{"name":"sprPongHeart","path":"sprites/sprPongHeart/sprPongHeart.yy",},},
     {"id":{"name":"objRmBasement","path":"objects/objRmBasement/objRmBasement.yy",},},
     {"id":{"name":"objRoom","path":"objects/objRoom/objRoom.yy",},},
     {"id":{"name":"sprCerealIntroBackground","path":"sprites/sprCerealIntroBackground/sprCerealIntroBackground.yy",},},

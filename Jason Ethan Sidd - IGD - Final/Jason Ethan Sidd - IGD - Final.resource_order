@@ -1,4 +1,6 @@
 {
   "FolderOrderSettings": [],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"sprPongHeart","order":1,"path":"sprites/sprPongHeart/sprPongHeart.yy",},
+  ],
 }
