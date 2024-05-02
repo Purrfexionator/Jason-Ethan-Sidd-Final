@@ -60,3 +60,33 @@ function addProp(xpos, ypos, propDepth, prop) {
 		ds_list_add(propList, newProp);
 	return newProp;
 }
+
+dataList = ds_list_create();
+
+function minigameData(name, value) constructor {
+	self.name = name;
+	self.value = value;
+}
+
+function setData(name, value) {
+	for (var i = 0; i < ds_list_size(dataList); i ++) {
+		with dataList[|i] {
+			if (self.name == name) {
+				self.value = value;
+				return;
+			}
+		}
+	}
+	ds_list_add(dataList, new minigameData(name, value));
+}
+
+function getData(name) {
+	for (var i = 0; i < ds_list_size(dataList); i ++) {
+		with dataList[|i] {
+			if (self.name == name) {
+				return value;
+			}
+		}
+	}
+	return undefined;
+}

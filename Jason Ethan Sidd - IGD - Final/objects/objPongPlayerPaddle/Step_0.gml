@@ -1,7 +1,7 @@
 if grabbed {
 	drawScale = lerp(drawScale, 1.1, 0.1);
 	var prevY = y;
-	y = clamp(relativeMouseY(), frame.bbox_top + 50, frame.bbox_bottom - 50);
+	y = clamp(relativeMouseY(), frame.bbox_top + 104, frame.bbox_bottom - 164);
 	drawAngle = lerp(drawAngle, (y - prevY) * -0.3, 0.2);
 	
 	if mouse_check_button_released(mb_left) {
@@ -9,7 +9,7 @@ if grabbed {
 		drawScale = 1.05;
 	}
 } else {
-	if mouseOver() {
+	if (mouseOver() && canGrab) {
 		drawScale = lerp(drawScale, 1.1, 0.1);	
 		if mouse_check_button_pressed(mb_left) {
 			grabbed = true;

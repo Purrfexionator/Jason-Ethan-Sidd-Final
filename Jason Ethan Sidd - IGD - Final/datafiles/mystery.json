@@ -198,6 +198,10 @@
                             },
                             {
                                 "minigame": "mg_epic",
+                                "minigameData": [
+                                    {"name": "round", "value": 1},
+                                    {"name": "lives", "value": 3}
+                                ],
                                 "portraits": false,
                                 "if_won": {
                                     "lines": [
@@ -227,6 +231,9 @@
                                         },
                                         {
                                             "minigame": "mg_epic",
+                                            "minigameData": [
+                                                {"name": "round", "value": 2}
+                                            ],
                                             "portraits": false,
                                             "if_won": {
                                                 "lines": [
@@ -267,6 +274,9 @@
                                                     },
                                                     {
                                                         "minigame": "mg_epic",
+                                                        "minigameData": [
+                                                            {"name": "round", "value": 3}
+                                                        ],
                                                         "portraits": false,
                                                         "if_won": {
                                                             "lines": [

@@ -35,6 +35,9 @@
     "name": "sprPongBorder",
     "path": "sprites/sprPongBorder/sprPongBorder.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sprPongBorderMask",
+    "path": "sprites/sprPongBorderMask/sprPongBorderMask.yy",
+  },
   "visible": true,
 }

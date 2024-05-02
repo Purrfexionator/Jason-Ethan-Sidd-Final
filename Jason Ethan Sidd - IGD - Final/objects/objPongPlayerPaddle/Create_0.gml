@@ -2,8 +2,9 @@
 event_inherited();
 
 minigame = "mg_epic";
+canGrab = true;
 grabbed = false;
-drawScale = 0;
+drawScale = 1;
 drawAngle = 0;
 
 draw = function() {

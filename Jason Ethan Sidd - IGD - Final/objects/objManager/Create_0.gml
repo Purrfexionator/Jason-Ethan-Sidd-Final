@@ -164,6 +164,14 @@ function doNextThing() {
 		skipToNext = false;
 	} else if variable_struct_exists(line, "minigame") {
 		if objMinigames.play(line.minigame) {
+			if variable_struct_exists(line, "minigameData") {
+				var dataList = line.minigameData;
+				for (var i = 0; i < array_length(dataList); i ++) {
+					var data = dataList[i];
+					objMinigames.currentFrame.setData(data.name, data.value);
+				}
+			}
+			
 			objMinigames.win = [line.if_won];
 			objMinigames.lose = [line.if_lost];
 			objDialogue.hide();
@@ -192,3 +200,5 @@ while (!file_text_eof(file)) {
 	fileStr += file_text_readln(file);
 }
 data = json_parse(fileStr);
+
+randomize();
