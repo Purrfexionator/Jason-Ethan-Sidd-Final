@@ -111,6 +111,7 @@
     {"id":{"name":"sprRmInBed","path":"sprites/sprRmInBed/sprRmInBed.yy",},},
     {"id":{"name":"sprNone","path":"sprites/sprNone/sprNone.yy",},},
     {"id":{"name":"sprPlayer","path":"sprites/sprPlayer/sprPlayer.yy",},},
+    {"id":{"name":"sprLawnMowerPortrait","path":"sprites/sprLawnMowerPortrait/sprLawnMowerPortrait.yy",},},
     {"id":{"name":"objComputer","path":"objects/objComputer/objComputer.yy",},},
     {"id":{"name":"sprPongPaddleBackup","path":"sprites/sprPongPaddleBackup/sprPongPaddleBackup.yy",},},
     {"id":{"name":"objPongBall","path":"objects/objPongBall/objPongBall.yy",},},

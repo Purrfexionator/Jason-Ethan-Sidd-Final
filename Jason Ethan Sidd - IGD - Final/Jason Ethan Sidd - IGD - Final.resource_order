@@ -4,5 +4,6 @@
     {"name":"sprSwedishFishPortrait","order":1,"path":"sprites/sprSwedishFishPortrait/sprSwedishFishPortrait.yy",},
     {"name":"sprPongHeart","order":1,"path":"sprites/sprPongHeart/sprPongHeart.yy",},
     {"name":"sprMetalPipePortrait","order":2,"path":"sprites/sprMetalPipePortrait/sprMetalPipePortrait.yy",},
+    {"name":"sprLawnMowerPortrait","order":3,"path":"sprites/sprLawnMowerPortrait/sprLawnMowerPortrait.yy",},
   ],
 }
