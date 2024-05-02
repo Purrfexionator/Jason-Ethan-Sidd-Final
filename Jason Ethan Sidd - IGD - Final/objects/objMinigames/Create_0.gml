@@ -1,6 +1,8 @@
 boxWidth = 0;
 boxHeight = 0;
 boxPercent = 0;
+boxShake = 0;
+boxShakeDeccel = 0.5;
 
 active = false;
 played = false;

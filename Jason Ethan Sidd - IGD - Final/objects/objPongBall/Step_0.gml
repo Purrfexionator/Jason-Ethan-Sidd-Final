@@ -1,4 +1,11 @@
-drawScale = lerp(drawScale, 1, 0.2);
+if active {
+	drawScale = lerp(drawScale, 1, 0.2);
+} else {
+	drawScale = max(drawScale - 0.1, 0);
+	if (drawScale == 0) {
+		instance_destroy();
+	}
+}
 
 if moving {
 	drawAngle += 2;
@@ -19,9 +26,16 @@ if moving {
 		}
 	}
 	if place_meeting(x + xspd, y, objPongBorder) {
+		var scoreSide = sign(xspd);
 		xspd = 0;
 		yspd = 0;
+		active = false;
 		moving = false;
+		objPongEnemyPaddle.switchState(pongEnemyStates.idle);
+		
+		if (scoreSide == 1) {
+			objPongManager.switchState(pongStates.playerScore);
+		}
 	}
 	x += xspd;
 	

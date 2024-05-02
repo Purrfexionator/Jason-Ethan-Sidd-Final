@@ -11,9 +11,13 @@ if boxPercent > 0.01 {
 	var width = boxWidth * boxPercent;
 	var height = boxHeight * boxPercent;
 	
-	draw_surface_ext(surface, x - width / 2, y - height / 2, boxPercent, boxPercent, 0, c_white, 1);
-	draw_rectangle(x - width / 2, y - height / 2, x + width / 2, y + height / 2, true);
+	var xPos = x - width / 2 + sin(random(2 * pi)) * boxShake;
+	var yPos = y - height / 2 + sin(random(2 * pi)) * boxShake;
+	boxShake = max(boxShake - boxShakeDeccel, 0);
+	
+	draw_surface_ext(surface, xPos, yPos, boxPercent, boxPercent, 0, c_white, 1);
+	draw_rectangle(xPos, yPos, xPos + width, yPos + height, true);
 	
 	caption.update();
-	draw_text_ext(x - width / 2, y - height / 2 - 20, caption.currentText, 20, width);
+	draw_text_ext(xPos, yPos - 20, caption.currentText, 20, width);
 }
