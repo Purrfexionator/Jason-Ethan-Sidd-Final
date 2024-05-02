@@ -3,4 +3,5 @@ with objRoom {
 		other.queuedRoom = self;
 		ds_stack_clear(other.lineStack);
 	}
+
 }

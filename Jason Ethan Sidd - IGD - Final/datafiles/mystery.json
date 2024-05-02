@@ -362,10 +362,12 @@
             "obj_door": {
                 "lines": [
                     {
-                        "if_true": "has_key",
+                        "if_true": "bested_computer",
                         "lines": [
                             {
-                                "text": "Let me open this door",
+								"portraits": false,
+								"speaker": "",
+                                "text": "let me get out of here",
                                 "goto": "rm_kitchen"
                             }
                         ]
@@ -406,17 +408,42 @@
         "dev_notes": "Its a pretty normal kitchen, with a fridge in the center.",
         "interactables": {
             "obj_fridge": {
-                "lines": [
-                    {
-                        "portraits": true,
-                        "portraitL": "sprPlayerPortrait"
-                    },
-                    {"portraitFocus": "left"},
-                    {"text": "okay lets see what we have in here"},
-                    {"text": "..."},
-                    {"text": "i guess ill have some cereal"}
-
-                ]
+				"lines": [
+					{
+						"if_false": "made_cereal",
+						"set_true": "made_cereal",
+						"lines": [
+							{
+								"portraits": true,
+								"portraitL": "sprPlayerPortrait",
+								"portraitR": ""
+							},
+							{"portraitFocus": "left"},
+							{"speaker": "None"},
+							{"text": "okay lets see what we have in here"},
+							{"speaker": "None"},
+							{"text": "..."},
+							{"speaker": "None"},
+							{"text": "i guess ill have some cereal"}
+						]
+					},
+					{
+						"if_true": "made_cereal",
+						"lines": [
+							{
+								"portraits": true,
+								"portraitL": "sprPlayerPortrait",
+								"portraitR": ""
+							},
+							{"portraitFocus": "left"},
+							{"text": "*eating noises*"},
+							{"text": "yeah thats food alright"},
+							{"text": "..."},
+							{"text": "it's getting kinda hot. i should go to the basement to fix the heater."},
+							{"goto": "rm_basement"}
+						]
+					}
+				]
             },
             "obj_tinfoil_gremlin": {
                 "lines": [
@@ -465,63 +492,106 @@
         "dev_notes": "The player enters the basement, where they find a lava-covered floor.",
         "free_move": "true",
         "lines": [
-            {
-                "portraits": true,
-                "portraitL": "sprPlayerPortrait",
-                "portraitR": "sprLavaPortrait"
-            },
-            {"portraitFocus": "left"},
-            { "speaker": "You" },
-            { "text": "oh. lava"},
-            {"portraitFocus": "right"},
-            { "speaker": "Lava" },
-            { "text": "im lava"},
-            {"portraitFocus": "left"},
-            { "speaker": "You" },
-            { "text": "thats probably not great"}
+			{
+				"if_false": "lava_gone",
+				"lines": [
+					{
+						"portraits": true,
+						"portraitL": "sprPlayerPortrait",
+						"portraitR": "sprLavaPortrait"
+					},
+					{"portraitFocus": "left"},
+					{ "speaker": "You" },
+					{ "text": "oh. lava"},
+					{"portraitFocus": "right"},
+					{ "speaker": "Lava" },
+					{ "text": "im lava"},
+					{"portraitFocus": "left"},
+					{ "speaker": "You" },
+					{ "text": "thats probably not great"}
+				]
+			},
+			{
+				"if_true": "lava_gone",
+				"lines": [
+					{
+						"portraits": true,
+						"portraitL": "sprPlayerPortrait",
+						"portraitR": "sprWizardPortrait"
+					},
+					{"portraitFocus": "right"},
+					{ "speaker": "Wizard"},
+					{ "text": "congratulations Young traveller you saved The basement"},
+					{"portraitFocus": "left"},
+					{ "speaker": "You"},
+					{ "text": "what happens to you now?"},
+					{"portraitFocus": "right"},
+					{ "speaker": "Wizard"},
+					{ "text": "my Time has come but my legacy Will always be carried on"},
+					{"text": "tell my tale To your children and do Not forget me"},
+					{"portraitFocus": "left"},
+					{ "speaker": "You"},
+					{ "text": "ok"}
+				]
+			}
         ],
         "interactables": {
             "obj_lava": {
                 "lines": [
-                    {
-                        "portraits": true,
-                        "portraitL": "sprPlayerPortrait",
-                        "portraitR": "sprWizardPortrait"
-                    },
-                    {"portraitFocus": "left"},
-                    { "speaker": "You" },
-                    { "text": "i didn't know lava had a reflection"},
-                    {"portraitFocus": "right"},
-                    { "speaker": "Wizard" },
-                    { "text": "Hello young traveler my Name is Marlin and i am Your Reflection"},
-                    {"portraitFocus": "left"},
-                    { "speaker": "You" },
-                    { "text": "you look nothing like me though"},
-                    {"portraitR": "sprPlayerPortrait"},
-                    {"portraitFocus": "right"},
-                    { "speaker": "Wizard" },
-                    { "text": "Wrong"},
-                    {"portraitFocus": "left"},
-                    { "speaker": "You" },
-                    { "text": "..."},
-                    {"portraitFocus": "left"},
-                    { "speaker": "You" },
-                    { "text": "do you know where all this lava is coming from?"},
-                    {"portraitR": "sprWizardPortrait"},
-                    {"portraitFocus": "right"},
-                    { "speaker": "Wizard" },
-                    { "text": "why of Course, it is coming From mister boiler Man"},
-                    {"portraitFocus": "left"},
-                    { "speaker": "You" },
-                    { "text": "mister boiler man?"},
-                    {"portraitFocus": "right"},
-                    { "speaker": "Wizard" },
-                    { "text": "it appears that He is particularly Sad today and that is why There is so much Lava"},
-                    {"text": "you Must approach him and make Him happy"},
-                    {"portraitFocus": "left"},
-                    { "speaker": "You" },
-                    { "text": "..."},
-                    {"text": "ok"}
+					{
+						"if_false": "met_wizard",
+						"lines": [
+							{
+								"portraits": true,
+								"portraitL": "sprPlayerPortrait",
+								"portraitR": "sprWizardPortrait"
+							},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{ "text": "i didn't know lava had a reflection"},
+							{"portraitFocus": "right"},
+							{ "speaker": "Wizard" },
+							{ "text": "Hello young traveler my Name is Marlin and i am Your Reflection"},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{ "text": "you look nothing like me though"},
+							{"portraitR": "sprPlayerPortrait"},
+							{"portraitFocus": "right"},
+							{ "speaker": "Wizard" },
+							{ "text": "Wrong"},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{ "text": "..."},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{ "text": "do you know where all this lava is coming from?"},
+							{"portraitR": "sprWizardPortrait"},
+							{"portraitFocus": "right"},
+							{ "speaker": "Wizard" },
+							{ "text": "why of Course, it is coming From mister boiler Man"},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{ "text": "mister boiler man?"},
+							{"portraitFocus": "right"},
+							{ "speaker": "Wizard" },
+							{ "text": "it appears that He is particularly Sad today and that is why There is so much Lava"},
+							{"text": "you Must approach him and make Him happy"},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{ "text": "..."},
+							{"text": "ok"},
+							{"set_true": "met_wizard"}
+						]
+					},
+					{
+						"if_true": "met_wizard",
+						"lines": [
+							{"portraitFocus": "right"},
+							{ "speaker": "Wizard" },
+							{ "text": "it appears that Mister Boiler is particularly Sad today and that is why There is so much Lava"},
+							{"text": "you Must approach him and make Him happy"}
+						]
+					}
                 ]
             },
             "obj_metal_pipe": {
@@ -543,25 +613,31 @@
                 ]
             },
             "obj_mister_boiler": {
-                "lines": [
-                    {
-                        "portraits": true,
-                        "portraitL": "sprPlayerPortrait",
-                        "portraitR": "sprMrBoilerPortrait"
-                    },
-                        {"portraitFocus": "left"},
-                        { "speaker": "You" },
-                        { "text": "are you mister boiler man?"},
-                        {"portraitFocus": "right"},
-                        { "speaker": "Mr. Boiler" },
-                        { "text": "sohayo!! my name is boiler-san!! uWu "},
-                        {"portraitFocus": "left"},
-                        { "speaker": "You" },
-                        { "text": "..."},
-                        { "text": "okay, can you please stop getting your lava everywhere?"}
-                ]
+				"lines": [
+					{
+						"if_true": "met_wizard",
+						"lines": [
+							{
+								"portraits": true,
+								"portraitL": "sprPlayerPortrait",
+								"portraitR": "sprMrBoilerPortrait"
+							},
+								{"portraitFocus": "left"},
+								{ "speaker": "You" },
+								{ "text": "are you mister boiler man?"},
+								{"portraitFocus": "right"},
+								{ "speaker": "Mr. Boiler" },
+								{ "text": "ohayo!! my name is boiler-san!! uWu "},
+								{"portraitFocus": "left"},
+								{ "speaker": "You" },
+								{ "text": "..."},
+								{ "text": "okay, can you please stop getting your lava everywhere?"},
+								{"set_true": "lava_gone"}
+						]
+					}
+				]
             },
-            "obj_racoon": {
+            "obj_raccoon": {
                 "lines": [
                     {
                         "if_true": "lava_gone",
@@ -606,56 +682,204 @@
                         ]
                   }
                 ]
-            }
+            },
+			"obj_door": {
+				"lines": [
+					{
+						"if_true": "lava_gone",
+						"lines": [
+							{"text": "let me get out of here"},
+							{"goto": "rm_living_room"}
+						]
+					},
+					{
+						"if_false": "lava_gone",
+						"lines": [
+							{"speaker": "None"},
+							{"text": "the door is locked"}
+						]
+					}
+				]
+			}
         }
     },
     "rm_living_room": {
         "free_move": "true",
         "interactables": {
             "obj_closet_goblin": {
-                "lines": [
-                    {
-                        "portraits": true,
-                        "portraitL": "sprPlayerPortrait",
-                        "portraitR": "sprClosetGoblinPortrait"
-                    },
-                    {"portraitFocus": "left"},
-                    { "speaker": "You" },
-                    {"text": "what did i put in here"},
-                    {"portraitFocus": "right"},
-                    { "speaker": "Closet Goblin" },
-                    {"text": "Ehehehehe Hello There . I Am The Closet Goblin ."},
-                    {"portraitFocus": "left"},
-                    { "speaker": "You" },
-                    {"text": "what"},
-                    {"portraitFocus": "right"},
-                    { "speaker": "Closet Goblin" },
-                    {"text": "As The Master Of This House , You Are Legally Required To Satisfy My Wishes ."},
-                    {"portraitFocus": "left"},
-                    { "speaker": "You" },
-                    {"text": "that makes no sense"},
-                    {"portraitFocus": "right"},
-                    { "speaker": "Closet Goblin" },
-                    {"text": "Bring Me A Flower ."},
-                    {"portraitFocus": "left"},
-                    { "speaker": "You" },
-                    {"text": "a flower?"},
-                    {"portraitFocus": "right"},
-                    { "speaker": "You" },
-                    {"text": "Yes Ehehehehe . Flower Are Nice ."},
-                    {"portraitFocus": "left"},
-                    { "speaker": "You" },
-                    {"text": "..."},
-                    {"text": "okay, i guess"},
-                    {"set_true": "met_goblin"}
-                ]
-            }
+				"lines": [
+					{
+						"if_true": "has_flower",
+						"lines": [
+							{
+								"portraits": true,
+								"portraitL": "sprPlayerPortrait",
+								"portraitR": "sprClosetGoblinPortrait"
+							},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{"text": "hey man i have your flower"},
+							{"portraitFocus": "right"},
+							{ "speaker": "Closet Goblin" },
+							{"text": "Most Splendid . You Have Done Well ."},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{"text": "..."},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{"text": "yeah"},
+							{"portraitFocus": "right"},
+							{ "speaker": "Closet Goblin" },
+							{"text": "Okay Bye ."},
+							{"portraitFocus": "left"},
+							{"portraitR": "sprNone"},
+							{ "speaker": "You" },
+							{"text": "well"},
+							{"text": "i should probably go take a shower"},
+							{"set_true": "gave_flower"},
+							{"goto": "rm_bathroom"}
+						]
+					},
+					{
+						"if_true": "got_bucket",
+						"lines": [
+							{"portraitFocus": "right"},
+							{ "speaker": "Closet Goblin" },
+							{"text": "Take The Bucket And Water The Flowers ."}
+						]
+					},
+					{
+						"if_false": "seen_note",
+						"lines": [
+							{
+								"portraits": true,
+								"portraitL": "sprPlayerPortrait",
+								"portraitR": "sprClosetGoblinPortrait"
+							},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{"text": "what did i put in here"},
+							{"portraitFocus": "right"},
+							{ "speaker": "Closet Goblin" },
+							{"text": "Ehehehehe Hello There . I Am The Closet Goblin ."},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{"text": "what"},
+							{"portraitFocus": "right"},
+							{ "speaker": "Closet Goblin" },
+							{"text": "As The Master Of This House , You Are Legally Required To Satisfy My Wishes ."},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{"text": "that makes no sense"},
+							{"portraitFocus": "right"},
+							{ "speaker": "Closet Goblin" },
+							{"text": "Bring Me A Flower ."},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{"text": "a flower?"},
+							{"portraitFocus": "right"},
+							{ "speaker": "Closet Goblin" },
+							{"text": "Yes Ehehehehe . Flower Are Nice ."},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{"text": "..."},
+							{"text": "okay, i guess"},
+							{"set_true": "met_goblin"}
+						]
+					},
+					{
+						"if_true": "seen_note",
+						"lines": [
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{"text": "look dude all the flowers are dying because you stole the water"},
+							{"portraitFocus": "right"},
+							{ "speaker": "Closet Goblin" },
+							{"text": "What . I Need The Water For Personal Reasons ."},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{"text": "can you please just give it back?"},
+							{"portraitFocus": "right"},
+							{ "speaker": "Closet Goblin" },
+							{"text": "No ."},
+							{"portraitFocus": "left"},
+							{ "speaker": "You" },
+							{"text": "there's a tribe of bunnies in the other room and they'll probably kill us all if they don't get the water"},
+							{"portraitFocus": "right"},
+							{ "speaker": "Closet Goblin" },
+							{"text": "..."},
+							{"text": "Okay Fine . I'll Put It Back . Take This Bucket Of Water For The Flowers ."},
+							{"set_true": "got_bucket"}
+						]
+					}
+				]
+            },
+			"obj_door": {
+				"lines": [
+					{"speaker": ""},
+					{"portraitFocus": "none"}, 
+					{"text": "Where would you like to go?"},
+					{
+						"choices": [
+							{
+								"text": "rm_grass_room",
+								"lines": [
+									{"portraitFocus": "left"},
+									{ "text": "lets-a-go" },
+									{"goto": "rm_grass_room"}
+								]
+							},
+							{
+								"text": "rm_bathroom",
+								"lines": [
+									{"portraitFocus": "left"},
+									{ "text": "lets-a-go" },
+									{"goto": "rm_bathroom"}
+								]
+							}
+						]
+					}
+				]
+			}
         }
     },
     "rm_grass_room": {
+        "free_move": "true",
         "interactables": {
             "obj_bunny_king": {
                 "lines": [
+					{
+						"if_true": "has_flower",
+						"lines": [
+						    {"portraitfocus": "right"},
+                            {"speaker": "Bunny King"},
+                            {"text": "May good faith be upon you, blessed with the possession of the Flower!"}
+						]
+					},
+					{
+						"if_true": "got_bucket",
+						"lines": [
+						    {"portraitfocus": "right"},
+                            {"speaker": "Bunny King"},
+                            {"text": "Great heavens!! Is that... water?"},
+                            {"portraitfocus": "left"},
+                            {"speaker": "You"},
+                            {"text": "yeah yeah dont lose your shit over it"},
+						    {"portraitfocus": "right"},
+                            {"speaker": "Bunny King"},
+                            {"text": "Thank you, oh thank you, good samaritan! Our harvests will be bountiful!"},
+                            {"portraitfocus": "left"},
+                            {"speaker": "You"},
+                            {"text": "uh i actually need to take this flower"},
+						    {"portraitfocus": "right"},
+                            {"speaker": "Bunny King"},
+                            {"text": "Oh, of course! May good faith be upon you, blessed with the possession of the Flower!"},
+                            {"portraitfocus": "left"},
+                            {"speaker": "You"},
+                            {"text": "thanks"},
+							{"set_true": "has_flower"}
+						]
+					},
                     {
                         "if_true": "met_goblin",
                         "lines": [
@@ -672,11 +896,150 @@
                             {"text": "Our precious flower!! It's dead!!"},
                             {"portraitfocus": "left"},
                             {"speaker": "You"},
-                            {"text": "yikes"}       
+                            {"text": "yikes"} , 
+                            {"portraitfocus": "right"},
+                            {"speaker": "Bunny King"},
+                            {"text": "Who goes there?!"},
+                            {"portraitfocus": "left"},
+                            {"speaker": "You"},
+                            {"text": "i live here. who are you?"} , 
+                            {"portraitfocus": "right"},
+                            {"speaker": "Bunny King"},
+                            {"text": "I am the lord of rabbits, son of St. Easter, and bringer of carrots!"},
+							{"text": "Every year, we pray to the Flower for good harvest, but it seems the Flower has not been properly watered!"},
+                            {"portraitfocus": "left"},
+                            {"speaker": "You"},
+                            {"text": "why dont you just... water it?"} , 
+                            {"portraitfocus": "right"},
+                            {"speaker": "Bunny King"},
+                            {"text": "A most ideal solution! Unfortunately, we have no access to the water."},
+							{"text": "Good samaritan, could you please solve our conundrum? Fetch us some water, please!"},
+                            {"portraitfocus": "left"},
+                            {"speaker": "You"},
+                            {"text": "i guess im just doing everyones errands"} , 
+							{"set_true": "met_bunny"}
                         ]
-                  }
+                  },
+				  {
+					  "if_true": "met_bunny",
+					  "lines": [
+                        {"portraitfocus": "right"},
+                        {"speaker": "Bunny King"},
+						{"text": "Good samaritan, could you please solve our conundrum? Fetch us some water, please!"}
+					  ]
+				  }
                 ]
-            }
+            },
+			"obj_door": {
+				"lines": [
+					{"speaker": ""},
+					{"portraitFocus": "none"}, 
+					{"text": "Where would you like to go?"},
+					{
+						"choices": [
+							{
+								"text": "rm_living_room",
+								"lines": [
+									{"portraitFocus": "left"},
+									{ "text": "lets-a-go" },
+									{"goto": "rm_living_room"}
+								]
+							},
+							{
+								"text": "rm_bathroom",
+								"lines": [
+									{"portraitFocus": "left"},
+									{ "text": "lets-a-go" },
+									{"goto": "rm_bathroom"}
+								]
+							}
+						]
+					}
+				]
+			}
+        }
+    },
+    "rm_bathroom": {
+        "free_move": "true",
+		"lines": [
+			{
+				"if_true": "gave_flower",
+				"lines": [
+					{"portraitFocus": "left"},
+					{"text": "okay time to take a shower"},
+					{"text": "wait shit it's already really late"},
+					{"text": "but i don't take a shower ill be really unhygienic"},
+					{"text": "but if i do it'll get really really late and then i'll be super tired"},
+					{"text": "but what if i dont"},
+					{"text": "but what if i do"},
+					{"text": "but what if i dont but what if i do but what if i dont but what if i do but what if i dont but what if i do but what if i dont but what if i do but what-"},	
+					{"goto": "rm_end"}
+				]
+			}
+		],
+        "interactables": {
+			"obj_door": {
+				"lines": [
+					{"speaker": ""},
+					{"portraitFocus": "none"}, 
+					{"text": "Where would you like to go?"},
+					{
+						"choices": [
+							{
+								"text": "rm_grass_room",
+								"lines": [
+									{"portraitFocus": "left"},
+									{ "text": "lets-a-go" },
+									{"goto": "rm_grass_room"}
+								]
+							},
+							{
+								"text": "rm_living_room",
+								"lines": [
+									{"portraitFocus": "left"},
+									{ "text": "lets-a-go" },
+									{"goto": "rm_living_room"}
+								]
+							}
+						]
+					}
+				]
+			},
+			"obj_sink": {
+				"lines": [
+					{
+						"if_false": "met_bunny",
+						"lines": [
+							{"text": "that sink sure is sinking"},
+							{"text": "let that sink in"}
+						]
+					},
+					{
+						"if_true": "met_bunny",
+						"lines": [
+							{"text": "...fuck. water's not working."},
+							{"text": "god this is gonna be a whole thing isnt it, im gonna have to call someone"},
+							{"text": "wait what does this note say"},
+							{"text": "Sorry I Am Using The Water . Check Back Later .- Closet Goblin"},
+							{"text": "ugh"},
+							{"set_true": "seen_note"}
+						]
+					},
+					{
+						"if_true": "seen_note",
+						"lines": [
+							{"text": "better go check on the closet goblin."}
+						]
+					}
+				]
+			},
+			"obj_toilet": {
+				"lines": [
+					{"text": "i spend more time on here than i do outside"},
+					{"text": "..."},
+					{"text": "disgusting"}
+				]
+			}
         }
     },
     "rm_end": {
