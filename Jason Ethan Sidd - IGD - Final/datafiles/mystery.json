@@ -100,6 +100,24 @@
                     }
                 ]
             },
+			"obj_minigame": {
+				"lines": [
+					{"text": "what"},
+					{
+						"minigame": "mg_cereal",
+						"if_won": {
+							"lines": [
+								{"text": "yippee"}
+							]
+						},
+						"if_lost": {
+							"lines": [
+								{"text": "womp womp"}
+							]
+						}
+					}
+				]
+			},
             "obj_computer": {
                 "lines": [
                     {
@@ -336,29 +354,6 @@
                     }
                 ]
             },
-            "obj_minigame": {
-                "lines": [
-                    {
-                        "speaker": "Minigame",
-                        "text": "minigame"
-                    },
-                    {
-                        "speaker": "You",
-                        "text": "ok"
-                    },
-                    {
-                        "minigame": "mg_epic",
-                        "if_won": {
-                            "speaker": "Minigame",
-                            "text": "you won"
-                        },
-                        "if_lost": {
-                            "speaker": "Minigame",
-                            "text": "you lost"
-                        }
-                    }
-                ]
-            },
             "obj_door": {
                 "lines": [
                     {
@@ -411,7 +406,6 @@
 				"lines": [
 					{
 						"if_false": "made_cereal",
-						"set_true": "made_cereal",
 						"lines": [
 							{
 								"portraits": true,
@@ -424,7 +418,17 @@
 							{"speaker": "None"},
 							{"text": "..."},
 							{"speaker": "None"},
-							{"text": "i guess ill have some cereal"}
+							{"text": "i guess ill have some cereal"},
+							{
+								"minigame": "mg_cereal",
+								"if_won": {
+									"text": "yippee",
+									"set_true": "made_cereal"
+								},
+								"if_lost": {
+									"text": "womp womp"
+								}
+							}
 						]
 					},
 					{

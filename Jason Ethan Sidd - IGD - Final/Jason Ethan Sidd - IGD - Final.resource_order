@@ -1,4 +1,16 @@
 {
-  "FolderOrderSettings": [],
-  "ResourceOrderSettings": [],
+  "FolderOrderSettings": [
+    {"name":"Cereal Minigame","order":1,"path":"folders/Objects/Minigames/Cereal Minigame.yy",},
+  ],
+  "ResourceOrderSettings": [
+    {"name":"objCerealCongrats","order":7,"path":"objects/objCerealCongrats/objCerealCongrats.yy",},
+    {"name":"sprCerealIntroButton","order":1,"path":"sprites/sprCerealIntroButton/sprCerealIntroButton.yy",},
+    {"name":"objCerealIntroBar","order":1,"path":"objects/objCerealIntroBar/objCerealIntroBar.yy",},
+    {"name":"sprCerealCongrats","order":1,"path":"sprites/sprCerealCongrats/sprCerealCongrats.yy",},
+    {"name":"objCerealManager","order":4,"path":"objects/objCerealManager/objCerealManager.yy",},
+    {"name":"objCerealCup","order":6,"path":"objects/objCerealCup/objCerealCup.yy",},
+    {"name":"objCerealBox","order":5,"path":"objects/objCerealBox/objCerealBox.yy",},
+    {"name":"objCerealIntroButton","order":2,"path":"objects/objCerealIntroButton/objCerealIntroButton.yy",},
+    {"name":"objCerealBackground","order":3,"path":"objects/objCerealBackground/objCerealBackground.yy",},
+  ],
 }
