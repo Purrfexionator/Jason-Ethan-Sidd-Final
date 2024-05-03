@@ -25,7 +25,12 @@ if grabbed {
 		if (objCerealCup.image_index >= objCerealCup.image_number - 1)
 		{ 
 			objCerealCup.image_speed = 0;
-			endMinigame(true);
+			timer++;
+			if (timer >= wait_time) {
+				endMinigame(true);
+				instance_destroy();
+				timer = 0;
+			}
 		}
 	}
 }

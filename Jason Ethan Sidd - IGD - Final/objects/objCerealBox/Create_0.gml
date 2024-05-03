@@ -12,3 +12,6 @@ cupTouch = false;
 draw = function() {
 	draw_sprite_ext(sprite_index, image_index, relativeX(), relativeY(), drawScale, drawScale, drawAngle, image_blend, image_alpha);	
 }
+
+timer = 0;
+wait_time = 100;
