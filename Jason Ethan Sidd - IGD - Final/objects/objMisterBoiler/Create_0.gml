@@ -5,7 +5,7 @@ name = "obj_mister_boiler";
 
 onActivate = function() {
 	if objManager.isTrue("met_wizard") {
-		sprite_index = sprApple;
+		sprite_index = sprBoiler;
 	} else {
 		sprite_index = sprNone;
 	}
