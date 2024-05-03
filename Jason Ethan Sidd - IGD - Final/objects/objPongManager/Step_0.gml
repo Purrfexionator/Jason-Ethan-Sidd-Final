@@ -75,4 +75,17 @@ switch state {
 			endMinigame(true);
 		}
 		break;
+	case pongStates.enemyScore:
+		if !stateInit {
+			screenShake(15);
+			stateInit = true;
+		}
+		counter ++;
+		if (counter == 30) {
+			objPongWindow.show(sprPongEnemyScore);
+		}
+		if (counter == 100) {
+			endMinigame(false);
+		}
+		break;
 }

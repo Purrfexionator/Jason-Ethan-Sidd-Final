@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprApple",
-    "path": "sprites/sprApple/sprApple.yy",
+    "name": "sprSwedishFish",
+    "path": "sprites/sprSwedishFish/sprSwedishFish.yy",
   },
   "spriteMaskId": null,
   "visible": true,

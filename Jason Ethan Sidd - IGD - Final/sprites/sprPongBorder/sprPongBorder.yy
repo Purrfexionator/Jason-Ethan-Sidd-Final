@@ -4,7 +4,7 @@
   "name": "sprPongBorder",
   "bbox_bottom": 479,
   "bbox_left": 0,
-  "bbox_right": 639,
+  "bbox_right": 719,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -24,7 +24,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e64101e6-da68-4671-a9a8-65f2eec8e955","blendMode":0,"displayName":"default (2)","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 0,
+  "origin": 9,
   "parent": {
     "name": "Evil Computer Minigame",
     "path": "folders/Sprites/Minigames/Evil Computer Minigame.yy",
@@ -60,7 +60,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 0,
+    "xorigin": 40,
     "yorigin": 0,
   },
   "swatchColours": null,
@@ -71,5 +71,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 640,
+  "width": 720,
 }

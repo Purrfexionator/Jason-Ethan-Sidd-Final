@@ -470,11 +470,11 @@
 							},
 							{"portraitFocus": "left"},
 							{"speaker": "None"},
-							{"text": "okay lets see what we have in here"},
+							{"text": "i cant remember the last time i bought groceries"},
 							{"speaker": "None"},
 							{"text": "..."},
 							{"speaker": "None"},
-							{"text": "i guess ill have some cereal"},
+							{"text": "theres only cereal in here"},
 							{
 								"minigame": "mg_cereal",
 								"if_won": {
@@ -489,7 +489,8 @@
 										{"text": "*eating noises*"},
 										{"text": "yeah thats food alright"},
 										{"text": "..."},
-										{"text": "it's getting kinda hot. i should go to the basement to fix the heater."},
+										{"text": "wait why is it so hot"},
+                                        {"text": "let me check the heater"},
 										{"goto": "rm_basement"}
 									]
 								},
@@ -516,6 +517,25 @@
 						]
 					}
 				]
+            },
+            "obj_guy": {
+                "lines": [                    
+                    {
+                        "portraits": true,
+                        "portraitL": "sprPlayerPortrait",
+                        "portraitR": "sprPlayerPortrait"
+                    }, 
+                    {"portraitFocus": "left"},
+                    {"speaker": "You"},
+                    {"text": "why is everyone here insane"},
+                    {"portraitFocus": "right"},
+                    {"speaker": "Guy"},
+                    {"text": "I'm going to be completely honest with you, I genuinely think there might be a gas leak."},
+                    {"portraitFocus": "left"},
+                    {"speaker": "You"},
+                    {"text": "oh."},
+                    {"text": "fuck"}
+                ]
             },
             "obj_tinfoil_gremlin": {
                 "lines": [
@@ -610,60 +630,71 @@
         "interactables": {
             "obj_lava": {
                 "lines": [
-					{
-						"if_false": "met_wizard",
-						"lines": [
-							{
-								"portraits": true,
-								"portraitL": "sprPlayerPortrait",
-								"portraitR": "sprWizardPortrait"
-							},
-							{"portraitFocus": "left"},
-							{ "speaker": "You" },
-							{ "text": "i didn't know lava had a reflection"},
-							{"portraitFocus": "right"},
-							{ "speaker": "Wizard" },
-							{ "text": "Hello young traveler my Name is Marlin and i am Your Reflection"},
-							{"portraitFocus": "left"},
-							{ "speaker": "You" },
-							{ "text": "you look nothing like me though"},
-							{"portraitR": "sprPlayerPortrait"},
-							{"portraitFocus": "right"},
-							{ "speaker": "Wizard" },
-							{ "text": "Wrong"},
-							{"portraitFocus": "left"},
-							{ "speaker": "You" },
-							{ "text": "..."},
-							{"portraitFocus": "left"},
-							{ "speaker": "You" },
-							{ "text": "do you know where all this lava is coming from?"},
-							{"portraitR": "sprWizardPortrait"},
-							{"portraitFocus": "right"},
-							{ "speaker": "Wizard" },
-							{ "text": "why of Course, it is coming From mister boiler Man"},
-							{"portraitFocus": "left"},
-							{ "speaker": "You" },
-							{ "text": "mister boiler man?"},
-							{"portraitFocus": "right"},
-							{ "speaker": "Wizard" },
-							{ "text": "it appears that He is particularly Sad today and that is why There is so much Lava"},
-							{"text": "you Must approach him and make Him happy"},
-							{"portraitFocus": "left"},
-							{ "speaker": "You" },
-							{ "text": "..."},
-							{"text": "ok"},
-							{"set_true": "met_wizard"}
-						]
-					},
-					{
-						"if_true": "met_wizard",
-						"lines": [
-							{"portraitFocus": "right"},
-							{ "speaker": "Wizard" },
-							{ "text": "it appears that Mister Boiler is particularly Sad today and that is why There is so much Lava"},
-							{"text": "you Must approach him and make Him happy"}
-						]
-					}
+                    {
+                        "if_true": "lava_gone",
+                        "lines": [
+                            {"text": "the wizard will always be remembered"}
+                        ]
+                    },
+                    {
+                        "if_false": "lava_gone",
+                        "lines": [
+                            {
+                                "if_false": "met_wizard",
+                                "lines": [
+                                    {
+                                        "portraits": true,
+                                        "portraitL": "sprPlayerPortrait",
+                                        "portraitR": "sprWizardPortrait"
+                                    },
+                                    {"portraitFocus": "left"},
+                                    { "speaker": "You" },
+                                    { "text": "i didn't know lava had a reflection"},
+                                    {"portraitFocus": "right"},
+                                    { "speaker": "Wizard" },
+                                    { "text": "Hello young traveler my Name is Marlin and i am Your Reflection"},
+                                    {"portraitFocus": "left"},
+                                    { "speaker": "You" },
+                                    { "text": "you look nothing like me though"},
+                                    {"portraitR": "sprPlayerPortrait"},
+                                    {"portraitFocus": "right"},
+                                    { "speaker": "Wizard" },
+                                    { "text": "Wrong"},
+                                    {"portraitFocus": "left"},
+                                    { "speaker": "You" },
+                                    { "text": "..."},
+                                    {"portraitFocus": "left"},
+                                    { "speaker": "You" },
+                                    { "text": "do you know where all this lava is coming from?"},
+                                    {"portraitR": "sprWizardPortrait"},
+                                    {"portraitFocus": "right"},
+                                    { "speaker": "Wizard" },
+                                    { "text": "why of Course, it is coming From mister boiler Man"},
+                                    {"portraitFocus": "left"},
+                                    { "speaker": "You" },
+                                    { "text": "mister boiler man?"},
+                                    {"portraitFocus": "right"},
+                                    { "speaker": "Wizard" },
+                                    { "text": "it appears that He is particularly Sad today and that is why There is so much Lava"},
+                                    {"text": "you Must approach him and make Him happy"},
+                                    {"portraitFocus": "left"},
+                                    { "speaker": "You" },
+                                    { "text": "..."},
+                                    {"text": "ok"},
+                                    {"set_true": "met_wizard"}
+                                ]
+                            },
+                            {
+                                "if_true": "met_wizard",
+                                "lines": [
+                                    {"portraitFocus": "right"},
+                                    { "speaker": "Wizard" },
+                                    { "text": "it appears that Mister Boiler is particularly Sad today and that is why There is so much Lava"},
+                                    {"text": "you Must approach him and make Him happy"}
+                                ]
+                            }
+                        ]
+                    }
                 ]
             },
             "obj_metal_pipe": {
@@ -671,7 +702,7 @@
                     {
                         "portraits": true,
                         "portraitL": "sprPlayerPortrait",
-                        "portraitR": "sprPipePortrait"
+                        "portraitR": "sprMetalPipePortrait"
                     },
                     {"portraitFocus": "left"},
                     { "speaker": "You" },
@@ -686,27 +717,138 @@
             },
             "obj_mister_boiler": {
 				"lines": [
-					{
-						"if_true": "met_wizard",
-						"lines": [
+                    {
+                        "if_true": "lava_gone",
+                        "lines": [
 							{
 								"portraits": true,
 								"portraitL": "sprPlayerPortrait",
 								"portraitR": "sprMrBoilerPortrait"
 							},
-								{"portraitFocus": "left"},
-								{ "speaker": "You" },
-								{ "text": "are you mister boiler man?"},
-								{"portraitFocus": "right"},
-								{ "speaker": "Mr. Boiler" },
-								{ "text": "ohayo!! my name is boiler-san!! uWu "},
-								{"portraitFocus": "left"},
-								{ "speaker": "You" },
-								{ "text": "..."},
-								{ "text": "okay, can you please stop getting your lava everywhere?"},
-								{"set_true": "lava_gone"}
-						]
-					}
+                            {"portraitFocus": "left"},
+                            {"speaker": "You"},
+                            {"text": "so what are we"},
+                            {"portraitFocus": "right"},
+                            {"speaker": "Mr. Boiler"},
+                            {"text": "you're my discord kitten!"}
+                        ]
+                    },
+                    {
+                        "if_false": "lava_gone",
+                        "lines": [
+                            {
+                                "if_true": "met_wizard",
+                                "lines": [
+                                    {
+                                        "portraits": true,
+                                        "portraitL": "sprPlayerPortrait",
+                                        "portraitR": "sprMrBoilerPortrait"
+                                    },
+                                        {"portraitFocus": "left"},
+                                        { "speaker": "You" },
+                                        { "text": "are you mister boiler man?"},
+                                        {"portraitFocus": "right"},
+                                        { "speaker": "Mr. Boiler" },
+                                        { "text": "ohayo!! my name is boiler-san!! uWu "},
+                                        {"portraitFocus": "left"},
+                                        { "speaker": "You" },
+                                        { "text": "..."},
+                                        { "text": "okay, can you please stop getting your lava everywhere?"},
+                                        {"portraitFocus": "right"},
+                                        { "speaker": "Mr. Boiler" },
+                                        { "text": "stick figure-kun... are you here to confess to me?"},
+                                        {
+                                            "choices": [
+                                                {
+                                                    "text": "i guess",
+                                                    "lines": [
+                                                        {"portraitFocus": "right"},
+                                                        { "speaker": "Mr. Boiler" },
+                                                        { "text": "ほんとね (really) ?? i don’t know what to say (⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ "},
+                                                        { "text": "w- what do you like about me??"},
+                                                        {
+                                                            "choices": [
+                                                                {
+                                                                    "text": "your eyes",
+                                                                    "lines": [
+                                                                        {"portraitFocus": "right"},
+                                                                        { "speaker": "Mr. Boiler" },
+                                                                        { "text": "すごい (wow) !! you really have a way with words, stick figure-kun…"}
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "text": "your smile",
+                                                                    "lines": [
+                                                                        {"portraitFocus": "right"},
+                                                                        { "speaker": "Mr. Boiler" },
+                                                                        { "text": "すごい (wow) !! you really have a way with words, stick figure-kun…"}
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {"text": "where would we go on our first date?"},
+                                                        {
+                                                            "choices": [
+                                                                {
+                                                                    "text": "a coffee shop",
+                                                                    "lines": [
+                                                                        {"portraitFocus": "right"},
+                                                                        { "speaker": "Mr. Boiler" },
+                                                                        { "text": "i- i don’t really like coffee… da caffeine ish too stwong fow my sensitive wittwe tastebuds"}
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "text": "an arcade",
+                                                                    "lines": [
+                                                                        {"portraitFocus": "right"},
+                                                                        { "speaker": "Mr. Boiler" },
+                                                                        { "text": "i wuv arcades!! (๑´>᎑<)~*"},
+                                                                        {"text": "i- i think i really like you stick figure-kun… can you be my kitten? uWu"},
+                                                                        {
+                                                                            "choices": [
+                                                                                {
+                                                                                    "text": "what",
+                                                                                    "lines": [
+                                                                                        {"portraitFocus": "right"},
+                                                                                        { "speaker": "Mr. Boiler" },
+                                                                                        { "text": "yay!! my very own e-kitten ♡⸜(˶˃ ᵕ ˂˶)⸝♡"},
+                                                                                        {"portraitFocus": "left"},
+                                                                                        { "speaker": "You" },
+                                                                                        { "text": "oh hey the lava's gone"},
+                                                                                        {"set_true": "lava_gone"}
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "text": "this sucks and i hate you",
+                                                                                    "lines": [
+                                                                                        {"portraitFocus": "right"},
+                                                                                        { "speaker": "Mr. Boiler" },
+                                                                                        {"text": "b- baka!!"}
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+        
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "no",
+                                                    "lines": [
+                                                        {"portraitFocus": "right"},
+                                                        { "speaker": "Mr. Boiler" },
+                                                        { "text": "h- how could you?? :(( youre such a meanie stick figure-kun"}
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                ]
+                            }
+                        ]
+                    }
 				]
             },
             "obj_raccoon": {
@@ -740,7 +882,7 @@
                             {
                                 "portraits": true,
                                 "portraitL": "sprPlayerPortrait",
-                                "portraitR": "sprLawnmowerPortrait"
+                                "portraitR": "sprLawnMowerPortrait"
                             },
                             {"portraitFocus": "left"},
                             { "speaker": "You" },
