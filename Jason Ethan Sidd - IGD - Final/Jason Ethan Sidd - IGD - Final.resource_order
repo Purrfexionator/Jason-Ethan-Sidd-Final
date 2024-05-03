@@ -19,6 +19,7 @@
     {"name":"sprArrow","order":9,"path":"sprites/sprArrow/sprArrow.yy",},
     {"name":"sprFridge","order":18,"path":"sprites/sprFridge/sprFridge.yy",},
     {"name":"sprMinigameFrame","order":8,"path":"sprites/sprMinigameFrame/sprMinigameFrame.yy",},
+    {"name":"sprRaccoonPortrait","order":2,"path":"sprites/sprRaccoonPortrait/sprRaccoonPortrait.yy",},
     {"name":"sprTinfoilGremlinPortrait","order":1,"path":"sprites/sprTinfoilGremlinPortrait/sprTinfoilGremlinPortrait.yy",},
     {"name":"objCerealIntroBar","order":1,"path":"objects/objCerealIntroBar/objCerealIntroBar.yy",},
     {"name":"sprCerealCongrats","order":1,"path":"sprites/sprCerealCongrats/sprCerealCongrats.yy",},
@@ -41,6 +42,7 @@
     {"name":"objCerealIntroButton","order":2,"path":"objects/objCerealIntroButton/objCerealIntroButton.yy",},
     {"name":"sprGuy","order":15,"path":"sprites/sprGuy/sprGuy.yy",},
     {"name":"objCerealBackground","order":3,"path":"objects/objCerealBackground/objCerealBackground.yy",},
+    {"name":"sprRaccoon","order":4,"path":"sprites/sprRaccoon/sprRaccoon.yy",},
     {"name":"Room1","order":2,"path":"rooms/Room1/Room1.yy",},
   ],
 }

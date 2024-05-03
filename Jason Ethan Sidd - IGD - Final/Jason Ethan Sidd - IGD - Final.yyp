@@ -42,7 +42,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.1.129",
   },
   "resources": [
     {"id":{"name":"objPongPlayerPaddle","path":"objects/objPongPlayerPaddle/objPongPlayerPaddle.yy",},},
@@ -99,6 +99,7 @@
     {"id":{"name":"objDoor5","path":"objects/objDoor5/objDoor5.yy",},},
     {"id":{"name":"objPongBackground","path":"objects/objPongBackground/objPongBackground.yy",},},
     {"id":{"name":"sprPongTutorial2","path":"sprites/sprPongTutorial2/sprPongTutorial2.yy",},},
+    {"id":{"name":"sprRaccoonPortrait","path":"sprites/sprRaccoonPortrait/sprRaccoonPortrait.yy",},},
     {"id":{"name":"sprPongBall","path":"sprites/sprPongBall/sprPongBall.yy",},},
     {"id":{"name":"objMinigameProp","path":"objects/objMinigameProp/objMinigameProp.yy",},},
     {"id":{"name":"sprCerealMainBackground","path":"sprites/sprCerealMainBackground/sprCerealMainBackground.yy",},},
@@ -170,6 +171,7 @@
     {"id":{"name":"sprApple","path":"sprites/sprApple/sprApple.yy",},},
     {"id":{"name":"objCerealBackground","path":"objects/objCerealBackground/objCerealBackground.yy",},},
     {"id":{"name":"objPongSurface","path":"objects/objPongSurface/objPongSurface.yy",},},
+    {"id":{"name":"sprRaccoon","path":"sprites/sprRaccoon/sprRaccoon.yy",},},
     {"id":{"name":"objPongEnemyPaddle","path":"objects/objPongEnemyPaddle/objPongEnemyPaddle.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
