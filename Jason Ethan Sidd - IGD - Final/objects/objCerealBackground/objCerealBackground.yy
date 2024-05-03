@@ -30,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sprCerealBackground",
-    "path": "sprites/sprCerealBackground/sprCerealBackground.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
