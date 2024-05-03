@@ -31,10 +31,10 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Cereal","folderPath":"folders/Sprites/Minigames/Cereal.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Intro","folderPath":"folders/Sprites/Minigames/Cereal/Intro.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Evil Computer Minigame","folderPath":"folders/Sprites/Minigames/Evil Computer Minigame.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Object Sprites","folderPath":"folders/Sprites/Object Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Portraits","folderPath":"folders/Sprites/Portraits.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Object Sprites","folderPath":"folders/Sprites/Minigames/Object Sprites.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"mystery.json","CopyToMask":-1,"filePath":"datafiles",},

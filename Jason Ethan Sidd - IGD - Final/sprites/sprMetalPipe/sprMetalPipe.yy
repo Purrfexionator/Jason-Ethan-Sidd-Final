@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Object Sprites",
-    "path": "folders/Sprites/Minigames/Object Sprites.yy",
+    "path": "folders/Sprites/Object Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
