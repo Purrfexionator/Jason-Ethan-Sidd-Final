@@ -46,6 +46,8 @@ switch state {
 		break;
 	case pongStates.playerGrab:
 		if !stateInit {
+			objPongPlayerPaddle.canGrab = true;
+			objPongWindow.hide();
 			objPongIndicator.show(sprPongGrabIndicator, getGameData("round") == 1);
 			stateInit = true;
 		}
