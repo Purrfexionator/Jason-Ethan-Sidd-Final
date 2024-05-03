@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprApple",
-    "path": "sprites/sprApple/sprApple.yy",
+    "name": "sprLawnMower",
+    "path": "sprites/sprLawnMower/sprLawnMower.yy",
   },
   "spriteMaskId": null,
   "visible": true,

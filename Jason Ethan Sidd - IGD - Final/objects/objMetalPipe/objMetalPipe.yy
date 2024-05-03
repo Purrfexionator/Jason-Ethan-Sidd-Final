@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprApple",
-    "path": "sprites/sprApple/sprApple.yy",
+    "name": "sprMetalPipe",
+    "path": "sprites/sprMetalPipe/sprMetalPipe.yy",
   },
   "spriteMaskId": null,
   "visible": true,
