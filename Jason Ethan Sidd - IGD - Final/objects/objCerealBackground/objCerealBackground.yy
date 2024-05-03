@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprCerealBackground",
-    "path": "sprites/sprCerealBackground/sprCerealBackground.yy",
+    "name": "sprCerealMainBackground",
+    "path": "sprites/sprCerealMainBackground/sprCerealMainBackground.yy",
   },
   "spriteMaskId": null,
   "visible": true,

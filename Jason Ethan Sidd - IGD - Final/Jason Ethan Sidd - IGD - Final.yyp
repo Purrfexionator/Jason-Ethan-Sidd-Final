@@ -84,8 +84,6 @@
     {"id":{"name":"objDoor4","path":"objects/objDoor4/objDoor4.yy",},},
     {"id":{"name":"sprPongEnemyHand","path":"sprites/sprPongEnemyHand/sprPongEnemyHand.yy",},},
     {"id":{"name":"objPongIndicator","path":"objects/objPongIndicator/objPongIndicator.yy",},},
-    {"id":{"name":"sprCerealBackground","path":"sprites/sprCerealBackground/sprCerealBackground.yy",},},
-    {"id":{"name":"objDoor4","path":"objects/objDoor4/objDoor4.yy",},},
     {"id":{"name":"sprWizardPortrait","path":"sprites/sprWizardPortrait/sprWizardPortrait.yy",},},
     {"id":{"name":"sprMinigameFrame","path":"sprites/sprMinigameFrame/sprMinigameFrame.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
