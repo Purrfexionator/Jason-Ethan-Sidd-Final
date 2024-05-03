@@ -4,8 +4,8 @@
   "name": "sprPongTaskbar",
   "bbox_bottom": 63,
   "bbox_left": 0,
-  "bbox_right": 511,
-  "bbox_top": 0,
+  "bbox_right": 510,
+  "bbox_top": 2,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d7e4f249-a9b0-437c-8b0a-57693f5cbf1d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f31076e9-221a-4533-ade4-1300a59767e6",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 64,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cf8f8af5-f442-47fa-8548-7d78f9bf796a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"41a56e1c-ecb0-461f-a386-96cde647cc9a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d7e4f249-a9b0-437c-8b0a-57693f5cbf1d","path":"sprites/sprPongTaskbar/sprPongTaskbar.yy",},},},"Disabled":false,"id":"1e67b2b6-1ee8-4fa2-bd5d-ea502156520c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f31076e9-221a-4533-ade4-1300a59767e6","path":"sprites/sprPongTaskbar/sprPongTaskbar.yy",},},},"Disabled":false,"id":"d6689b51-42ce-4222-887f-7018b2dd2df1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
