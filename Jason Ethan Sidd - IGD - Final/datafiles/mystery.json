@@ -542,7 +542,7 @@
                     {
                         "portraits": true,
                         "portraitL": "sprPlayerPortrait",
-                        "portraitR": "sprTinfoilGremlin"
+                        "portraitR": "sprTinfoilGremlinPortrait"
                     },
                     {"portraitFocus": "right"},
                     {"speaker": "Gremlin"},
@@ -561,7 +561,7 @@
                     {
                         "portraits": true,
                         "portraitL": "sprPlayerPortrait",
-                        "portraitR": "sprSwedishFish"
+                        "portraitR": "sprSwedishFishPortrait"
                     },
                     {"portraitFocus": "left"},
                     {"speaker": "You"},
