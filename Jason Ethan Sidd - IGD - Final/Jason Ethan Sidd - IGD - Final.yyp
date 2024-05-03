@@ -34,6 +34,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Portraits","folderPath":"folders/Sprites/Portraits.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Object Sprites","folderPath":"folders/Sprites/Minigames/Object Sprites.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"mystery.json","CopyToMask":-1,"filePath":"datafiles",},
@@ -90,6 +91,7 @@
     {"id":{"name":"sprWizardPortrait","path":"sprites/sprWizardPortrait/sprWizardPortrait.yy",},},
     {"id":{"name":"sprMinigameFrame","path":"sprites/sprMinigameFrame/sprMinigameFrame.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
+    {"id":{"name":"sprBoilerPortrait","path":"sprites/sprBoilerPortrait/sprBoilerPortrait.yy",},},
     {"id":{"name":"objCerealIntroBackground","path":"objects/objCerealIntroBackground/objCerealIntroBackground.yy",},},
     {"id":{"name":"objDoor5","path":"objects/objDoor5/objDoor5.yy",},},
     {"id":{"name":"objPongBackground","path":"objects/objPongBackground/objPongBackground.yy",},},
@@ -104,6 +106,7 @@
     {"id":{"name":"objCerealManager","path":"objects/objCerealManager/objCerealManager.yy",},},
     {"id":{"name":"sprPongPaddle","path":"sprites/sprPongPaddle/sprPongPaddle.yy",},},
     {"id":{"name":"sprPongPlayerScore","path":"sprites/sprPongPlayerScore/sprPongPlayerScore.yy",},},
+    {"id":{"name":"sprBoiler","path":"sprites/sprBoiler/sprBoiler.yy",},},
     {"id":{"name":"sprCerealBoxGrabbed","path":"sprites/sprCerealBoxGrabbed/sprCerealBoxGrabbed.yy",},},
     {"id":{"name":"objDoor3","path":"objects/objDoor3/objDoor3.yy",},},
     {"id":{"name":"objLawnmower","path":"objects/objLawnmower/objLawnmower.yy",},},

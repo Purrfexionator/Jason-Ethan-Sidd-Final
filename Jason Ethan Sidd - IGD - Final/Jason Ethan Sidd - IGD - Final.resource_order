@@ -3,6 +3,7 @@
     {"name":"Cereal Minigame","order":1,"path":"folders/Objects/Minigames/Cereal Minigame.yy",},
     {"name":"Minigames","order":13,"path":"folders/Sprites/Minigames.yy",},
     {"name":"Portraits","order":14,"path":"folders/Sprites/Portraits.yy",},
+    {"name":"Object Sprites","order":1,"path":"folders/Sprites/Minigames/Object Sprites.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sprDoor","order":12,"path":"sprites/sprDoor/sprDoor.yy",},
@@ -16,6 +17,7 @@
     {"name":"sprArrow","order":9,"path":"sprites/sprArrow/sprArrow.yy",},
     {"name":"sprFridge","order":19,"path":"sprites/sprFridge/sprFridge.yy",},
     {"name":"sprMinigameFrame","order":8,"path":"sprites/sprMinigameFrame/sprMinigameFrame.yy",},
+    {"name":"sprBoilerPortrait","order":2,"path":"sprites/sprBoilerPortrait/sprBoilerPortrait.yy",},
     {"name":"sprTinfoilHatGremlin","order":1,"path":"sprites/sprTinfoilHatGremlin/sprTinfoilHatGremlin.yy",},
     {"name":"objCerealIntroBar","order":1,"path":"objects/objCerealIntroBar/objCerealIntroBar.yy",},
     {"name":"sprCerealCongrats","order":1,"path":"sprites/sprCerealCongrats/sprCerealCongrats.yy",},
