@@ -9,7 +9,7 @@
     {"name":"sprDoor","order":12,"path":"sprites/sprDoor/sprDoor.yy",},
     {"name":"sprRmPlaceholder","order":18,"path":"sprites/sprRmPlaceholder/sprRmPlaceholder.yy",},
     {"name":"objGuy","order":1,"path":"objects/objGuy/objGuy.yy",},
-    {"name":"sprSwedishFish","order":17,"path":"sprites/sprSwedishFish/sprSwedishFish.yy",},
+    {"name":"sprSwedishFish","order":1,"path":"sprites/sprSwedishFish/sprSwedishFish.yy",},
     {"name":"objCerealCongrats","order":7,"path":"objects/objCerealCongrats/objCerealCongrats.yy",},
     {"name":"sprRmBedroom","order":11,"path":"sprites/sprRmBedroom/sprRmBedroom.yy",},
     {"name":"sprCerealIntroButton","order":1,"path":"sprites/sprCerealIntroButton/sprCerealIntroButton.yy",},
