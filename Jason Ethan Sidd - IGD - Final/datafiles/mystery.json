@@ -100,262 +100,313 @@
                     }
                 ]
             },
+			"obj_minigame": {
+				"lines": [
+					{"text": "what"},
+					{
+						"minigame": "mg_cereal",
+						"if_won": {
+							"lines": [
+								{"text": "yippee"}
+							]
+						},
+						"if_lost": {
+							"lines": [
+								{"text": "womp womp"}
+							]
+						}
+					}
+				]
+			},
             "obj_computer": {
                 "lines": [
-                    {
-                        "if_false": "tried_door",
-                        "lines": [
-                            {
-                                "portraits": true,
-                                "portraitL": "sprPlayerPortrait"
-                            },
-                            {"portraitFocus": "left"},
-                            { "text": "its my computer."},
-                            { "text": "must have left it on overnight"},
-                            { "text": "typical, i guess"}
-                        ]
-                    },
-                    {
-                        "if_true": "tried_door",
-                        "lines": [
+					{
+						"if_true": "bested_computer",
+						"lines": [
                             {
                                 "portraits": true,
                                 "portraitL": "sprPlayerPortrait",
-                                "portraitR": "sprEvilComputerPortrait"
-                            },
+                                "portraitR": ""
+                            },	
                             {
                                 "speaker": "You",
                                 "portraitFocus": "left",
-                                "text": "hey whats up with my..."},
-                            {
-                                "speaker": "Evil Computer",
-                                "portraitFocus": "right",
-                                "portraitRI": 1,
-                                "text": "RAAAAAAAAAHHHHHHHHH"
-                            },
-                            { 
-                                "speaker": "You",
-                                "portraitFocus": "left",
-                                "text": "OH MY GOD"
-                            },
-                            {
-                                "speaker": "Evil Computer",
-                                "portraitFocus": "right",
-                                "portraitRI": 3,
-                                "text": "HELLO AND WELCOME TO [[My Trap]]! PREPARE TO BE [[Cordially Executed]]."
-                            },
-                            { 
-                                "speaker": "You",
-                                "portraitFocus": "left",
-                                "text": "okay??? why"
-                            },
-                            {
-                                "speaker": "Evil Computer",
-                                "portraitFocus": "right",
-                                "text": "YOU MUST [[Answer]] MY THREE RIDDLES!"
-                            },
-                            {
-                                "speaker": "You",
-                                "portraitFocus": "left",
-                                "text": "shit, did i leave the stove on?"
-                            },
-                            {
-                                "speaker": "Evil Computer",
-                                "portraitFocus": "right",
-                                "portraitRI": 4,
-                                "text": "FOCUS, HUMAN! MY [[Master Plan]] IS UNFOLDING BEFORE YOU!!"
-                            },
-                            { 
-                                "speaker": "You",
-                                "portraitFocus": "left",
-                                "lines": [
-                                    { "text": "can you just..." },
-                                    { "text": "let me go?" }
-                                ]
-                            },
-                            {
-                                "speaker": "Evil Computer",
-                                "portraitFocus": "right",
-                                "portraitRI": 3,
-                                "text": "YOU MUST PLAY MY [[Impossible Game]]!!! AHAHA!!!"
-                            },
-                            { 
-                                "speaker": "You",
-                                "portraitFocus": "left",
-                                "lines": [
-                                    { "text": "..." },
-                                    { "text": "fine. what's your game." }
-                                ]
-                            },
-                            {
-                                "speaker": "Evil Computer",
-                                "portraitFocus": "right",
-                                "portraitRI": 4,
-                                "lines": [
-                                    { "text": "THIS GAME IS [[Painful]], [[Torturous]], AND [[Excruciating]]!!" },
-                                    { "text": "YOU WILL NEVER [[Surpass]] MY [[Villlanous Endeavours]]!!!!" }
-                                ]
-                            },
-                            {
-                                "minigame": "mg_epic",
-                                "minigameData": [
-                                    {"name": "round", "value": 1},
-                                    {"name": "lives", "value": 3}
-                                ],
-                                "portraits": false,
-                                "if_won": {
-                                    "lines": [
-                                        {
-                                            "speaker": "Evil Computer",
-                                            "portraits": true,
-                                            "portraitFocus": "right",
-                                            "portraitRI": 3,
-                                            "text": "WHAT?!?!?!?!?! [[How Dare You]]?!!?!?"
-                                        },
-                                        {
-                                            "speaker": "You",
-                                            "portraitFocus": "left",
-                                            "text": "you kinda suck at this"
-                                        },
-                                        {
-                                            "speaker": "RAAAAAAAHHHHHHH",
-                                            "portraitFocus": "right",
-                                            "portraitRI": 1,
-                                            "text": "Evil Computer"
-                                        },
-                                        {
-                                            "speaker": "Evil Computer",
-                                            "portraitFocus": "right",
-                                            "portraitRI": 4,
-                                            "text": "PREPARE FOR [[Phase 2]] OF MY VILLAINY!! YOU WILL [[Never]] TRIUMPH, HUMAN!!"
-                                        },
-                                        {
-                                            "minigame": "mg_epic",
-                                            "minigameData": [
-                                                {"name": "round", "value": 2}
-                                            ],
-                                            "portraits": false,
-                                            "if_won": {
-                                                "lines": [
-                                                    {
-                                                        "speaker": "Evil Computer",
-                                                        "portraits": true,
-                                                        "portraitFocus": "right",
-                                                        "portraitRI": 3,
-                                                        "text": "[[What The Fuck]]"
-                                                    },
-                                                    {
-                                                        "speaker": "You",
-                                                        "portraitFocus": "left",
-                                                        "text": "hey you kinda remind me of that guy? that one guy? from that game? uhhh that one? yeah him"
-                                                    },
-                                                    {
-                                                        "speaker": "Evil Computer",
-                                                        "portraitFocus": "right",
-                                                        "portraitRI": 4,
-                                                        "text": "ITS CALLED A [[Reference]], HUMAN!!! THIS IS [[Comedy 101]]"
-                                                    },
-                                                    {
-                                                        "speaker": "You",
-                                                        "portraitFocus": "left",
-                                                        "text": "idk that seems a little on the nose"
-                                                    },
-                                                    {
-                                                        "speaker": "Evil Computer",
-                                                        "portraitFocus": "right",
-                                                        "portraitRI": 2,
-                                                        "text": "[[look man can you just go along with it for the bit, im really trying here]]"
-                                                    },
-                                                    {
-                                                        "speaker": "Evil Computer",
-                                                        "portraitFocus": "right",
-                                                        "portraitRI": 1,
-                                                        "text": "IM GOING TO [[BOIL]] YOU"
-                                                    },
-                                                    {
-                                                        "minigame": "mg_epic",
-                                                        "minigameData": [
-                                                            {"name": "round", "value": 3}
-                                                        ],
-                                                        "portraits": false,
-                                                        "if_won": {
-                                                            "lines": [
-                                                                {
-                                                                    "speaker": "Evil Computer",
-                                                                    "portraits": true,
-                                                                    "portraitFocus": "right",
-                                                                    "portraitRI": 3,
-                                                                    "text": "[[Fuck]]"
-                                                                },
-                                                                {
-                                                                    "speaker": "You",
-                                                                    "portraitFocus": "left",
-                                                                    "text": "..."
-                                                                },
-                                                                {"text": "can i please go now"},
-                                                                {
-                                                                    "speaker": "Evil Computer",
-                                                                    "portraitFocus": "right",
-                                                                    "text": "...FINE."
-                                                                },
-                                                                {
-                                                                    "speaker": "You",
-                                                                    "portraitFocus": "left",
-                                                                    "text": "okay"
-                                                                },
-                                                                {
-                                                                    "speaker": "Evil Computer",
-                                                                    "portraitFocus": "right",
-                                                                    "portraitRI": 4,
-                                                                    "text": "I WILL [[Return]], MORTAL.",
-                                                                    "set_true": "bested_computer"
-                                                                }
-                                                            ]
-                                                        },
-                                                        "if_lost": {
-                                                            "speaker": "Minigame",
-                                                            "text": "you lost"
-                                                        }
-                                                    }
-                                                ]
-                                            },
-                                            "if_lost": {
-                                                "speaker": "Minigame",
-                                                "text": "you lost"
-                                            }
-                                        }
-                                    ]
-                                },
-                                "if_lost": {
-                                    "speaker": "Minigame",
-                                    "text": "you lost"
-                                }
+                                "text": "my computer looks kinda sad now"
                             }
-
+						]
+					},
+                    {
+                        "if_false": "bested_computer",
+                        "lines": [
+                            {
+                                "if_false": "tried_door",
+                                "lines": [
+                                    {
+                                        "portraits": true,
+                                        "portraitL": "sprPlayerPortrait"
+                                    },
+                                    {"portraitFocus": "left"},
+                                    { "text": "its my computer."},
+                                    { "text": "must have left it on overnight"},
+                                    { "text": "typical, i guess"}
+                                ]
+                            },
+                            {
+                                "if_true": "tried_door",
+                                "lines": [
+                                    {
+                                        "portraits": true,
+                                        "portraitL": "sprPlayerPortrait",
+                                        "portraitR": "sprEvilComputerPortrait"
+                                    },
+                                    {
+                                        "speaker": "You",
+                                        "portraitFocus": "left",
+                                        "text": "hey whats up with my..."},
+                                    {
+                                        "speaker": "Evil Computer",
+                                        "portraitFocus": "right",
+                                        "portraitRI": 1,
+                                        "text": "RAAAAAAAAAHHHHHHHHH"
+                                    },
+                                    { 
+                                        "speaker": "You",
+                                        "portraitFocus": "left",
+                                        "text": "OH MY GOD"
+                                    },
+                                    {
+                                        "speaker": "Evil Computer",
+                                        "portraitFocus": "right",
+                                        "portraitRI": 3,
+                                        "text": "HELLO AND WELCOME TO [[My Trap]]! PREPARE TO BE [[Cordially Executed]]."
+                                    },
+                                    { 
+                                        "speaker": "You",
+                                        "portraitFocus": "left",
+                                        "text": "okay??? why"
+                                    },
+                                    {
+                                        "speaker": "Evil Computer",
+                                        "portraitFocus": "right",
+                                        "text": "YOU MUST [[Answer]] MY THREE RIDDLES!"
+                                    },
+                                    {
+                                        "speaker": "You",
+                                        "portraitFocus": "left",
+                                        "text": "shit, did i leave the stove on?"
+                                    },
+                                    {
+                                        "speaker": "Evil Computer",
+                                        "portraitFocus": "right",
+                                        "portraitRI": 4,
+                                        "text": "FOCUS, HUMAN! MY [[Master Plan]] IS UNFOLDING BEFORE YOU!!"
+                                    },
+                                    { 
+                                        "speaker": "You",
+                                        "portraitFocus": "left",
+                                        "lines": [
+                                            { "text": "can you just..." },
+                                            { "text": "let me go?" }
+                                        ]
+                                    },
+                                    {
+                                        "speaker": "Evil Computer",
+                                        "portraitFocus": "right",
+                                        "portraitRI": 3,
+                                        "text": "YOU MUST PLAY MY [[Impossible Game]]!!! AHAHA!!!"
+                                    },
+                                    { 
+                                        "speaker": "You",
+                                        "portraitFocus": "left",
+                                        "lines": [
+                                            { "text": "..." },
+                                            { "text": "fine. what's your game." }
+                                        ]
+                                    },
+                                    {
+                                        "speaker": "Evil Computer",
+                                        "portraitFocus": "right",
+                                        "portraitRI": 4,
+                                        "lines": [
+                                            { "text": "THIS GAME IS [[Painful]], [[Torturous]], AND [[Excruciating]]!!" },
+                                            { "text": "YOU WILL NEVER [[Surpass]] MY [[Villlanous Endeavours]]!!!!" }
+                                        ]
+                                    },
+                                    {
+                                        "minigame": "mg_epic",
+                                        "minigameData": [
+                                            {"name": "round", "value": 1},
+                                            {"name": "lives", "value": 3}
+                                        ],
+                                        "portraits": false,
+                                        "if_won": {
+                                            "lines": [
+                                                {
+                                                    "speaker": "Evil Computer",
+                                                    "portraits": true,
+                                                    "portraitFocus": "right",
+                                                    "portraitRI": 3,
+                                                    "text": "WHAT?!?!?!?!?! [[How Dare You]]?!!?!?"
+                                                },
+                                                {
+                                                    "speaker": "You",
+                                                    "portraitFocus": "left",
+                                                    "text": "you kinda suck at this"
+                                                },
+                                                {
+                                                    "speaker": "RAAAAAAAHHHHHHH",
+                                                    "portraitFocus": "right",
+                                                    "portraitRI": 1,
+                                                    "text": "Evil Computer"
+                                                },
+                                                {
+                                                    "speaker": "Evil Computer",
+                                                    "portraitFocus": "right",
+                                                    "portraitRI": 4,
+                                                    "text": "PREPARE FOR [[Phase 2]] OF MY VILLAINY!! YOU WILL [[Never]] TRIUMPH, HUMAN!!"
+                                                },
+                                                {
+                                                    "minigame": "mg_epic",
+                                                    "minigameData": [
+                                                        {"name": "round", "value": 2}
+                                                    ],
+                                                    "portraits": false,
+                                                    "if_won": {
+                                                        "lines": [
+                                                            {
+                                                                "speaker": "Evil Computer",
+                                                                "portraits": true,
+                                                                "portraitFocus": "right",
+                                                                "portraitRI": 3,
+                                                                "text": "[[What The Fuck]]"
+                                                            },
+                                                            {
+                                                                "speaker": "You",
+                                                                "portraitFocus": "left",
+                                                                "text": "hey you kinda remind me of that guy? that one guy? from that game? uhhh that one? yeah him"
+                                                            },
+                                                            {
+                                                                "speaker": "Evil Computer",
+                                                                "portraitFocus": "right",
+                                                                "portraitRI": 4,
+                                                                "text": "ITS CALLED A [[Reference]], HUMAN!!! THIS IS [[Comedy 101]]"
+                                                            },
+                                                            {
+                                                                "speaker": "You",
+                                                                "portraitFocus": "left",
+                                                                "text": "idk that seems a little on the nose"
+                                                            },
+                                                            {
+                                                                "speaker": "Evil Computer",
+                                                                "portraitFocus": "right",
+                                                                "portraitRI": 2,
+                                                                "text": "[[look man can you just go along with it for the bit, im really trying here]]"
+                                                            },
+                                                            {
+                                                                "speaker": "Evil Computer",
+                                                                "portraitFocus": "right",
+                                                                "portraitRI": 1,
+                                                                "text": "IM GOING TO [[BOIL]] YOU"
+                                                            },
+                                                            {
+                                                                "minigame": "mg_epic",
+                                                                "minigameData": [
+                                                                    {"name": "round", "value": 3}
+                                                                ],
+                                                                "portraits": false,
+                                                                "if_won": {
+                                                                    "lines": [
+                                                                        {
+                                                                            "speaker": "Evil Computer",
+                                                                            "portraits": true,
+                                                                            "portraitFocus": "right",
+                                                                            "portraitRI": 3,
+                                                                            "text": "[[Fuck]]"
+                                                                        },
+                                                                        {
+                                                                            "speaker": "You",
+                                                                            "portraitFocus": "left",
+                                                                            "text": "..."
+                                                                        },
+                                                                        {"text": "can i please go now"},
+                                                                        {
+                                                                            "speaker": "Evil Computer",
+                                                                            "portraitFocus": "right",
+                                                                            "text": "...FINE."
+                                                                        },
+                                                                        {
+                                                                            "speaker": "You",
+                                                                            "portraitFocus": "left",
+                                                                            "text": "okay"
+                                                                        },
+                                                                        {
+                                                                            "speaker": "Evil Computer",
+                                                                            "portraitFocus": "right",
+                                                                            "portraitRI": 4,
+                                                                            "text": "I WILL [[Return]], MORTAL.",
+                                                                            "set_true": "bested_computer"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "if_lost": {
+                                                                    "lines": [
+                                                                        {
+                                                                            "speaker": "Evil Computer",
+                                                                            "portraits": true,
+                                                                            "portraitFocus": "right",
+                                                                            "portraitRI": 3,
+                                                                            "text": "HAHAHAHAHA!!! YOU ARE [[Stuck]] HERE FOREVER!!!"
+                                                                        },
+                                                                        {
+                                                                            "speaker": "You",
+                                                                            "portraitFocus": "left",
+                                                                            "text": "..."
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    "if_lost": {
+                                                        "lines": [
+                                                            {
+                                                                "speaker": "Evil Computer",
+                                                                "portraits": true,
+                                                                "portraitFocus": "right",
+                                                                "portraitRI": 3,
+                                                                "text": "HAHAHAHAHA!!! YOU ARE [[Stuck]] HERE FOREVER!!!"
+                                                            },
+                                                            {
+                                                                "speaker": "You",
+                                                                "portraitFocus": "left",
+                                                                "text": "..."
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "if_lost": {
+                                            "lines": [
+                                                {
+                                                    "speaker": "Evil Computer",
+                                                    "portraits": true,
+                                                    "portraitFocus": "right",
+                                                    "portraitRI": 3,
+                                                    "text": "HAHAHAHAHA!!! YOU ARE [[Stuck]] HERE FOREVER!!!"
+                                                },
+                                                {
+                                                    "speaker": "You",
+                                                    "portraitFocus": "left",
+                                                    "text": "..."
+                                                }
+                                            ]
+                                        }
+                                    }
+        
+                                ]
+                            }
                         ]
-                    }
-                ]
-            },
-            "obj_minigame": {
-                "lines": [
-                    {
-                        "speaker": "Minigame",
-                        "text": "minigame"
-                    },
-                    {
-                        "speaker": "You",
-                        "text": "ok"
-                    },
-                    {
-                        "minigame": "mg_epic",
-                        "if_won": {
-                            "speaker": "Minigame",
-                            "text": "you won"
-                        },
-                        "if_lost": {
-                            "speaker": "Minigame",
-                            "text": "you lost"
-                        }
                     }
                 ]
             },
@@ -411,7 +462,6 @@
 				"lines": [
 					{
 						"if_false": "made_cereal",
-						"set_true": "made_cereal",
 						"lines": [
 							{
 								"portraits": true,
@@ -424,7 +474,29 @@
 							{"speaker": "None"},
 							{"text": "..."},
 							{"speaker": "None"},
-							{"text": "i guess ill have some cereal"}
+							{"text": "i guess ill have some cereal"},
+							{
+								"minigame": "mg_cereal",
+								"if_won": {
+									"set_true": "made_cereal",
+									"lines": [
+										{
+											"portraits": true,
+											"portraitL": "sprPlayerPortrait",
+											"portraitR": ""
+										},
+										{"portraitFocus": "left"},
+										{"text": "*eating noises*"},
+										{"text": "yeah thats food alright"},
+										{"text": "..."},
+										{"text": "it's getting kinda hot. i should go to the basement to fix the heater."},
+										{"goto": "rm_basement"}
+									]
+								},
+								"if_lost": {
+									"text": "fuck i spilled the cereal"
+								}
+							}
 						]
 					},
 					{
@@ -856,78 +928,83 @@
                             {"text": "May good faith be upon you, blessed with the possession of the Flower!"}
 						]
 					},
-					{
-						"if_true": "got_bucket",
-						"lines": [
-						    {"portraitfocus": "right"},
-                            {"speaker": "Bunny King"},
-                            {"text": "Great heavens!! Is that... water?"},
-                            {"portraitfocus": "left"},
-                            {"speaker": "You"},
-                            {"text": "yeah yeah dont lose your shit over it"},
-						    {"portraitfocus": "right"},
-                            {"speaker": "Bunny King"},
-                            {"text": "Thank you, oh thank you, good samaritan! Our harvests will be bountiful!"},
-                            {"portraitfocus": "left"},
-                            {"speaker": "You"},
-                            {"text": "uh i actually need to take this flower"},
-						    {"portraitfocus": "right"},
-                            {"speaker": "Bunny King"},
-                            {"text": "Oh, of course! May good faith be upon you, blessed with the possession of the Flower!"},
-                            {"portraitfocus": "left"},
-                            {"speaker": "You"},
-                            {"text": "thanks"},
-							{"set_true": "has_flower"}
-						]
-					},
                     {
-                        "if_true": "met_goblin",
+                        "if_false": "has_flower",
                         "lines": [
                             {
-                                "portraits": true,
-                                "portraitL": "sprPlayerPortrait",
-                                "portraitR": "sprBunnyKingPortrait"
+                                "if_true": "got_bucket",
+                                "lines": [
+                                    {"portraitfocus": "right"},
+                                    {"speaker": "Bunny King"},
+                                    {"text": "Great heavens!! Is that... water?"},
+                                    {"portraitfocus": "left"},
+                                    {"speaker": "You"},
+                                    {"text": "yeah yeah dont lose your shit over it"},
+                                    {"portraitfocus": "right"},
+                                    {"speaker": "Bunny King"},
+                                    {"text": "Thank you, oh thank you, good samaritan! Our harvests will be bountiful!"},
+                                    {"portraitfocus": "left"},
+                                    {"speaker": "You"},
+                                    {"text": "uh i actually need to take this flower"},
+                                    {"portraitfocus": "right"},
+                                    {"speaker": "Bunny King"},
+                                    {"text": "Oh, of course! May good faith be upon you, blessed with the possession of the Flower!"},
+                                    {"portraitfocus": "left"},
+                                    {"speaker": "You"},
+                                    {"text": "thanks"},
+                                    {"set_true": "has_flower"}
+                                ]
                             },
-                            {"portraitfocus": "left"},
-                            {"speaker": "You"},
-                            {"text": "uhhh"},
-                            {"portraitfocus": "right"},
-                            {"speaker": "Bunny King"},
-                            {"text": "Our precious flower!! It's dead!!"},
-                            {"portraitfocus": "left"},
-                            {"speaker": "You"},
-                            {"text": "yikes"} , 
-                            {"portraitfocus": "right"},
-                            {"speaker": "Bunny King"},
-                            {"text": "Who goes there?!"},
-                            {"portraitfocus": "left"},
-                            {"speaker": "You"},
-                            {"text": "i live here. who are you?"} , 
-                            {"portraitfocus": "right"},
-                            {"speaker": "Bunny King"},
-                            {"text": "I am the lord of rabbits, son of St. Easter, and bringer of carrots!"},
-							{"text": "Every year, we pray to the Flower for good harvest, but it seems the Flower has not been properly watered!"},
-                            {"portraitfocus": "left"},
-                            {"speaker": "You"},
-                            {"text": "why dont you just... water it?"} , 
-                            {"portraitfocus": "right"},
-                            {"speaker": "Bunny King"},
-                            {"text": "A most ideal solution! Unfortunately, we have no access to the water."},
-							{"text": "Good samaritan, could you please solve our conundrum? Fetch us some water, please!"},
-                            {"portraitfocus": "left"},
-                            {"speaker": "You"},
-                            {"text": "i guess im just doing everyones errands"} , 
-							{"set_true": "met_bunny"}
+                            {
+                                "if_true": "met_goblin",
+                                "lines": [
+                                    {
+                                        "portraits": true,
+                                        "portraitL": "sprPlayerPortrait",
+                                        "portraitR": "sprBunnyKingPortrait"
+                                    },
+                                    {"portraitfocus": "left"},
+                                    {"speaker": "You"},
+                                    {"text": "uhhh"},
+                                    {"portraitfocus": "right"},
+                                    {"speaker": "Bunny King"},
+                                    {"text": "Our precious flower!! It's dead!!"},
+                                    {"portraitfocus": "left"},
+                                    {"speaker": "You"},
+                                    {"text": "yikes"} , 
+                                    {"portraitfocus": "right"},
+                                    {"speaker": "Bunny King"},
+                                    {"text": "Who goes there?!"},
+                                    {"portraitfocus": "left"},
+                                    {"speaker": "You"},
+                                    {"text": "i live here. who are you?"} , 
+                                    {"portraitfocus": "right"},
+                                    {"speaker": "Bunny King"},
+                                    {"text": "I am the lord of rabbits, son of St. Easter, and bringer of carrots!"},
+                                    {"text": "Every year, we pray to the Flower for good harvest, but it seems the Flower has not been properly watered!"},
+                                    {"portraitfocus": "left"},
+                                    {"speaker": "You"},
+                                    {"text": "why dont you just... water it?"} , 
+                                    {"portraitfocus": "right"},
+                                    {"speaker": "Bunny King"},
+                                    {"text": "A most ideal solution! Unfortunately, we have no access to the water."},
+                                    {"text": "Good samaritan, could you please solve our conundrum? Fetch us some water, please!"},
+                                    {"portraitfocus": "left"},
+                                    {"speaker": "You"},
+                                    {"text": "i guess im just doing everyones errands"} , 
+                                    {"set_true": "met_bunny"}
+                                ]
+                          },
+                          {
+                              "if_true": "met_bunny",
+                              "lines": [
+                                {"portraitfocus": "right"},
+                                {"speaker": "Bunny King"},
+                                {"text": "Good samaritan, could you please solve our conundrum? Fetch us some water, please!"}
+                              ]
+                          }
                         ]
-                  },
-				  {
-					  "if_true": "met_bunny",
-					  "lines": [
-                        {"portraitfocus": "right"},
-                        {"speaker": "Bunny King"},
-						{"text": "Good samaritan, could you please solve our conundrum? Fetch us some water, please!"}
-					  ]
-				  }
+                    }
                 ]
             },
 			"obj_door": {
