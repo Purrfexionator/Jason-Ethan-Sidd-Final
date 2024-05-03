@@ -17,6 +17,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Minigames","folderPath":"folders/Objects/Minigames.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Cereal Minigame","folderPath":"folders/Objects/Minigames/Cereal Minigame.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Evil Computer Minigame","folderPath":"folders/Objects/Minigames/Evil Computer Minigame.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Particle Systems","folderPath":"folders/Particle Systems.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Paths","folderPath":"folders/Paths.yy",},
@@ -33,7 +34,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Portraits","folderPath":"folders/Sprites/Portraits.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Cereal Minigame","folderPath":"folders/Objects/Minigames/Cereal Minigame.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"mystery.json","CopyToMask":-1,"filePath":"datafiles",},
@@ -47,6 +47,7 @@
     {"id":{"name":"objPongPlayerPaddle","path":"objects/objPongPlayerPaddle/objPongPlayerPaddle.yy",},},
     {"id":{"name":"sprDoor","path":"sprites/sprDoor/sprDoor.yy",},},
     {"id":{"name":"objPongEnemyHand","path":"objects/objPongEnemyHand/objPongEnemyHand.yy",},},
+    {"id":{"name":"objGuy","path":"objects/objGuy/objGuy.yy",},},
     {"id":{"name":"objPongBorder","path":"objects/objPongBorder/objPongBorder.yy",},},
     {"id":{"name":"objPongManager","path":"objects/objPongManager/objPongManager.yy",},},
     {"id":{"name":"objKey","path":"objects/objKey/objKey.yy",},},

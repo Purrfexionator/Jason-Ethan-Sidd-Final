@@ -3,6 +3,7 @@
     {"name":"Cereal Minigame","order":1,"path":"folders/Objects/Minigames/Cereal Minigame.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"objGuy","order":1,"path":"objects/objGuy/objGuy.yy",},
     {"name":"objCerealCongrats","order":7,"path":"objects/objCerealCongrats/objCerealCongrats.yy",},
     {"name":"sprCerealIntroButton","order":1,"path":"sprites/sprCerealIntroButton/sprCerealIntroButton.yy",},
     {"name":"objCerealIntroBar","order":1,"path":"objects/objCerealIntroBar/objCerealIntroBar.yy",},
