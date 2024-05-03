@@ -35,6 +35,8 @@ if moving {
 		
 		if (scoreSide == 1) {
 			objPongManager.switchState(pongStates.playerScore);
+		} else {
+			objPongManager.switchState(pongStates.enemyScore);
 		}
 	}
 	x += xspd;

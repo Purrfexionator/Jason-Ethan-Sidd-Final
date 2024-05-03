@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprApple",
-    "path": "sprites/sprApple/sprApple.yy",
+    "name": "sprGuy",
+    "path": "sprites/sprGuy/sprGuy.yy",
   },
   "spriteMaskId": null,
   "visible": true,

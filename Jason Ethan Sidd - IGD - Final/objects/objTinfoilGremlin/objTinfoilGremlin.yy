@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprApple",
-    "path": "sprites/sprApple/sprApple.yy",
+    "name": "sprTinfoilGremlin",
+    "path": "sprites/sprTinfoilGremlin/sprTinfoilGremlin.yy",
   },
   "spriteMaskId": null,
   "visible": true,
