@@ -742,7 +742,7 @@
                                     {
                                         "portraits": true,
                                         "portraitL": "sprPlayerPortrait",
-                                        "portraitR": "sprMrBoilerPortrait"
+                                        "portraitR": "sprBoilerPortrait"
                                     },
                                         {"portraitFocus": "left"},
                                         { "speaker": "You" },
