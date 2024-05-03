@@ -18,7 +18,7 @@
     {"name":"sprArrow","order":9,"path":"sprites/sprArrow/sprArrow.yy",},
     {"name":"sprFridge","order":19,"path":"sprites/sprFridge/sprFridge.yy",},
     {"name":"sprMinigameFrame","order":8,"path":"sprites/sprMinigameFrame/sprMinigameFrame.yy",},
-    {"name":"sprTinfoilHatGremlin","order":1,"path":"sprites/sprTinfoilHatGremlin/sprTinfoilHatGremlin.yy",},
+    {"name":"sprTinfoilGremlinPortrait","order":1,"path":"sprites/sprTinfoilGremlinPortrait/sprTinfoilGremlinPortrait.yy",},
     {"name":"objCerealIntroBar","order":1,"path":"objects/objCerealIntroBar/objCerealIntroBar.yy",},
     {"name":"sprCerealCongrats","order":1,"path":"sprites/sprCerealCongrats/sprCerealCongrats.yy",},
     {"name":"objCerealManager","order":4,"path":"objects/objCerealManager/objCerealManager.yy",},

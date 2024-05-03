@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sprTinfoilHatGremlin",
+  "name": "sprTinfoilGremlinPortrait",
   "bbox_bottom": 246,
   "bbox_left": 14,
   "bbox_right": 242,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sprTinfoilHatGremlin",
+    "name": "sprTinfoilGremlinPortrait",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ade30740-8924-40a6-9def-823baada2837","path":"sprites/sprTinfoilHatGremlin/sprTinfoilHatGremlin.yy",},},},"Disabled":false,"id":"c90ac7f9-7758-4886-a33b-2c9c3c3f3ad4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ade30740-8924-40a6-9def-823baada2837","path":"sprites/sprTinfoilGremlinPortrait/sprTinfoilGremlinPortrait.yy",},},},"Disabled":false,"id":"c90ac7f9-7758-4886-a33b-2c9c3c3f3ad4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
