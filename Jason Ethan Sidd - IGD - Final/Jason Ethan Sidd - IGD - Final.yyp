@@ -103,7 +103,7 @@
     {"id":{"name":"objMinigameProp","path":"objects/objMinigameProp/objMinigameProp.yy",},},
     {"id":{"name":"sprCerealMainBackground","path":"sprites/sprCerealMainBackground/sprCerealMainBackground.yy",},},
     {"id":{"name":"objRmLivingRoom","path":"objects/objRmLivingRoom/objRmLivingRoom.yy",},},
-    {"id":{"name":"sprTinfoilHatGremlin","path":"sprites/sprTinfoilHatGremlin/sprTinfoilHatGremlin.yy",},},
+    {"id":{"name":"sprTinfoilGremlinPortrait","path":"sprites/sprTinfoilGremlinPortrait/sprTinfoilGremlinPortrait.yy",},},
     {"id":{"name":"objCerealIntroBar","path":"objects/objCerealIntroBar/objCerealIntroBar.yy",},},
     {"id":{"name":"sprCerealCongrats","path":"sprites/sprCerealCongrats/sprCerealCongrats.yy",},},
     {"id":{"name":"objCerealManager","path":"objects/objCerealManager/objCerealManager.yy",},},
