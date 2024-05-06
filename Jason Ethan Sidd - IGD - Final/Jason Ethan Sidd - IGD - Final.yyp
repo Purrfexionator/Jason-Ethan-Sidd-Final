@@ -95,6 +95,7 @@
     {"id":{"name":"sprMinigameFrame","path":"sprites/sprMinigameFrame/sprMinigameFrame.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
     {"id":{"name":"sprBoilerPortrait","path":"sprites/sprBoilerPortrait/sprBoilerPortrait.yy",},},
+    {"id":{"name":"sprRmKitchen","path":"sprites/sprRmKitchen/sprRmKitchen.yy",},},
     {"id":{"name":"objCerealIntroBackground","path":"objects/objCerealIntroBackground/objCerealIntroBackground.yy",},},
     {"id":{"name":"objDoor5","path":"objects/objDoor5/objDoor5.yy",},},
     {"id":{"name":"objPongBackground","path":"objects/objPongBackground/objPongBackground.yy",},},
