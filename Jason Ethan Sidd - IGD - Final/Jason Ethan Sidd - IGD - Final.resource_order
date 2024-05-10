@@ -4,6 +4,7 @@
     {"name":"Minigames","order":14,"path":"folders/Sprites/Minigames.yy",},
     {"name":"Object Sprites","order":21,"path":"folders/Sprites/Object Sprites.yy",},
     {"name":"Portraits","order":15,"path":"folders/Sprites/Portraits.yy",},
+    {"name":"Ending","order":2,"path":"folders/Sprites/Minigames/Cereal/Ending.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sprDoor","order":13,"path":"sprites/sprDoor/sprDoor.yy",},

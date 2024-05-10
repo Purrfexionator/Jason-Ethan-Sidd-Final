@@ -35,6 +35,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Portraits","folderPath":"folders/Sprites/Portraits.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Ending","folderPath":"folders/Sprites/Minigames/Cereal/Ending.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"mystery.json","CopyToMask":-1,"filePath":"datafiles",},
@@ -163,6 +164,7 @@
     {"id":{"name":"objFridge","path":"objects/objFridge/objFridge.yy",},},
     {"id":{"name":"objClosetGoblin","path":"objects/objClosetGoblin/objClosetGoblin.yy",},},
     {"id":{"name":"sprMetalPipe","path":"sprites/sprMetalPipe/sprMetalPipe.yy",},},
+    {"id":{"name":"spr_cereal_ending","path":"sprites/spr_cereal_ending/spr_cereal_ending.yy",},},
     {"id":{"name":"sprEvilComputerPortrait","path":"sprites/sprEvilComputerPortrait/sprEvilComputerPortrait.yy",},},
     {"id":{"name":"objPongWindow","path":"objects/objPongWindow/objPongWindow.yy",},},
     {"id":{"name":"rTutorial","path":"rooms/rTutorial/rTutorial.yy",},},
