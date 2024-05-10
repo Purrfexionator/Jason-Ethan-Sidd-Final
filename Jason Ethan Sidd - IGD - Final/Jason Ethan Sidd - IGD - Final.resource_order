@@ -2,9 +2,9 @@
   "FolderOrderSettings": [
     {"name":"Cereal Minigame","order":1,"path":"folders/Objects/Minigames/Cereal Minigame.yy",},
     {"name":"Minigames","order":14,"path":"folders/Sprites/Minigames.yy",},
+    {"name":"Ending","order":2,"path":"folders/Sprites/Minigames/Cereal/Ending.yy",},
     {"name":"Object Sprites","order":21,"path":"folders/Sprites/Object Sprites.yy",},
     {"name":"Portraits","order":15,"path":"folders/Sprites/Portraits.yy",},
-    {"name":"Ending","order":2,"path":"folders/Sprites/Minigames/Cereal/Ending.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sprDoor","order":13,"path":"sprites/sprDoor/sprDoor.yy",},
@@ -14,6 +14,7 @@
     {"name":"sprSwedishFish","order":1,"path":"sprites/sprSwedishFish/sprSwedishFish.yy",},
     {"name":"objCerealCongrats","order":7,"path":"objects/objCerealCongrats/objCerealCongrats.yy",},
     {"name":"sprTitle","order":20,"path":"sprites/sprTitle/sprTitle.yy",},
+    {"name":"sprCerealDescription","order":2,"path":"sprites/sprCerealDescription/sprCerealDescription.yy",},
     {"name":"sprRmBedroom","order":12,"path":"sprites/sprRmBedroom/sprRmBedroom.yy",},
     {"name":"sprCerealIntroButton","order":1,"path":"sprites/sprCerealIntroButton/sprCerealIntroButton.yy",},
     {"name":"sprMinigameAnchor","order":11,"path":"sprites/sprMinigameAnchor/sprMinigameAnchor.yy",},
