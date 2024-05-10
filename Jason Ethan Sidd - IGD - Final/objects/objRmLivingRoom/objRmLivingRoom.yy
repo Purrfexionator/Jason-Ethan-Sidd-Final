@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprRmPlaceholder",
-    "path": "sprites/sprRmPlaceholder/sprRmPlaceholder.yy",
+    "name": "sprRmLivingRoom",
+    "path": "sprites/sprRmLivingRoom/sprRmLivingRoom.yy",
   },
   "spriteMaskId": null,
   "visible": true,
