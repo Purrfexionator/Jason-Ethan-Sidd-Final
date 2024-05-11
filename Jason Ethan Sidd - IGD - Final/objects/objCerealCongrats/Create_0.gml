@@ -2,4 +2,5 @@
 event_inherited();
 
 minigame = "mg_cereal";
-propDepth = 9;
+
+image_speed = 0;

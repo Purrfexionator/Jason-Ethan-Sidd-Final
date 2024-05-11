@@ -27,7 +27,7 @@ if grabbed {
 			objCerealCup.image_speed = 0;
 			timer++;
 			if (timer >= wait_time) {
-				endMinigame(true);
+				objCerealManager.switchState(cerealStates.congrats);
 				instance_destroy();
 				timer = 0;
 			}

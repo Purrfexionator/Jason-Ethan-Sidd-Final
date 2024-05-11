@@ -12,4 +12,14 @@ enum cerealStates {
 	congrats
 }
 
-state = cerealStates.intro;
+state = 0;
+stateInit = false;
+counter = 0;
+
+function switchState(newState) {
+	state = newState;
+	stateInit = false;
+	counter = 0;
+}
+
+switchState(cerealStates.intro);
