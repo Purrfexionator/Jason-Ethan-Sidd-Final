@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprApple",
-    "path": "sprites/sprApple/sprApple.yy",
+    "name": "sprLava",
+    "path": "sprites/sprLava/sprLava.yy",
   },
   "spriteMaskId": null,
   "visible": true,
