@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objToilet",
+  "name": "objRmKitchen",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -12,8 +12,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "objInteractable",
-    "path": "objects/objInteractable/objInteractable.yy",
+    "name": "objRoom",
+    "path": "objects/objRoom/objRoom.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprToilet",
-    "path": "sprites/sprToilet/sprToilet.yy",
+    "name": "sprRmPlaceholder",
+    "path": "sprites/sprRmPlaceholder/sprRmPlaceholder.yy",
   },
   "spriteMaskId": null,
   "visible": true,

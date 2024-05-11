@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprRmPlaceholder",
-    "path": "sprites/sprRmPlaceholder/sprRmPlaceholder.yy",
+    "name": "sprRmGrassRoom",
+    "path": "sprites/sprRmGrassRoom/sprRmGrassRoom.yy",
   },
   "spriteMaskId": null,
   "visible": true,
