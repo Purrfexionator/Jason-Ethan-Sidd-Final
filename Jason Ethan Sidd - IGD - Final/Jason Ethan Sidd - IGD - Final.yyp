@@ -82,6 +82,7 @@
     {"id":{"name":"objRmInBed","path":"objects/objRmInBed/objRmInBed.yy",},},
     {"id":{"name":"objSink","path":"objects/objSink/objSink.yy",},},
     {"id":{"name":"sprRmLivingRoom","path":"sprites/sprRmLivingRoom/sprRmLivingRoom.yy",},},
+    {"id":{"name":"sprRmBasementCleared","path":"sprites/sprRmBasementCleared/sprRmBasementCleared.yy",},},
     {"id":{"name":"objTinfoilGremlin","path":"objects/objTinfoilGremlin/objTinfoilGremlin.yy",},},
     {"id":{"name":"objDoor2","path":"objects/objDoor2/objDoor2.yy",},},
     {"id":{"name":"objSwedishFish","path":"objects/objSwedishFish/objSwedishFish.yy",},},
