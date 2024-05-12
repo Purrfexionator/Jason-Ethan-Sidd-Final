@@ -99,6 +99,7 @@
     {"id":{"name":"sprPongEnemyHand","path":"sprites/sprPongEnemyHand/sprPongEnemyHand.yy",},},
     {"id":{"name":"objPongIndicator","path":"objects/objPongIndicator/objPongIndicator.yy",},},
     {"id":{"name":"sprWizardPortrait","path":"sprites/sprWizardPortrait/sprWizardPortrait.yy",},},
+    {"id":{"name":"sngAmbience","path":"sounds/sngAmbience/sngAmbience.yy",},},
     {"id":{"name":"sprMinigameFrame","path":"sprites/sprMinigameFrame/sprMinigameFrame.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
     {"id":{"name":"sprBoilerPortrait","path":"sprites/sprBoilerPortrait/sprBoilerPortrait.yy",},},
