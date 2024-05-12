@@ -19,5 +19,5 @@ if boxPercent > 0.01 {
 	draw_rectangle(xPos, yPos, xPos + width, yPos + height, true);
 	
 	caption.update();
-	draw_text_ext(xPos, yPos - 20, caption.currentText, 20, width);
+	draw_text(xPos, yPos - 20, caption.currentText);
 }
