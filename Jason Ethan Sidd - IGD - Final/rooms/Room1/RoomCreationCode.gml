@@ -1,1 +1,0 @@
-audio_play_sound(sngAmbience, 10, true);
