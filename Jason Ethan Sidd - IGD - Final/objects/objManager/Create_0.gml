@@ -138,12 +138,14 @@ function doNextThing() {
 	}
 	if variable_struct_exists(line, "portraitL") {
 		objLeftPortrait.sprite_index = asset_get_index(line.portraitL);
+		objLeftPortrait.image_index = 0;
 	}
 	if variable_struct_exists(line, "portraitLI") {
 		objLeftPortrait.image_index = line.portraitLI;
 	}
 	if variable_struct_exists(line, "portraitR") {
 		objRightPortrait.sprite_index = asset_get_index(line.portraitR);
+		objRightPortrait.image_index = 0;
 	}
 	if variable_struct_exists(line, "portraitRI") {
 		objRightPortrait.image_index = line.portraitRI;
